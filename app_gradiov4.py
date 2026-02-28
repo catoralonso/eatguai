@@ -368,7 +368,7 @@ input[type="number"] + label,
 
 /* Quitar padding interno excesivo de los wrap */
 .wrap {{
-    padding: 12px !important;
+    padding: 16px !important;
 }}
 
 /* ─────────────────────────────────────────────────────────────────────────── */
@@ -405,6 +405,14 @@ fieldset,
     padding: 0 !important;
     margin: 0 !important;
     box-shadow: none !important;
+}}
+
+/* Quitar fondo del form contenedor */
+.form {{
+    background: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+    gap: 8px !important;
 }}
 
 /* ─────────────────────────────────────────────────────────────────────────── */
@@ -494,21 +502,21 @@ input:focus {{
         inset 0 0 20px rgba(125, 211, 252, 0.03) !important;
 }}
 
-/* Botón primario */
-button.primary {{
-    background: linear-gradient(135deg, rgba(125,211,252,0.9), rgba(167,139,250,0.9)) !important;
+button.lg.primary,
+button.svelte-xzq5jh.primary {{
+    background: linear-gradient(135deg, {COLORS.ICE_BLUE}, {COLORS.PURPLE_NEBULA}) !important;
+    color: {COLORS.BG_PRIMARY} !important;
     border: none !important;
     border-radius: 12px !important;
     font-family: 'Space Grotesk', sans-serif !important;
     font-weight: 600 !important;
     text-transform: uppercase !important;
     letter-spacing: 1px !important;
-    color: {COLORS.BG_PRIMARY} !important;
-    transition: all 0.3s ease !important;
     box-shadow: 0 4px 20px rgba(125, 211, 252, 0.3) !important;
 }}
 
-button.primary:hover {{
+button.lg.primary:hover,
+button.svelte-xzq5jh.primary:hover {{
     transform: translateY(-2px) !important;
     box-shadow: 0 8px 30px rgba(125, 211, 252, 0.4) !important;
     filter: brightness(1.1) !important;
@@ -551,15 +559,106 @@ button.secondary:hover {{
 }}
 
 /* Animaciones para empty states y elementos */
-@keyframes float {
-    0%, 100% { transform: translateY(0px); }
-    50% { transform: translateY(-10px); }
-}
+@keyframes float {{
+    0%, 100% {{ transform: translateY(0px); }}
+    50% {{ transform: translateY(-10px); }}
+}}
+@keyframes dotPulse {{
+    0%, 80%, 100% {{ transform: scale(0.6); opacity: 0.4; }}
+    40% {{ transform: scale(1); opacity: 1; box-shadow: 0 0 10px var(--ice-blue); }}
+}}
 
-@keyframes dotPulse {
-    0%, 80%, 100% { transform: scale(0.6); opacity: 0.4; }
-    40% { transform: scale(1); opacity: 1; box-shadow: 0 0 10px var(--ice-blue); }
-}
+/* Label universal - cubre TODOS los componentes */
+[data-testid="block-info"] {{
+    color: {COLORS.ICE_BLUE} !important;
+    font-family: 'Space Grotesk', sans-serif !important;
+    font-size: 0.75em !important;
+    font-weight: 500 !important;
+    text-transform: uppercase !important;
+    letter-spacing: 2px !important;
+    opacity: 0.9 !important;
+    padding-left: 4px !important;
+    margin-bottom: 8px !important;
+}}
+
+/* Quitar fondo gris del form contenedor */
+.form.svelte-d5xbca {{
+    background: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+}}
+
+/* Quitar border-style solid que Gradio inyecta inline */
+.block.svelte-1plpy97 {{
+    border-style: none !important;
+    background: {COLORS.BG_SECONDARY} !important;
+    border: 1px solid rgba(125, 211, 252, 0.25) !important;
+    border-radius: 16px !important;
+    box-shadow: 
+        0 0 18px rgba(125, 211, 252, 0.15),
+        0 0 40px rgba(125, 211, 252, 0.06),
+        inset 0 0 20px rgba(125, 211, 252, 0.03) !important;
+}}
+
+/* Radio horizontal */
+.gradio-radio .wrap.svelte-e4x47i {{
+    display: flex !important;
+    flex-direction: row !important;
+    gap: 8px !important;
+}}
+
+/* Dropdown más pequeño */
+.svelte-1xfsv4t.container {{
+    min-height: unset !important;
+}}
+.wrap.svelte-1xfsv4t {{
+    min-height: unset !important;
+    padding: 4px 8px !important;
+}}
+
+/* Radio en fila horizontal */
+.wrap.svelte-e4x47i {{
+    display: flex !important;
+    flex-direction: row !important;
+    flex-wrap: nowrap !important;
+    gap: 8px !important;
+    padding: 4px !important;
+}}
+
+/* Radio labels centrados con padding */
+label.svelte-19qdtil {{
+    display: flex !important;
+    align-items: center !important;
+    padding: 6px 8px !important;
+    border-radius: 8px !important;
+    background: rgba(255,255,255,0.03) !important;
+    border: 1px solid rgba(125,211,252,0.15) !important;
+    cursor: pointer !important;
+    flex: 1 !important;
+    justify-content: center !important;
+    min-width: 0 !important;
+    font-size: 0.85em !important;
+}}
+
+label.svelte-19qdtil.selected {{
+    background: rgba(125,211,252,0.12) !important;
+    border-color: rgba(125,211,252,0.4) !important;
+}}
+
+/* Padding interno del bloque para alinear con los demás */
+.block.svelte-1plpy97.padded {{
+    padding: 16px !important;
+}}
+
+/* Ocultar completamente grupos invisibles */
+.gradio-group[style*="display: none"],
+.gradio-group.hidden {{
+    display: none !important;
+    height: 0 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    overflow: hidden !important;
+}}
 """
 
 # =============================================================================
@@ -585,17 +684,24 @@ with gr.Blocks(title="🧊 Fridge Survival Guide Pro 🧊", theme=gr.themes.Base
                         label="Modo",
                     )
                     imagen_input = gr.Image(type="pil", label="Foto de tu nevera", height=300)
-                    analizar_btn = gr.Button("🔍 Analizar nevera", variant="primary", size="lg")
+                    analizar_btn = gr.Button("Analizar nevera", variant="primary", size="lg")
 
                 # COLUMNA 2 — Filtros y valoración
                 with gr.Column(scale=1, min_width=200):
                     n_slider      = gr.Slider(1, 10, value=5, step=1, label="Nº recetas")
-                    conf_radio    = gr.Radio(["Bajo", "Medio", "Alto"], value="Medio", label="Precisión")
+                    conf_radio = gr.Radio(
+                        ["Bajo", "Medio", "Alto"],
+                        value="Medio",
+                        label="Precisión",
+                        type="value",
+                        interactive=True,
+                        container=True,
+                    )
                     filtro_tiempo = gr.Dropdown(choices=OPCIONES_TIEMPO, value="Todos", label="⏱ Tiempo máx.")
                     filtro_faltan = gr.Dropdown(choices=OPCIONES_FALTAN, value="Todos", label="❌ Máx. faltantes")
 
                     with gr.Group(visible=False) as val_group:
-                        gr.HTML("<hr style='border-color:rgba(125,211,252,0.1); margin:16px 0;'>")
+                        gr.HTML("<div style='height:16px;'></div>")
                         receta_dd   = gr.Dropdown(choices=[], label="⭐ Valorar receta")
                         gusto_radio = gr.Radio(["👍 Me gusta", "👎 No me gusta"], label="¿Te gustó?")
                         rel_radio   = gr.Radio(["Usa lo que tengo", "Me faltan cosas"], label="¿Es relevante?")
