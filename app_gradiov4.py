@@ -257,31 +257,97 @@ def mostrar_analytics():
 CSS_CUSTOM = f"""
 {renderer.get_base_styles()}
 
-/* Contenedor principal */
+/* ─────────────────────────────────────────────────────────────────────────── */
+/* CONTENEDOR PRINCIPAL */
+/* ─────────────────────────────────────────────────────────────────────────── */
+
 .gradio-container {{
     background: {COLORS.BG_PRIMARY} !important;
     font-family: 'DM Sans', sans-serif !important;
 }}
 
-/* Tabs */
+/* ─────────────────────────────────────────────────────────────────────────── */
+/* TABS - Mismo estilo que "cocina con lo que tienes ahora" */
+/* ─────────────────────────────────────────────────────────────────────────── */
+
+.tab-nav {{
+    background: rgba(255,255,255,0.03) !important;
+    border-radius: 16px !important;
+    padding: 6px !important;
+    margin-bottom: 24px !important;
+    border: 1px solid rgba(125, 211, 252, 0.15) !important;
+}}
+
 .tab-nav button {{
-    font-weight: 600 !important;
+    font-family: 'Space Grotesk', sans-serif !important;
+    font-size: 0.75em !important;
+    font-weight: 500 !important;
+    text-transform: uppercase !important;
+    letter-spacing: 2px !important;
+    color: rgba(125, 211, 252, 0.6) !important;
     border-radius: 12px !important;
-}}
-.tab-nav button.selected {{
-    background: rgba(125,211,252,0.1) !important;
-    color: {COLORS.TEXT_PRIMARY} !important;
-}}
-
-/* Botón primario */
-button.primary {{
-    background: linear-gradient(135deg, rgba(125,211,252,0.8), rgba(167,139,250,0.8)) !important;
+    padding: 12px 24px !important;
     border: none !important;
-    border-radius: 12px !important;
-    font-weight: 700 !important;
+    background: transparent !important;
+    transition: all 0.3s ease !important;
 }}
 
-/* Bloques con brillo estilo v3 */
+.tab-nav button:hover {{
+    color: rgba(125, 211, 252, 0.85) !important;
+    background: rgba(125, 211, 252, 0.05) !important;
+}}
+
+.tab-nav button.selected {{
+    color: {COLORS.ICE_BLUE} !important;
+    background: rgba(125, 211, 252, 0.12) !important;
+    box-shadow: 0 0 20px rgba(125, 211, 252, 0.15) !important;
+    font-weight: 600 !important;
+}}
+
+/* ─────────────────────────────────────────────────────────────────────────── */
+/* LABELS DE FILTROS - Mismo estilo que subtítulo del header */
+/* ─────────────────────────────────────────────────────────────────────────── */
+
+/* Todos los labels de Gradio */
+label .label-text,
+label span,
+.form .label span,
+.gradio-dropdown label,
+.gradio-slider label,
+.gradio-radio label,
+.gradio-checkbox label,
+.gradio-textbox label,
+.gradio-number label,
+.gradio-image label,
+input[type="number"] + label,
+.wrap .label span {{
+    color: {COLORS.ICE_BLUE} !important;
+    font-family: 'Space Grotesk', sans-serif !important;
+    font-size: 0.75em !important;
+    font-weight: 500 !important;
+    text-transform: uppercase !important;
+    letter-spacing: 2px !important;
+    opacity: 0.9 !important;
+    margin-bottom: 8px !important;
+    display: block !important;
+}}
+
+/* Labels específicos de dropdown y radio */
+.gradio-dropdown .label span,
+.gradio-radio .label span,
+.gradio-slider .label span {{
+    color: {COLORS.ICE_BLUE} !important;
+    font-family: 'Space Grotesk', sans-serif !important;
+    font-size: 0.75em !important;
+    text-transform: uppercase !important;
+    letter-spacing: 2px !important;
+}}
+
+/* ─────────────────────────────────────────────────────────────────────────── */
+/* CONTENEDORES (BLOCKS) - Sin espacios entre ellos, solo bordes brillantes */
+/* ─────────────────────────────────────────────────────────────────────────── */
+
+/* Cada componente individual envuelto en .block */
 .block {{
     background: {COLORS.BG_SECONDARY} !important;
     border: 1px solid rgba(125, 211, 252, 0.25) !important;
@@ -290,7 +356,10 @@ button.primary {{
         0 0 18px rgba(125, 211, 252, 0.15),
         0 0 40px rgba(125, 211, 252, 0.06),
         inset 0 0 20px rgba(125, 211, 252, 0.03) !important;
+    margin: 0 !important;  /* Sin margen entre contenedores */
+    transition: all 0.3s ease !important;
 }}
+
 .block:hover {{
     border-color: rgba(125, 211, 252, 0.45) !important;
     box-shadow: 
@@ -299,74 +368,187 @@ button.primary {{
         inset 0 0 20px rgba(125, 211, 252, 0.05) !important;
 }}
 
-/* Labels todos celestes */
-label span {{
-    color: {COLORS.ICE_BLUE} !important;
-    font-family: 'Space Grotesk', sans-serif !important;
-    font-size: 0.75em !important;
-    font-weight: 500 !important;
-    text-transform: uppercase !important;
-    letter-spacing: 2px !important;
-    opacity: 0.85 !important;
+/* Quitar padding interno excesivo de los wrap */
+.wrap {{
+    padding: 12px !important;
 }}
 
-/* Quitar fondo gris interno de grupos y fieldsets */
-.gradio-group, fieldset {{
-    border: none !important;
-    background: transparent !important;
-    padding: 0 !important;
-}}
+/* ─────────────────────────────────────────────────────────────────────────── */
+/* ROWS - Sin fondo, sin bordes, solo gap controlado */
+/* ─────────────────────────────────────────────────────────────────────────── */
 
-/* Quitar fondo gris de radio y slider */
-.gradio-radio, .gradio-slider {{
-    background: transparent !important;
-    border: none !important;
-    padding: 0 !important;
-}}
-
-/* Imagen */
-.gradio-image > .wrap {{
-    border: 1px solid rgba(125, 211, 252, 0.25) !important;
-    border-radius: 16px !important;
-    overflow: hidden !important;
-}}
-
-/* Textbox */
-textarea, input[type="text"] {{
-    background: {COLORS.BG_PRIMARY} !important;
-    border: 1px solid {COLORS.BORDER_SUBTLE} !important;
-    color: {COLORS.TEXT_PRIMARY} !important;
-    border-radius: 10px !important;
-}}
-
-/* Slider color */
-input[type="range"] {{
-    accent-color: {COLORS.ICE_BLUE} !important;
-}}
-
-/* Cada componente dentro de Row tiene su propio borde */
-.gradio-row > div > .block {{
-    background: {COLORS.BG_SECONDARY} !important;
-    border: 1px solid rgba(125, 211, 252, 0.25) !important;
-    border-radius: 16px !important;
-    box-shadow: 
-        0 0 18px rgba(125, 211, 252, 0.15),
-        0 0 40px rgba(125, 211, 252, 0.06) !important;
-}}
-
-/* Quitar borde del Row contenedor */
 .gradio-row {{
     background: transparent !important;
     border: none !important;
     box-shadow: none !important;
-    gap: 8px !important;
+    gap: 12px !important;  /* Separación entre columnas, no espacio vacío */
+    margin: 0 !important;
+    padding: 0 !important;
 }}
 
-/* Quitar borde de separadores HTML */
+/* Las columnas dentro del row */
+.gradio-row > .column {{
+    background: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+    padding: 0 !important;
+    margin: 0 !important;
+}}
+
+/* ─────────────────────────────────────────────────────────────────────────── */
+/* GRUPOS Y FIELDSETS - Sin fondo gris */
+/* ─────────────────────────────────────────────────────────────────────────── */
+
+.gradio-group,
+fieldset,
+.group {{
+    border: none !important;
+    background: transparent !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    box-shadow: none !important;
+}}
+
+/* ─────────────────────────────────────────────────────────────────────────── */
+/* COMPONENTES INTERNOS - Sin bordes propios, heredan del .block */
+/* ─────────────────────────────────────────────────────────────────────────── */
+
+/* Radio buttons */
+.gradio-radio .wrap,
+.gradio-radio .container {{
+    background: transparent !important;
+    border: none !important;
+    padding: 8px 0 !important;
+}}
+
+/* Radio items individuales */
+.radio-item {{
+    background: rgba(255,255,255,0.03) !important;
+    border: 1px solid rgba(125, 211, 252, 0.15) !important;
+    border-radius: 8px !important;
+    margin: 4px 0 !important;
+    padding: 8px 12px !important;
+    transition: all 0.2s ease !important;
+}}
+
+.radio-item:hover {{
+    background: rgba(125, 211, 252, 0.08) !important;
+    border-color: rgba(125, 211, 252, 0.3) !important;
+}}
+
+.radio-item.selected {{
+    background: rgba(125, 211, 252, 0.15) !important;
+    border-color: rgba(125, 211, 252, 0.4) !important;
+    color: {COLORS.ICE_BLUE} !important;
+}}
+
+/* Slider */
+.gradio-slider .wrap {{
+    background: transparent !important;
+    border: none !important;
+    padding: 8px 0 !important;
+}}
+
+input[type="range"] {{
+    accent-color: {COLORS.ICE_BLUE} !important;
+    height: 6px !important;
+    background: rgba(255,255,255,0.1) !important;
+    border-radius: 3px !important;
+}}
+
+/* Dropdown */
+.gradio-dropdown .wrap {{
+    background: {COLORS.BG_PRIMARY} !important;
+    border: 1px solid rgba(125, 211, 252, 0.2) !important;
+    border-radius: 10px !important;
+}}
+
+.gradio-dropdown .wrap:hover {{
+    border-color: rgba(125, 211, 252, 0.4) !important;
+}}
+
+/* Input de texto */
+textarea,
+input[type="text"],
+input[type="number"] {{
+    background: {COLORS.BG_PRIMARY} !important;
+    border: 1px solid rgba(125, 211, 252, 0.2) !important;
+    color: {COLORS.TEXT_PRIMARY} !important;
+    border-radius: 10px !important;
+    font-family: 'DM Sans', sans-serif !important;
+}}
+
+textarea:focus,
+input:focus {{
+    border-color: {COLORS.ICE_BLUE} !important;
+    box-shadow: 0 0 0 3px rgba(125, 211, 252, 0.1) !important;
+    outline: none !important;
+}}
+
+/* Imagen */
+.gradio-image .wrap {{
+    background: {COLORS.BG_SECONDARY} !important;
+    border: 1px solid rgba(125, 211, 252, 0.25) !important;
+    border-radius: 16px !important;
+    overflow: hidden !important;
+    box-shadow: 
+        0 0 18px rgba(125, 211, 252, 0.15),
+        inset 0 0 20px rgba(125, 211, 252, 0.03) !important;
+}}
+
+/* Botón primario */
+button.primary {{
+    background: linear-gradient(135deg, rgba(125,211,252,0.9), rgba(167,139,250,0.9)) !important;
+    border: none !important;
+    border-radius: 12px !important;
+    font-family: 'Space Grotesk', sans-serif !important;
+    font-weight: 600 !important;
+    text-transform: uppercase !important;
+    letter-spacing: 1px !important;
+    color: {COLORS.BG_PRIMARY} !important;
+    transition: all 0.3s ease !important;
+    box-shadow: 0 4px 20px rgba(125, 211, 252, 0.3) !important;
+}}
+
+button.primary:hover {{
+    transform: translateY(-2px) !important;
+    box-shadow: 0 8px 30px rgba(125, 211, 252, 0.4) !important;
+    filter: brightness(1.1) !important;
+}}
+
+/* Botón secundario */
+button.secondary {{
+    background: rgba(125, 211, 252, 0.1) !important;
+    border: 1px solid rgba(125, 211, 252, 0.3) !important;
+    color: {COLORS.ICE_BLUE} !important;
+    border-radius: 10px !important;
+    font-family: 'Space Grotesk', sans-serif !important;
+    font-weight: 500 !important;
+    text-transform: uppercase !important;
+    letter-spacing: 1px !important;
+    font-size: 0.85em !important;
+}}
+
+button.secondary:hover {{
+    background: rgba(125, 211, 252, 0.2) !important;
+    border-color: rgba(125, 211, 252, 0.5) !important;
+}}
+
+/* Quitar espacios de HTML injectado */
 .gradio-html {{
     background: transparent !important;
     border: none !important;
     box-shadow: none !important;
+    padding: 0 !important;
+    margin: 0 !important;
+}}
+
+/* Separador invisible (usa esto en lugar de gr.HTML con height) */
+.spacer {{
+    height: 8px !important;
+    background: transparent !important;
+    border: none !important;
+    margin: 0 !important;
     padding: 0 !important;
 }}
 """
@@ -399,11 +581,8 @@ with gr.Blocks(title="🧊 Fridge Survival Guide Pro 🧊", theme=gr.themes.Base
                 # COLUMNA 2 — Filtros y valoración
                 with gr.Column(scale=1, min_width=200):
                     n_slider      = gr.Slider(1, 10, value=5, step=1, label="Nº recetas")
-                    gr.HTML("<div style='height:8px;'></div>")
                     conf_radio    = gr.Radio(["Bajo", "Medio", "Alto"], value="Medio", label="Precisión")
-                    gr.HTML("<div style='height:8px;'></div>")
                     filtro_tiempo = gr.Dropdown(choices=OPCIONES_TIEMPO, value="Todos", label="⏱ Tiempo máx.")
-                    gr.HTML("<div style='height:8px;'></div>")
                     filtro_faltan = gr.Dropdown(choices=OPCIONES_FALTAN, value="Todos", label="❌ Máx. faltantes")
 
                     with gr.Group(visible=False) as val_group:
@@ -459,10 +638,10 @@ with gr.Blocks(title="🧊 Fridge Survival Guide Pro 🧊", theme=gr.themes.Base
             )
 
         # ── TAB 3: ANALYTICS ─────────────────────────────────────────────────
-        with gr.Tab("Analytics"):
-            refresh_btn = gr.Button("🔄 Actualizar dashboard")
+        with gr.Tab("Estadísticas"):
+            refresh_btn = gr.Button("Actualizar dashboard")
             dashboard   = gr.HTML()
-            export_btn  = gr.Button("📥 Exportar datos")
+            export_btn  = gr.Button("Exportar datos")
             export_txt  = gr.Textbox(
                 label="Copia esto antes de destruir el VM",
                 lines=10,
