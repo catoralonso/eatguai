@@ -1,0 +1,5325 @@
+[
+  {
+    "receta_id": 101,
+    "nombre": "tortilla de patatas",
+    "categoria": "comida",
+    "tipo": "completa",
+    "ingredientes_clave": [
+      {
+        "item": "huevo",
+        "qty": 4,
+        "unit": "ud"
+      },
+      {
+        "item": "patata",
+        "qty": 3,
+        "unit": "ud"
+      },
+      {
+        "item": "cebolla",
+        "qty": 0.5,
+        "unit": "ud"
+      }
+    ],
+    "ingredientes_base": [
+      "aceite",
+      "sal"
+    ],
+    "dificultad": "media",
+    "tiempo_min": 30,
+    "calorias_aprox": 300,
+    "tags": [
+      "tradicional",
+      "vegetariano"
+    ],
+    "proceso_corto": "Batir o preparar el huevo según receta. Añadir ingredientes base y ajustar sal al gusto. Servir caliente o frío según corresponda.",
+    "proceso_detallado": [
+      "1. batir los huevos, preparar patata, picar la cebolla finamente.",
+      "2. Calentar una sarten con un poco de aceite o mantequilla.",
+      "3. Agregar los ingredientes preparados y luego incorporar el huevo.",
+      "4. Cocinar hasta que el huevo este en el punto deseado.",
+      "5. Ajustar sal y especias al gusto y servir."
+    ]
+  },
+  {
+    "receta_id": 102,
+    "nombre": "huevos revueltos con jamon",
+    "categoria": "desayuno",
+    "tipo": "completa",
+    "ingredientes_clave": [
+      {
+        "item": "huevo",
+        "qty": 2,
+        "unit": "ud"
+      },
+      {
+        "item": "jamon",
+        "qty": 50,
+        "unit": "gr"
+      }
+    ],
+    "ingredientes_base": [
+      "mantequilla",
+      "pimienta"
+    ],
+    "dificultad": "baja",
+    "tiempo_min": 15,
+    "calorias_aprox": 300,
+    "tags": [
+      "desayuno",
+      "proteina"
+    ],
+    "proceso_corto": "Batir o preparar el huevo según receta. Añadir ingredientes base y ajustar sal al gusto. Servir caliente o frío según corresponda.",
+    "proceso_detallado": [
+      "1. batir los huevos, cortar el jamon en tiras.",
+      "2. Calentar una sarten con un poco de aceite o mantequilla.",
+      "3. Agregar los ingredientes preparados y luego incorporar el huevo.",
+      "4. Cocinar hasta que el huevo este en el punto deseado.",
+      "5. Ajustar sal y especias al gusto y servir."
+    ]
+  },
+  {
+    "receta_id": 103,
+    "nombre": "omelette de queso y espinaca",
+    "categoria": "comida",
+    "tipo": "completa",
+    "ingredientes_clave": [
+      {
+        "item": "huevo",
+        "qty": 2,
+        "unit": "ud"
+      },
+      {
+        "item": "queso",
+        "qty": 30,
+        "unit": "gr"
+      },
+      {
+        "item": "espinaca",
+        "qty": 1,
+        "unit": "taza"
+      }
+    ],
+    "ingredientes_base": [
+      "aceite",
+      "sal"
+    ],
+    "dificultad": "baja",
+    "tiempo_min": 15,
+    "calorias_aprox": 300,
+    "tags": [
+      "fit",
+      "vegetariano"
+    ],
+    "proceso_corto": "Batir o preparar el huevo según receta. Añadir ingredientes base y ajustar sal al gusto. Servir caliente o frío según corresponda.",
+    "proceso_detallado": [
+      "1. batir los huevos, rallar o cortar el queso, preparar espinaca.",
+      "2. Calentar una sarten con un poco de aceite o mantequilla.",
+      "3. Agregar los ingredientes preparados y luego incorporar el huevo.",
+      "4. Cocinar hasta que el huevo este en el punto deseado.",
+      "5. Ajustar sal y especias al gusto y servir."
+    ]
+  },
+  {
+    "receta_id": 104,
+    "nombre": "shakshuka express",
+    "categoria": "comida",
+    "tipo": "completa",
+    "ingredientes_clave": [
+      {
+        "item": "huevo",
+        "qty": 2,
+        "unit": "ud"
+      },
+      {
+        "item": "tomate",
+        "qty": 2,
+        "unit": "ud"
+      },
+      {
+        "item": "pimiento",
+        "qty": 1,
+        "unit": "ud"
+      }
+    ],
+    "ingredientes_base": [
+      "aceite",
+      "ajo",
+      "comino"
+    ],
+    "dificultad": "media",
+    "tiempo_min": 30,
+    "calorias_aprox": 300,
+    "tags": [
+      "internacional",
+      "salsa"
+    ],
+    "proceso_corto": "Batir o preparar el huevo según receta. Añadir ingredientes base y ajustar sal al gusto. Servir caliente o frío según corresponda.",
+    "proceso_detallado": [
+      "1. batir los huevos, picar el tomate en cubos, preparar pimiento.",
+      "2. Calentar una sarten con un poco de aceite o mantequilla.",
+      "3. Agregar los ingredientes preparados y luego incorporar el huevo.",
+      "4. Cocinar hasta que el huevo este en el punto deseado.",
+      "5. Ajustar sal y especias al gusto y servir."
+    ]
+  },
+  {
+    "receta_id": 105,
+    "nombre": "sandwich de huevo y mayonesa",
+    "categoria": "comida",
+    "tipo": "completa",
+    "ingredientes_clave": [
+      {
+        "item": "huevo cocido",
+        "qty": 2,
+        "unit": "ud"
+      },
+      {
+        "item": "pan",
+        "qty": 2,
+        "unit": "rebanada"
+      },
+      {
+        "item": "mayonesa",
+        "qty": 1,
+        "unit": "cda"
+      }
+    ],
+    "ingredientes_base": [
+      "sal",
+      "mostaza"
+    ],
+    "dificultad": "baja",
+    "tiempo_min": 15,
+    "calorias_aprox": 300,
+    "tags": [
+      "frio",
+      "lunch"
+    ],
+    "proceso_corto": "Batir o preparar el huevo según receta. Añadir ingredientes base y ajustar sal al gusto. Servir caliente o frío según corresponda.",
+    "proceso_detallado": [
+      "1. batir los huevos, preparar pan, preparar mayonesa.",
+      "2. Calentar una sarten con un poco de aceite o mantequilla.",
+      "3. Agregar los ingredientes preparados y luego incorporar el huevo.",
+      "4. Cocinar hasta que el huevo este en el punto deseado.",
+      "5. Ajustar sal y especias al gusto y servir."
+    ]
+  },
+  {
+    "receta_id": 106,
+    "nombre": "quiche de jamon y queso",
+    "categoria": "comida",
+    "tipo": "completa",
+    "ingredientes_clave": [
+      {
+        "item": "huevo",
+        "qty": 3,
+        "unit": "ud"
+      },
+      {
+        "item": "leche",
+        "qty": 200,
+        "unit": "ml"
+      },
+      {
+        "item": "masa",
+        "qty": 1,
+        "unit": "ud"
+      },
+      {
+        "item": "jamon",
+        "qty": 100,
+        "unit": "gr"
+      },
+      {
+        "item": "queso",
+        "qty": 100,
+        "unit": "gr"
+      }
+    ],
+    "ingredientes_base": [
+      "sal",
+      "nuez moscada"
+    ],
+    "dificultad": "alta",
+    "tiempo_min": 45,
+    "calorias_aprox": 300,
+    "tags": [
+      "horno",
+      "gourmet"
+    ],
+    "proceso_corto": "Batir o preparar el huevo según receta. Añadir ingredientes base y ajustar sal al gusto. Servir caliente o frío según corresponda.",
+    "proceso_detallado": [
+      "1. batir los huevos, preparar leche, preparar masa, cortar el jamon en tiras, rallar o cortar el queso.",
+      "2. Calentar una sarten con un poco de aceite o mantequilla.",
+      "3. Agregar los ingredientes preparados y luego incorporar el huevo.",
+      "4. Cocinar hasta que el huevo este en el punto deseado.",
+      "5. Ajustar sal y especias al gusto y servir."
+    ]
+  },
+  {
+    "receta_id": 107,
+    "nombre": "arroz con huevo estrellado",
+    "categoria": "comida",
+    "tipo": "completa",
+    "ingredientes_clave": [
+      {
+        "item": "arroz",
+        "qty": 1,
+        "unit": "taza"
+      },
+      {
+        "item": "huevo",
+        "qty": 1,
+        "unit": "ud"
+      }
+    ],
+    "ingredientes_base": [
+      "aceite",
+      "ajo",
+      "sal"
+    ],
+    "dificultad": "baja",
+    "tiempo_min": 15,
+    "calorias_aprox": 300,
+    "tags": [
+      "economico",
+      "rapido"
+    ],
+    "proceso_corto": "Batir o preparar el huevo según receta. Cocinar el arroz hasta que esté suave. Añadir ingredientes base y ajustar sal al gusto. Servir caliente o frío según corresponda.",
+    "proceso_detallado": [
+      "1. preparar arroz, batir los huevos.",
+      "2. Calentar una sarten con un poco de aceite o mantequilla.",
+      "3. Agregar los ingredientes preparados y luego incorporar el huevo.",
+      "4. Cocinar hasta que el huevo este en el punto deseado.",
+      "5. Ajustar sal y especias al gusto y servir."
+    ]
+  },
+  {
+    "receta_id": 108,
+    "nombre": "crepas saladas",
+    "categoria": "comida",
+    "tipo": "completa",
+    "ingredientes_clave": [
+      {
+        "item": "huevo",
+        "qty": 1,
+        "unit": "ud"
+      },
+      {
+        "item": "leche",
+        "qty": 250,
+        "unit": "ml"
+      },
+      {
+        "item": "harina",
+        "qty": 125,
+        "unit": "gr"
+      },
+      {
+        "item": "queso",
+        "qty": 50,
+        "unit": "gr"
+      }
+    ],
+    "ingredientes_base": [
+      "mantequilla",
+      "sal"
+    ],
+    "dificultad": "media",
+    "tiempo_min": 30,
+    "calorias_aprox": 300,
+    "tags": [
+      "frances",
+      "versatil"
+    ],
+    "proceso_corto": "Batir o preparar el huevo según receta. Añadir ingredientes base y ajustar sal al gusto. Servir caliente o frío según corresponda.",
+    "proceso_detallado": [
+      "1. batir los huevos, preparar leche, preparar harina, rallar o cortar el queso.",
+      "2. Calentar una sarten con un poco de aceite o mantequilla.",
+      "3. Agregar los ingredientes preparados y luego incorporar el huevo.",
+      "4. Cocinar hasta que el huevo este en el punto deseado.",
+      "5. Ajustar sal y especias al gusto y servir."
+    ]
+  },
+  {
+    "receta_id": 109,
+    "nombre": "huevos a la mexicana",
+    "categoria": "desayuno",
+    "tipo": "completa",
+    "ingredientes_clave": [
+      {
+        "item": "huevo",
+        "qty": 2,
+        "unit": "ud"
+      },
+      {
+        "item": "tomate",
+        "qty": 1,
+        "unit": "ud"
+      },
+      {
+        "item": "cebolla",
+        "qty": 0.25,
+        "unit": "ud"
+      },
+      {
+        "item": "chile",
+        "qty": 1,
+        "unit": "ud"
+      }
+    ],
+    "ingredientes_base": [
+      "aceite",
+      "sal"
+    ],
+    "dificultad": "baja",
+    "tiempo_min": 15,
+    "calorias_aprox": 300,
+    "tags": [
+      "desayuno",
+      "picante"
+    ],
+    "proceso_corto": "Batir o preparar el huevo según receta. Añadir ingredientes base y ajustar sal al gusto. Servir caliente o frío según corresponda.",
+    "proceso_detallado": [
+      "1. batir los huevos, picar el tomate en cubos, picar la cebolla finamente, preparar chile.",
+      "2. Calentar una sarten con un poco de aceite o mantequilla.",
+      "3. Agregar los ingredientes preparados y luego incorporar el huevo.",
+      "4. Cocinar hasta que el huevo este en el punto deseado.",
+      "5. Ajustar sal y especias al gusto y servir."
+    ]
+  },
+  {
+    "receta_id": 110,
+    "nombre": "yogur con frutas y miel",
+    "categoria": "postre",
+    "tipo": "completa",
+    "ingredientes_clave": [
+      {
+        "item": "yogur",
+        "qty": 1,
+        "unit": "taza"
+      },
+      {
+        "item": "manzana",
+        "qty": 0.5,
+        "unit": "ud"
+      },
+      {
+        "item": "fresa",
+        "qty": 4,
+        "unit": "ud"
+      }
+    ],
+    "ingredientes_base": [
+      "miel",
+      "canela"
+    ],
+    "dificultad": "baja",
+    "tiempo_min": 15,
+    "calorias_aprox": 300,
+    "tags": [
+      "saludable",
+      "postre"
+    ],
+    "proceso_corto": "Preparar y mezclar los ingredientes principales. Añadir ingredientes base y ajustar sal al gusto. Servir caliente o frío según corresponda.",
+    "proceso_detallado": [
+      "1. preparar yogur, preparar manzana, preparar fresa.",
+      "2. Cocinar o mezclar los ingredientes segun el tipo de receta.",
+      "5. Ajustar sal y especias al gusto y servir."
+    ]
+  },
+  {
+    "receta_id": 111,
+    "nombre": "ensalada rusa",
+    "categoria": "guarnicion",
+    "tipo": "completa",
+    "ingredientes_clave": [
+      {
+        "item": "patata",
+        "qty": 2,
+        "unit": "ud"
+      },
+      {
+        "item": "zanahoria",
+        "qty": 1,
+        "unit": "ud"
+      },
+      {
+        "item": "chicharos",
+        "qty": 0.5,
+        "unit": "taza"
+      },
+      {
+        "item": "mayonesa",
+        "qty": 3,
+        "unit": "cda"
+      }
+    ],
+    "ingredientes_base": [
+      "sal",
+      "agua"
+    ],
+    "dificultad": "media",
+    "tiempo_min": 30,
+    "calorias_aprox": 300,
+    "tags": [
+      "guarnicion",
+      "frio"
+    ],
+    "proceso_corto": "Preparar y mezclar los ingredientes principales. Añadir ingredientes base y ajustar sal al gusto. Servir caliente o frío según corresponda.",
+    "proceso_detallado": [
+      "1. preparar patata, preparar zanahoria, preparar chicharos, preparar mayonesa.",
+      "2. Cocinar o mezclar los ingredientes segun el tipo de receta.",
+      "5. Ajustar sal y especias al gusto y servir."
+    ]
+  },
+  {
+    "receta_id": 112,
+    "nombre": "calabacitas con queso",
+    "categoria": "comida",
+    "tipo": "completa",
+    "ingredientes_clave": [
+      {
+        "item": "calabacita",
+        "qty": 2,
+        "unit": "ud"
+      },
+      {
+        "item": "tomate",
+        "qty": 1,
+        "unit": "ud"
+      },
+      {
+        "item": "queso panela",
+        "qty": 100,
+        "unit": "gr"
+      }
+    ],
+    "ingredientes_base": [
+      "aceite",
+      "cebolla"
+    ],
+    "dificultad": "baja",
+    "tiempo_min": 15,
+    "calorias_aprox": 300,
+    "tags": [
+      "ligero",
+      "vegetariano"
+    ],
+    "proceso_corto": "Preparar y mezclar los ingredientes principales. Añadir ingredientes base y ajustar sal al gusto. Servir caliente o frío según corresponda.",
+    "proceso_detallado": [
+      "1. preparar calabacita, picar el tomate en cubos, rallar o cortar el queso.",
+      "2. Cocinar o mezclar los ingredientes segun el tipo de receta.",
+      "5. Ajustar sal y especias al gusto y servir."
+    ]
+  },
+  {
+    "receta_id": 113,
+    "nombre": "ensalada caprese",
+    "categoria": "comida",
+    "tipo": "completa",
+    "ingredientes_clave": [
+      {
+        "item": "tomate",
+        "qty": 2,
+        "unit": "ud"
+      },
+      {
+        "item": "queso fresco",
+        "qty": 100,
+        "unit": "gr"
+      },
+      {
+        "item": "albahaca",
+        "qty": 5,
+        "unit": "hojas"
+      }
+    ],
+    "ingredientes_base": [
+      "aceite de oliva",
+      "sal"
+    ],
+    "dificultad": "baja",
+    "tiempo_min": 15,
+    "calorias_aprox": 300,
+    "tags": [
+      "fresco",
+      "italiano"
+    ],
+    "proceso_corto": "Preparar y mezclar los ingredientes principales. Añadir ingredientes base y ajustar sal al gusto. Servir caliente o frío según corresponda.",
+    "proceso_detallado": [
+      "1. picar el tomate en cubos, rallar o cortar el queso, preparar albahaca.",
+      "2. Cocinar o mezclar los ingredientes segun el tipo de receta.",
+      "5. Ajustar sal y especias al gusto y servir."
+    ]
+  },
+  {
+    "receta_id": 114,
+    "nombre": "crema de zanahoria",
+    "categoria": "comida",
+    "tipo": "completa",
+    "ingredientes_clave": [
+      {
+        "item": "zanahoria",
+        "qty": 3,
+        "unit": "ud"
+      },
+      {
+        "item": "leche",
+        "qty": 1,
+        "unit": "taza"
+      },
+      {
+        "item": "cebolla",
+        "qty": 0.25,
+        "unit": "ud"
+      }
+    ],
+    "ingredientes_base": [
+      "mantequilla",
+      "sal"
+    ],
+    "dificultad": "baja",
+    "tiempo_min": 15,
+    "calorias_aprox": 300,
+    "tags": [
+      "sopa",
+      "caliente"
+    ],
+    "proceso_corto": "Preparar y mezclar los ingredientes principales. Añadir ingredientes base y ajustar sal al gusto. Servir caliente o frío según corresponda.",
+    "proceso_detallado": [
+      "1. preparar zanahoria, preparar leche, picar la cebolla finamente.",
+      "2. Cocinar o mezclar los ingredientes segun el tipo de receta.",
+      "5. Ajustar sal y especias al gusto y servir."
+    ]
+  },
+  {
+    "receta_id": 115,
+    "nombre": "espinacas a la crema",
+    "categoria": "guarnicion",
+    "tipo": "completa",
+    "ingredientes_clave": [
+      {
+        "item": "espinaca",
+        "qty": 2,
+        "unit": "tazas"
+      },
+      {
+        "item": "crema",
+        "qty": 100,
+        "unit": "ml"
+      },
+      {
+        "item": "queso",
+        "qty": 50,
+        "unit": "gr"
+      }
+    ],
+    "ingredientes_base": [
+      "ajo",
+      "mantequilla"
+    ],
+    "dificultad": "baja",
+    "tiempo_min": 15,
+    "calorias_aprox": 300,
+    "tags": [
+      "guarnicion",
+      "cremoso"
+    ],
+    "proceso_corto": "Preparar y mezclar los ingredientes principales. Añadir ingredientes base y ajustar sal al gusto. Servir caliente o frío según corresponda.",
+    "proceso_detallado": [
+      "1. preparar espinaca, preparar crema, rallar o cortar el queso.",
+      "2. Cocinar o mezclar los ingredientes segun el tipo de receta.",
+      "5. Ajustar sal y especias al gusto y servir."
+    ]
+  },
+  {
+    "receta_id": 116,
+    "nombre": "sandwich club",
+    "categoria": "comida",
+    "tipo": "completa",
+    "ingredientes_clave": [
+      {
+        "item": "pan",
+        "qty": 3,
+        "unit": "rebanada"
+      },
+      {
+        "item": "pollo",
+        "qty": 80,
+        "unit": "gr"
+      },
+      {
+        "item": "jamon",
+        "qty": 1,
+        "unit": "rebanada"
+      },
+      {
+        "item": "queso",
+        "qty": 1,
+        "unit": "rebanada"
+      },
+      {
+        "item": "lechuga",
+        "qty": 2,
+        "unit": "hojas"
+      }
+    ],
+    "ingredientes_base": [
+      "mayonesa",
+      "tomate"
+    ],
+    "dificultad": "media",
+    "tiempo_min": 30,
+    "calorias_aprox": 300,
+    "tags": [
+      "clasico",
+      "lunch"
+    ],
+    "proceso_corto": "Cocinar el pollo hasta que esté bien hecho. Añadir ingredientes base y ajustar sal al gusto. Servir caliente o frío según corresponda.",
+    "proceso_detallado": [
+      "1. preparar pan, cortar el pollo en trozos, cortar el jamon en tiras, rallar o cortar el queso, preparar lechuga.",
+      "2. Cocinar el pollo en sarten hasta que este dorado y bien hecho.",
+      "3. Agregar los demas ingredientes y cocinar unos minutos mas.",
+      "5. Ajustar sal y especias al gusto y servir."
+    ]
+  },
+  {
+    "receta_id": 117,
+    "nombre": "pollo al limon",
+    "categoria": "comida",
+    "tipo": "completa",
+    "ingredientes_clave": [
+      {
+        "item": "pollo",
+        "qty": 200,
+        "unit": "gr"
+      },
+      {
+        "item": "limon",
+        "qty": 1,
+        "unit": "ud"
+      }
+    ],
+    "ingredientes_base": [
+      "ajo",
+      "aceite",
+      "pimienta"
+    ],
+    "dificultad": "baja",
+    "tiempo_min": 15,
+    "calorias_aprox": 300,
+    "tags": [
+      "proteina",
+      "citrico"
+    ],
+    "proceso_corto": "Cocinar el pollo hasta que esté bien hecho. Añadir ingredientes base y ajustar sal al gusto. Servir caliente o frío según corresponda.",
+    "proceso_detallado": [
+      "1. cortar el pollo en trozos, preparar limon.",
+      "2. Cocinar el pollo en sarten hasta que este dorado y bien hecho.",
+      "3. Agregar los demas ingredientes y cocinar unos minutos mas.",
+      "5. Ajustar sal y especias al gusto y servir."
+    ]
+  },
+  {
+    "receta_id": 118,
+    "nombre": "salchichas a la mexicana",
+    "categoria": "comida",
+    "tipo": "completa",
+    "ingredientes_clave": [
+      {
+        "item": "salchicha",
+        "qty": 3,
+        "unit": "ud"
+      },
+      {
+        "item": "tomate",
+        "qty": 1,
+        "unit": "ud"
+      },
+      {
+        "item": "cebolla",
+        "qty": 0.25,
+        "unit": "ud"
+      },
+      {
+        "item": "chile",
+        "qty": 1,
+        "unit": "ud"
+      }
+    ],
+    "ingredientes_base": [
+      "aceite",
+      "sal"
+    ],
+    "dificultad": "baja",
+    "tiempo_min": 15,
+    "calorias_aprox": 300,
+    "tags": [
+      "rapido",
+      "barato"
+    ],
+    "proceso_corto": "Preparar y mezclar los ingredientes principales. Añadir ingredientes base y ajustar sal al gusto. Servir caliente o frío según corresponda.",
+    "proceso_detallado": [
+      "1. preparar salchicha, picar el tomate en cubos, picar la cebolla finamente, preparar chile.",
+      "2. Cocinar o mezclar los ingredientes segun el tipo de receta.",
+      "5. Ajustar sal y especias al gusto y servir."
+    ]
+  },
+  {
+    "receta_id": 119,
+    "nombre": "milanesa de pollo",
+    "categoria": "comida",
+    "tipo": "completa",
+    "ingredientes_clave": [
+      {
+        "item": "pollo",
+        "qty": 1,
+        "unit": "filete"
+      },
+      {
+        "item": "huevo",
+        "qty": 1,
+        "unit": "ud"
+      },
+      {
+        "item": "pan molido",
+        "qty": 100,
+        "unit": "gr"
+      }
+    ],
+    "ingredientes_base": [
+      "aceite",
+      "sal"
+    ],
+    "dificultad": "media",
+    "tiempo_min": 30,
+    "calorias_aprox": 300,
+    "tags": [
+      "frito",
+      "ninos"
+    ],
+    "proceso_corto": "Batir o preparar el huevo según receta. Cocinar el pollo hasta que esté bien hecho. Añadir ingredientes base y ajustar sal al gusto. Servir caliente o frío según corresponda.",
+    "proceso_detallado": [
+      "1. cortar el pollo en trozos, batir los huevos, preparar pan molido.",
+      "2. Calentar una sarten con un poco de aceite o mantequilla.",
+      "3. Agregar los ingredientes preparados y luego incorporar el huevo.",
+      "4. Cocinar hasta que el huevo este en el punto deseado.",
+      "5. Ajustar sal y especias al gusto y servir."
+    ]
+  },
+  {
+    "receta_id": 120,
+    "nombre": "rollitos de jamon y queso",
+    "categoria": "snack",
+    "tipo": "completa",
+    "ingredientes_clave": [
+      {
+        "item": "jamon",
+        "qty": 4,
+        "unit": "rebanada"
+      },
+      {
+        "item": "queso crema",
+        "qty": 60,
+        "unit": "gr"
+      }
+    ],
+    "ingredientes_base": [
+      "pimienta"
+    ],
+    "dificultad": "baja",
+    "tiempo_min": 15,
+    "calorias_aprox": 300,
+    "tags": [
+      "snack",
+      "keto"
+    ],
+    "proceso_corto": "Preparar y mezclar los ingredientes principales. Añadir ingredientes base y ajustar sal al gusto. Servir caliente o frío según corresponda.",
+    "proceso_detallado": [
+      "1. cortar el jamon en tiras, rallar o cortar el queso.",
+      "2. Cocinar o mezclar los ingredientes segun el tipo de receta.",
+      "5. Ajustar sal y especias al gusto y servir."
+    ]
+  },
+  {
+    "receta_id": 121,
+    "nombre": "espagueti blanco",
+    "categoria": "comida",
+    "tipo": "completa",
+    "ingredientes_clave": [
+      {
+        "item": "pasta",
+        "qty": 100,
+        "unit": "gr"
+      },
+      {
+        "item": "crema",
+        "qty": 100,
+        "unit": "ml"
+      },
+      {
+        "item": "jamon",
+        "qty": 2,
+        "unit": "rebanada"
+      }
+    ],
+    "ingredientes_base": [
+      "mantequilla",
+      "sal"
+    ],
+    "dificultad": "baja",
+    "tiempo_min": 15,
+    "calorias_aprox": 300,
+    "tags": [
+      "pasta",
+      "cremoso"
+    ],
+    "proceso_corto": "Hervir la pasta hasta que esté al dente. Añadir ingredientes base y ajustar sal al gusto. Servir caliente o frío según corresponda.",
+    "proceso_detallado": [
+      "1. preparar pasta, preparar crema, cortar el jamon en tiras.",
+      "2. Hervir agua con sal y cocinar la pasta hasta que este al dente.",
+      "3. Incorporar los ingredientes preparados y mezclar bien.",
+      "5. Ajustar sal y especias al gusto y servir."
+    ]
+  },
+  {
+    "receta_id": 122,
+    "nombre": "arroz con leche",
+    "categoria": "postre",
+    "tipo": "completa",
+    "ingredientes_clave": [
+      {
+        "item": "arroz",
+        "qty": 0.5,
+        "unit": "taza"
+      },
+      {
+        "item": "leche",
+        "qty": 500,
+        "unit": "ml"
+      },
+      {
+        "item": "azucar",
+        "qty": 50,
+        "unit": "gr"
+      }
+    ],
+    "ingredientes_base": [
+      "canela",
+      "limon"
+    ],
+    "dificultad": "media",
+    "tiempo_min": 30,
+    "calorias_aprox": 300,
+    "tags": [
+      "dulce",
+      "tradicional"
+    ],
+    "proceso_corto": "Cocinar el arroz hasta que esté suave. Añadir ingredientes base y ajustar sal al gusto. Servir caliente o frío según corresponda.",
+    "proceso_detallado": [
+      "1. preparar arroz, preparar leche, preparar azucar.",
+      "2. Cocinar el arroz segun instrucciones hasta que este listo.",
+      "3. Mezclar con los ingredientes preparados y saltear brevemente.",
+      "5. Ajustar sal y especias al gusto y servir."
+    ]
+  },
+  {
+    "receta_id": 123,
+    "nombre": "batido de fresa",
+    "categoria": "comida",
+    "tipo": "completa",
+    "ingredientes_clave": [
+      {
+        "item": "fresa",
+        "qty": 1,
+        "unit": "taza"
+      },
+      {
+        "item": "leche",
+        "qty": 1,
+        "unit": "taza"
+      },
+      {
+        "item": "yogur",
+        "qty": 0.5,
+        "unit": "taza"
+      }
+    ],
+    "ingredientes_base": [
+      "azucar"
+    ],
+    "dificultad": "baja",
+    "tiempo_min": 15,
+    "calorias_aprox": 300,
+    "tags": [
+      "bebida",
+      "fruta"
+    ],
+    "proceso_corto": "Preparar y mezclar los ingredientes principales. Añadir ingredientes base y ajustar sal al gusto. Servir caliente o frío según corresponda.",
+    "proceso_detallado": [
+      "1. preparar fresa, preparar leche, preparar yogur.",
+      "2. Cocinar o mezclar los ingredientes segun el tipo de receta.",
+      "5. Ajustar sal y especias al gusto y servir."
+    ]
+  },
+  {
+    "receta_id": 124,
+    "nombre": "papas al horno con queso",
+    "categoria": "comida",
+    "tipo": "completa",
+    "ingredientes_clave": [
+      {
+        "item": "patata",
+        "qty": 2,
+        "unit": "ud"
+      },
+      {
+        "item": "queso",
+        "qty": 100,
+        "unit": "gr"
+      },
+      {
+        "item": "crema",
+        "qty": 50,
+        "unit": "ml"
+      }
+    ],
+    "ingredientes_base": [
+      "mantequilla",
+      "sal"
+    ],
+    "dificultad": "media",
+    "tiempo_min": 30,
+    "calorias_aprox": 300,
+    "tags": [
+      "horno",
+      "calorico"
+    ],
+    "proceso_corto": "Preparar y mezclar los ingredientes principales. Añadir ingredientes base y ajustar sal al gusto. Servir caliente o frío según corresponda.",
+    "proceso_detallado": [
+      "1. preparar patata, rallar o cortar el queso, preparar crema.",
+      "2. Cocinar o mezclar los ingredientes segun el tipo de receta.",
+      "5. Ajustar sal y especias al gusto y servir."
+    ]
+  },
+  {
+    "receta_id": 125,
+    "nombre": "ensalada de atun",
+    "categoria": "comida",
+    "tipo": "completa",
+    "ingredientes_clave": [
+      {
+        "item": "atun",
+        "qty": 1,
+        "unit": "lata"
+      },
+      {
+        "item": "mayonesa",
+        "qty": 2,
+        "unit": "cda"
+      },
+      {
+        "item": "verduras",
+        "qty": 0.5,
+        "unit": "taza"
+      }
+    ],
+    "ingredientes_base": [
+      "limon",
+      "sal"
+    ],
+    "dificultad": "baja",
+    "tiempo_min": 15,
+    "calorias_aprox": 300,
+    "tags": [
+      "emergencia",
+      "rapido"
+    ],
+    "proceso_corto": "Preparar y mezclar los ingredientes principales. Añadir ingredientes base y ajustar sal al gusto. Servir caliente o frío según corresponda.",
+    "proceso_detallado": [
+      "1. preparar atun, preparar mayonesa, preparar verduras.",
+      "2. Cocinar o mezclar los ingredientes segun el tipo de receta.",
+      "5. Ajustar sal y especias al gusto y servir."
+    ]
+  },
+  {
+    "receta_id": 126,
+    "nombre": "tostadas de pollo",
+    "categoria": "comida",
+    "tipo": "completa",
+    "ingredientes_clave": [
+      {
+        "item": "pollo deshebrado",
+        "qty": 100,
+        "unit": "gr"
+      },
+      {
+        "item": "lechuga",
+        "qty": 1,
+        "unit": "taza"
+      },
+      {
+        "item": "crema",
+        "qty": 2,
+        "unit": "cda"
+      },
+      {
+        "item": "tostadas",
+        "qty": 3,
+        "unit": "ud"
+      }
+    ],
+    "ingredientes_base": [
+      "frijoles",
+      "salsa"
+    ],
+    "dificultad": "baja",
+    "tiempo_min": 15,
+    "calorias_aprox": 300,
+    "tags": [
+      "crujiente",
+      "comida"
+    ],
+    "proceso_corto": "Cocinar el pollo hasta que esté bien hecho. Añadir ingredientes base y ajustar sal al gusto. Servir caliente o frío según corresponda.",
+    "proceso_detallado": [
+      "1. cortar el pollo en trozos, preparar lechuga, preparar crema, preparar tostadas.",
+      "2. Cocinar el pollo en sarten hasta que este dorado y bien hecho.",
+      "3. Agregar los demas ingredientes y cocinar unos minutos mas.",
+      "5. Ajustar sal y especias al gusto y servir."
+    ]
+  },
+  {
+    "receta_id": 127,
+    "nombre": "sopa de verduras",
+    "categoria": "comida",
+    "tipo": "completa",
+    "ingredientes_clave": [
+      {
+        "item": "zanahoria",
+        "qty": 1,
+        "unit": "ud"
+      },
+      {
+        "item": "calabaza",
+        "qty": 1,
+        "unit": "ud"
+      },
+      {
+        "item": "apio",
+        "qty": 1,
+        "unit": "tallo"
+      },
+      {
+        "item": "patata",
+        "qty": 1,
+        "unit": "ud"
+      }
+    ],
+    "ingredientes_base": [
+      "caldo",
+      "sal"
+    ],
+    "dificultad": "baja",
+    "tiempo_min": 15,
+    "calorias_aprox": 300,
+    "tags": [
+      "saludable",
+      "veggie"
+    ],
+    "proceso_corto": "Preparar y mezclar los ingredientes principales. Añadir ingredientes base y ajustar sal al gusto. Servir caliente o frío según corresponda.",
+    "proceso_detallado": [
+      "1. preparar zanahoria, preparar calabaza, preparar apio, preparar patata.",
+      "2. Cocinar o mezclar los ingredientes segun el tipo de receta.",
+      "5. Ajustar sal y especias al gusto y servir."
+    ]
+  },
+  {
+    "receta_id": 128,
+    "nombre": "quesadillas de champinones",
+    "categoria": "comida",
+    "tipo": "completa",
+    "ingredientes_clave": [
+      {
+        "item": "tortilla",
+        "qty": 2,
+        "unit": "ud"
+      },
+      {
+        "item": "queso",
+        "qty": 60,
+        "unit": "gr"
+      },
+      {
+        "item": "champinones",
+        "qty": 100,
+        "unit": "gr"
+      }
+    ],
+    "ingredientes_base": [
+      "epazote",
+      "aceite"
+    ],
+    "dificultad": "baja",
+    "tiempo_min": 15,
+    "calorias_aprox": 300,
+    "tags": [
+      "mexicano",
+      "vegetariano"
+    ],
+    "proceso_corto": "Preparar y mezclar los ingredientes principales. Añadir ingredientes base y ajustar sal al gusto. Servir caliente o frío según corresponda.",
+    "proceso_detallado": [
+      "1. preparar tortilla, rallar o cortar el queso, preparar champinones.",
+      "2. Cocinar o mezclar los ingredientes segun el tipo de receta.",
+      "5. Ajustar sal y especias al gusto y servir."
+    ]
+  },
+  {
+    "receta_id": 129,
+    "nombre": "pechugas rellenas",
+    "categoria": "comida",
+    "tipo": "completa",
+    "ingredientes_clave": [
+      {
+        "item": "pollo",
+        "qty": 1,
+        "unit": "filete"
+      },
+      {
+        "item": "jamon",
+        "qty": 1,
+        "unit": "rebanada"
+      },
+      {
+        "item": "queso",
+        "qty": 1,
+        "unit": "rebanada"
+      }
+    ],
+    "ingredientes_base": [
+      "sal",
+      "pimienta"
+    ],
+    "dificultad": "alta",
+    "tiempo_min": 45,
+    "calorias_aprox": 300,
+    "tags": [
+      "proteina",
+      "formal"
+    ],
+    "proceso_corto": "Cocinar el pollo hasta que esté bien hecho. Añadir ingredientes base y ajustar sal al gusto. Servir caliente o frío según corresponda.",
+    "proceso_detallado": [
+      "1. cortar el pollo en trozos, cortar el jamon en tiras, rallar o cortar el queso.",
+      "2. Cocinar el pollo en sarten hasta que este dorado y bien hecho.",
+      "3. Agregar los demas ingredientes y cocinar unos minutos mas.",
+      "5. Ajustar sal y especias al gusto y servir."
+    ]
+  },
+  {
+    "receta_id": 130,
+    "nombre": "pudin de chia con leche",
+    "categoria": "desayuno",
+    "tipo": "completa",
+    "ingredientes_clave": [
+      {
+        "item": "chia",
+        "qty": 3,
+        "unit": "cda"
+      },
+      {
+        "item": "leche",
+        "qty": 1,
+        "unit": "taza"
+      },
+      {
+        "item": "fruta",
+        "qty": 0.5,
+        "unit": "taza"
+      }
+    ],
+    "ingredientes_base": [
+      "miel"
+    ],
+    "dificultad": "baja",
+    "tiempo_min": 15,
+    "calorias_aprox": 300,
+    "tags": [
+      "desayuno",
+      "fibra"
+    ],
+    "proceso_corto": "Preparar y mezclar los ingredientes principales. Añadir ingredientes base y ajustar sal al gusto. Servir caliente o frío según corresponda.",
+    "proceso_detallado": [
+      "1. preparar chia, preparar leche, preparar fruta.",
+      "2. Cocinar o mezclar los ingredientes segun el tipo de receta.",
+      "5. Ajustar sal y especias al gusto y servir."
+    ]
+  },
+  {
+    "receta_id": 131,
+    "nombre": "huevos divorciados",
+    "categoria": "comida",
+    "tipo": "completa",
+    "ingredientes_clave": [
+      {
+        "item": "huevo",
+        "qty": 2,
+        "unit": "ud"
+      },
+      {
+        "item": "tortilla",
+        "qty": 2,
+        "unit": "ud"
+      },
+      {
+        "item": "salsa roja",
+        "qty": 0.5,
+        "unit": "taza"
+      },
+      {
+        "item": "salsa verde",
+        "qty": 0.5,
+        "unit": "taza"
+      }
+    ],
+    "ingredientes_base": [
+      "aceite",
+      "frijoles"
+    ],
+    "dificultad": "media",
+    "tiempo_min": 30,
+    "calorias_aprox": 300,
+    "tags": [
+      "mexicano",
+      "picante"
+    ],
+    "proceso_corto": "Batir o preparar el huevo según receta. Añadir ingredientes base y ajustar sal al gusto. Servir caliente o frío según corresponda.",
+    "proceso_detallado": [
+      "1. batir los huevos, preparar tortilla, preparar salsa roja, preparar salsa verde.",
+      "2. Calentar una sarten con un poco de aceite o mantequilla.",
+      "3. Agregar los ingredientes preparados y luego incorporar el huevo.",
+      "4. Cocinar hasta que el huevo este en el punto deseado.",
+      "5. Ajustar sal y especias al gusto y servir."
+    ]
+  },
+  {
+    "receta_id": 132,
+    "nombre": "burritos de jamon",
+    "categoria": "comida",
+    "tipo": "completa",
+    "ingredientes_clave": [
+      {
+        "item": "tortilla de harina",
+        "qty": 2,
+        "unit": "ud"
+      },
+      {
+        "item": "jamon",
+        "qty": 2,
+        "unit": "rebanada"
+      },
+      {
+        "item": "queso",
+        "qty": 40,
+        "unit": "gr"
+      },
+      {
+        "item": "frijoles",
+        "qty": 0.5,
+        "unit": "taza"
+      }
+    ],
+    "ingredientes_base": [
+      "mantequilla"
+    ],
+    "dificultad": "baja",
+    "tiempo_min": 15,
+    "calorias_aprox": 300,
+    "tags": [
+      "rapido",
+      "callejero"
+    ],
+    "proceso_corto": "Preparar y mezclar los ingredientes principales. Añadir ingredientes base y ajustar sal al gusto. Servir caliente o frío según corresponda.",
+    "proceso_detallado": [
+      "1. preparar tortilla de harina, cortar el jamon en tiras, rallar o cortar el queso, preparar frijoles.",
+      "2. Cocinar o mezclar los ingredientes segun el tipo de receta.",
+      "5. Ajustar sal y especias al gusto y servir."
+    ]
+  },
+  {
+    "receta_id": 133,
+    "nombre": "ensalada cesar",
+    "categoria": "comida",
+    "tipo": "completa",
+    "ingredientes_clave": [
+      {
+        "item": "lechuga",
+        "qty": 2,
+        "unit": "tazas"
+      },
+      {
+        "item": "pollo",
+        "qty": 100,
+        "unit": "gr"
+      },
+      {
+        "item": "queso parmesano",
+        "qty": 20,
+        "unit": "gr"
+      },
+      {
+        "item": "pan",
+        "qty": 1,
+        "unit": "rebanada"
+      }
+    ],
+    "ingredientes_base": [
+      "mayonesa",
+      "limon",
+      "ajo"
+    ],
+    "dificultad": "media",
+    "tiempo_min": 30,
+    "calorias_aprox": 300,
+    "tags": [
+      "clasico",
+      "ensalada"
+    ],
+    "proceso_corto": "Cocinar el pollo hasta que esté bien hecho. Añadir ingredientes base y ajustar sal al gusto. Servir caliente o frío según corresponda.",
+    "proceso_detallado": [
+      "1. preparar lechuga, cortar el pollo en trozos, rallar o cortar el queso, preparar pan.",
+      "2. Cocinar el pollo en sarten hasta que este dorado y bien hecho.",
+      "3. Agregar los demas ingredientes y cocinar unos minutos mas.",
+      "5. Ajustar sal y especias al gusto y servir."
+    ]
+  },
+  {
+    "receta_id": 134,
+    "nombre": "sopa de coditos",
+    "categoria": "comida",
+    "tipo": "completa",
+    "ingredientes_clave": [
+      {
+        "item": "pasta",
+        "qty": 100,
+        "unit": "gr"
+      },
+      {
+        "item": "jamon",
+        "qty": 2,
+        "unit": "rebanada"
+      },
+      {
+        "item": "crema",
+        "qty": 0.5,
+        "unit": "taza"
+      },
+      {
+        "item": "mayonesa",
+        "qty": 1,
+        "unit": "cda"
+      }
+    ],
+    "ingredientes_base": [
+      "pina",
+      "sal"
+    ],
+    "dificultad": "baja",
+    "tiempo_min": 15,
+    "calorias_aprox": 300,
+    "tags": [
+      "fiesta",
+      "ninos"
+    ],
+    "proceso_corto": "Hervir la pasta hasta que esté al dente. Añadir ingredientes base y ajustar sal al gusto. Servir caliente o frío según corresponda.",
+    "proceso_detallado": [
+      "1. preparar pasta, cortar el jamon en tiras, preparar crema, preparar mayonesa.",
+      "2. Hervir agua con sal y cocinar la pasta hasta que este al dente.",
+      "3. Incorporar los ingredientes preparados y mezclar bien.",
+      "5. Ajustar sal y especias al gusto y servir."
+    ]
+  },
+  {
+    "receta_id": 135,
+    "nombre": "tacos dorados de pollo",
+    "categoria": "comida",
+    "tipo": "completa",
+    "ingredientes_clave": [
+      {
+        "item": "tortilla",
+        "qty": 4,
+        "unit": "ud"
+      },
+      {
+        "item": "pollo",
+        "qty": 100,
+        "unit": "gr"
+      },
+      {
+        "item": "lechuga",
+        "qty": 1,
+        "unit": "taza"
+      },
+      {
+        "item": "crema",
+        "qty": 2,
+        "unit": "cda"
+      }
+    ],
+    "ingredientes_base": [
+      "aceite",
+      "queso"
+    ],
+    "dificultad": "media",
+    "tiempo_min": 30,
+    "calorias_aprox": 300,
+    "tags": [
+      "mexicano",
+      "frito"
+    ],
+    "proceso_corto": "Cocinar el pollo hasta que esté bien hecho. Añadir ingredientes base y ajustar sal al gusto. Servir caliente o frío según corresponda.",
+    "proceso_detallado": [
+      "1. preparar tortilla, cortar el pollo en trozos, preparar lechuga, preparar crema.",
+      "2. Cocinar el pollo en sarten hasta que este dorado y bien hecho.",
+      "3. Agregar los demas ingredientes y cocinar unos minutos mas.",
+      "5. Ajustar sal y especias al gusto y servir."
+    ]
+  },
+  {
+    "receta_id": 136,
+    "nombre": "guiso de salchichas con papas",
+    "categoria": "comida",
+    "tipo": "completa",
+    "ingredientes_clave": [
+      {
+        "item": "salchicha",
+        "qty": 3,
+        "unit": "ud"
+      },
+      {
+        "item": "patata",
+        "qty": 2,
+        "unit": "ud"
+      },
+      {
+        "item": "tomate",
+        "qty": 1,
+        "unit": "ud"
+      }
+    ],
+    "ingredientes_base": [
+      "cebolla",
+      "aceite"
+    ],
+    "dificultad": "baja",
+    "tiempo_min": 15,
+    "calorias_aprox": 300,
+    "tags": [
+      "confort",
+      "barato"
+    ],
+    "proceso_corto": "Preparar y mezclar los ingredientes principales. Añadir ingredientes base y ajustar sal al gusto. Servir caliente o frío según corresponda.",
+    "proceso_detallado": [
+      "1. preparar salchicha, preparar patata, picar el tomate en cubos.",
+      "2. Cocinar o mezclar los ingredientes segun el tipo de receta.",
+      "5. Ajustar sal y especias al gusto y servir."
+    ]
+  },
+  {
+    "receta_id": 137,
+    "nombre": "brocoli con queso",
+    "categoria": "comida",
+    "tipo": "completa",
+    "ingredientes_clave": [
+      {
+        "item": "brocoli",
+        "qty": 1,
+        "unit": "cabeza"
+      },
+      {
+        "item": "queso",
+        "qty": 80,
+        "unit": "gr"
+      },
+      {
+        "item": "leche",
+        "qty": 50,
+        "unit": "ml"
+      }
+    ],
+    "ingredientes_base": [
+      "mantequilla",
+      "sal"
+    ],
+    "dificultad": "baja",
+    "tiempo_min": 15,
+    "calorias_aprox": 300,
+    "tags": [
+      "veggie",
+      "ninos"
+    ],
+    "proceso_corto": "Preparar y mezclar los ingredientes principales. Añadir ingredientes base y ajustar sal al gusto. Servir caliente o frío según corresponda.",
+    "proceso_detallado": [
+      "1. preparar brocoli, rallar o cortar el queso, preparar leche.",
+      "2. Cocinar o mezclar los ingredientes segun el tipo de receta.",
+      "5. Ajustar sal y especias al gusto y servir."
+    ]
+  },
+  {
+    "receta_id": 138,
+    "nombre": "ensalada de frutas",
+    "categoria": "postre",
+    "tipo": "completa",
+    "ingredientes_clave": [
+      {
+        "item": "manzana",
+        "qty": 1,
+        "unit": "ud"
+      },
+      {
+        "item": "fresa",
+        "qty": 5,
+        "unit": "ud"
+      },
+      {
+        "item": "uva",
+        "qty": 10,
+        "unit": "ud"
+      },
+      {
+        "item": "yogur",
+        "qty": 125,
+        "unit": "ml"
+      }
+    ],
+    "ingredientes_base": [
+      "miel"
+    ],
+    "dificultad": "baja",
+    "tiempo_min": 15,
+    "calorias_aprox": 300,
+    "tags": [
+      "fresco",
+      "postre"
+    ],
+    "proceso_corto": "Preparar y mezclar los ingredientes principales. Añadir ingredientes base y ajustar sal al gusto. Servir caliente o frío según corresponda.",
+    "proceso_detallado": [
+      "1. preparar manzana, preparar fresa, preparar uva, preparar yogur.",
+      "2. Cocinar o mezclar los ingredientes segun el tipo de receta.",
+      "5. Ajustar sal y especias al gusto y servir."
+    ]
+  },
+  {
+    "receta_id": 139,
+    "nombre": "arroz frito con verduras",
+    "categoria": "comida",
+    "tipo": "completa",
+    "ingredientes_clave": [
+      {
+        "item": "arroz cocido",
+        "qty": 1,
+        "unit": "taza"
+      },
+      {
+        "item": "zanahoria",
+        "qty": 1,
+        "unit": "ud"
+      },
+      {
+        "item": "huevo",
+        "qty": 1,
+        "unit": "ud"
+      }
+    ],
+    "ingredientes_base": [
+      "salsa de soya",
+      "aceite"
+    ],
+    "dificultad": "baja",
+    "tiempo_min": 15,
+    "calorias_aprox": 300,
+    "tags": [
+      "sobras",
+      "oriental"
+    ],
+    "proceso_corto": "Batir o preparar el huevo según receta. Cocinar el arroz hasta que esté suave. Añadir ingredientes base y ajustar sal al gusto. Servir caliente o frío según corresponda.",
+    "proceso_detallado": [
+      "1. preparar arroz cocido, preparar zanahoria, batir los huevos.",
+      "2. Calentar una sarten con un poco de aceite o mantequilla.",
+      "3. Agregar los ingredientes preparados y luego incorporar el huevo.",
+      "4. Cocinar hasta que el huevo este en el punto deseado.",
+      "5. Ajustar sal y especias al gusto y servir."
+    ]
+  },
+  {
+    "receta_id": 140,
+    "nombre": "chilaquiles con huevo",
+    "categoria": "desayuno",
+    "tipo": "completa",
+    "ingredientes_clave": [
+      {
+        "item": "tortilla",
+        "qty": 5,
+        "unit": "ud"
+      },
+      {
+        "item": "salsa",
+        "qty": 1,
+        "unit": "taza"
+      },
+      {
+        "item": "huevo",
+        "qty": 1,
+        "unit": "ud"
+      },
+      {
+        "item": "crema",
+        "qty": 2,
+        "unit": "cda"
+      }
+    ],
+    "ingredientes_base": [
+      "queso",
+      "cebolla"
+    ],
+    "dificultad": "media",
+    "tiempo_min": 30,
+    "calorias_aprox": 300,
+    "tags": [
+      "mexicano",
+      "desayuno"
+    ],
+    "proceso_corto": "Batir o preparar el huevo según receta. Añadir ingredientes base y ajustar sal al gusto. Servir caliente o frío según corresponda.",
+    "proceso_detallado": [
+      "1. preparar tortilla, preparar salsa, batir los huevos, preparar crema.",
+      "2. Calentar una sarten con un poco de aceite o mantequilla.",
+      "3. Agregar los ingredientes preparados y luego incorporar el huevo.",
+      "4. Cocinar hasta que el huevo este en el punto deseado.",
+      "5. Ajustar sal y especias al gusto y servir."
+    ]
+  },
+  {
+    "receta_id": 141,
+    "nombre": "molletes",
+    "categoria": "comida",
+    "tipo": "completa",
+    "ingredientes_clave": [
+      {
+        "item": "pan",
+        "qty": 1,
+        "unit": "bolillo"
+      },
+      {
+        "item": "frijoles",
+        "qty": 0.5,
+        "unit": "taza"
+      },
+      {
+        "item": "queso",
+        "qty": 50,
+        "unit": "gr"
+      }
+    ],
+    "ingredientes_base": [
+      "pico de gallo"
+    ],
+    "dificultad": "baja",
+    "tiempo_min": 15,
+    "calorias_aprox": 300,
+    "tags": [
+      "mexicano",
+      "rapido"
+    ],
+    "proceso_corto": "Preparar y mezclar los ingredientes principales. Añadir ingredientes base y ajustar sal al gusto. Servir caliente o frío según corresponda.",
+    "proceso_detallado": [
+      "1. preparar pan, preparar frijoles, rallar o cortar el queso.",
+      "2. Cocinar o mezclar los ingredientes segun el tipo de receta.",
+      "5. Ajustar sal y especias al gusto y servir."
+    ]
+  },
+  {
+    "receta_id": 142,
+    "nombre": "pasta al pesto de espinaca",
+    "categoria": "comida",
+    "tipo": "completa",
+    "ingredientes_clave": [
+      {
+        "item": "pasta",
+        "qty": 100,
+        "unit": "gr"
+      },
+      {
+        "item": "espinaca",
+        "qty": 1,
+        "unit": "taza"
+      },
+      {
+        "item": "queso",
+        "qty": 30,
+        "unit": "gr"
+      }
+    ],
+    "ingredientes_base": [
+      "aceite de oliva",
+      "ajo"
+    ],
+    "dificultad": "baja",
+    "tiempo_min": 15,
+    "calorias_aprox": 300,
+    "tags": [
+      "veggie",
+      "pasta"
+    ],
+    "proceso_corto": "Hervir la pasta hasta que esté al dente. Añadir ingredientes base y ajustar sal al gusto. Servir caliente o frío según corresponda.",
+    "proceso_detallado": [
+      "1. preparar pasta, preparar espinaca, rallar o cortar el queso.",
+      "2. Hervir agua con sal y cocinar la pasta hasta que este al dente.",
+      "3. Incorporar los ingredientes preparados y mezclar bien.",
+      "5. Ajustar sal y especias al gusto y servir."
+    ]
+  },
+  {
+    "receta_id": 143,
+    "nombre": "berenjenas a la parmesana",
+    "categoria": "comida",
+    "tipo": "completa",
+    "ingredientes_clave": [
+      {
+        "item": "berenjena",
+        "qty": 1,
+        "unit": "ud"
+      },
+      {
+        "item": "tomate",
+        "qty": 2,
+        "unit": "ud"
+      },
+      {
+        "item": "queso",
+        "qty": 100,
+        "unit": "gr"
+      }
+    ],
+    "ingredientes_base": [
+      "aceite",
+      "sal"
+    ],
+    "dificultad": "media",
+    "tiempo_min": 30,
+    "calorias_aprox": 300,
+    "tags": [
+      "italiano",
+      "vegetariano"
+    ],
+    "proceso_corto": "Preparar y mezclar los ingredientes principales. Añadir ingredientes base y ajustar sal al gusto. Servir caliente o frío según corresponda.",
+    "proceso_detallado": [
+      "1. preparar berenjena, picar el tomate en cubos, rallar o cortar el queso.",
+      "2. Cocinar o mezclar los ingredientes segun el tipo de receta.",
+      "5. Ajustar sal y especias al gusto y servir."
+    ]
+  },
+  {
+    "receta_id": 144,
+    "nombre": "tortilla de espinacas",
+    "categoria": "comida",
+    "tipo": "completa",
+    "ingredientes_clave": [
+      {
+        "item": "huevo",
+        "qty": 2,
+        "unit": "ud"
+      },
+      {
+        "item": "espinaca",
+        "qty": 1,
+        "unit": "taza"
+      },
+      {
+        "item": "cebolla",
+        "qty": 0.25,
+        "unit": "ud"
+      }
+    ],
+    "ingredientes_base": [
+      "aceite",
+      "sal"
+    ],
+    "dificultad": "baja",
+    "tiempo_min": 15,
+    "calorias_aprox": 300,
+    "tags": [
+      "ligero",
+      "cena"
+    ],
+    "proceso_corto": "Batir o preparar el huevo según receta. Añadir ingredientes base y ajustar sal al gusto. Servir caliente o frío según corresponda.",
+    "proceso_detallado": [
+      "1. batir los huevos, preparar espinaca, picar la cebolla finamente.",
+      "2. Calentar una sarten con un poco de aceite o mantequilla.",
+      "3. Agregar los ingredientes preparados y luego incorporar el huevo.",
+      "4. Cocinar hasta que el huevo este en el punto deseado.",
+      "5. Ajustar sal y especias al gusto y servir."
+    ]
+  },
+  {
+    "receta_id": 145,
+    "nombre": "sandwich de queso a la plancha",
+    "categoria": "comida",
+    "tipo": "completa",
+    "ingredientes_clave": [
+      {
+        "item": "pan",
+        "qty": 2,
+        "unit": "rebanada"
+      },
+      {
+        "item": "queso",
+        "qty": 2,
+        "unit": "rebanada"
+      }
+    ],
+    "ingredientes_base": [
+      "mantequilla"
+    ],
+    "dificultad": "baja",
+    "tiempo_min": 15,
+    "calorias_aprox": 300,
+    "tags": [
+      "confort",
+      "rapido"
+    ],
+    "proceso_corto": "Preparar y mezclar los ingredientes principales. Añadir ingredientes base y ajustar sal al gusto. Servir caliente o frío según corresponda.",
+    "proceso_detallado": [
+      "1. preparar pan, rallar o cortar el queso.",
+      "2. Cocinar o mezclar los ingredientes segun el tipo de receta.",
+      "5. Ajustar sal y especias al gusto y servir."
+    ]
+  },
+  {
+    "receta_id": 146,
+    "nombre": "pollo con champinones",
+    "categoria": "comida",
+    "tipo": "completa",
+    "ingredientes_clave": [
+      {
+        "item": "pollo",
+        "qty": 150,
+        "unit": "gr"
+      },
+      {
+        "item": "champinones",
+        "qty": 100,
+        "unit": "gr"
+      },
+      {
+        "item": "crema",
+        "qty": 0.5,
+        "unit": "taza"
+      }
+    ],
+    "ingredientes_base": [
+      "ajo",
+      "sal"
+    ],
+    "dificultad": "media",
+    "tiempo_min": 30,
+    "calorias_aprox": 300,
+    "tags": [
+      "cremoso",
+      "proteina"
+    ],
+    "proceso_corto": "Cocinar el pollo hasta que esté bien hecho. Añadir ingredientes base y ajustar sal al gusto. Servir caliente o frío según corresponda.",
+    "proceso_detallado": [
+      "1. cortar el pollo en trozos, preparar champinones, preparar crema.",
+      "2. Cocinar el pollo en sarten hasta que este dorado y bien hecho.",
+      "3. Agregar los demas ingredientes y cocinar unos minutos mas.",
+      "5. Ajustar sal y especias al gusto y servir."
+    ]
+  },
+  {
+    "receta_id": 147,
+    "nombre": "ensalada de garbanzos",
+    "categoria": "comida",
+    "tipo": "completa",
+    "ingredientes_clave": [
+      {
+        "item": "garbanzos",
+        "qty": 1,
+        "unit": "lata"
+      },
+      {
+        "item": "tomate",
+        "qty": 1,
+        "unit": "ud"
+      },
+      {
+        "item": "cebolla",
+        "qty": 0.25,
+        "unit": "ud"
+      },
+      {
+        "item": "pepino",
+        "qty": 0.5,
+        "unit": "ud"
+      }
+    ],
+    "ingredientes_base": [
+      "limon",
+      "aceite"
+    ],
+    "dificultad": "baja",
+    "tiempo_min": 15,
+    "calorias_aprox": 300,
+    "tags": [
+      "vegano",
+      "ensalada"
+    ],
+    "proceso_corto": "Preparar y mezclar los ingredientes principales. Añadir ingredientes base y ajustar sal al gusto. Servir caliente o frío según corresponda.",
+    "proceso_detallado": [
+      "1. preparar garbanzos, picar el tomate en cubos, picar la cebolla finamente, preparar pepino.",
+      "2. Cocinar o mezclar los ingredientes segun el tipo de receta.",
+      "5. Ajustar sal y especias al gusto y servir."
+    ]
+  },
+  {
+    "receta_id": 148,
+    "nombre": "papas con chorizo",
+    "categoria": "comida",
+    "tipo": "completa",
+    "ingredientes_clave": [
+      {
+        "item": "patata",
+        "qty": 2,
+        "unit": "ud"
+      },
+      {
+        "item": "chorizo",
+        "qty": 50,
+        "unit": "gr"
+      }
+    ],
+    "ingredientes_base": [
+      "aceite",
+      "cebolla"
+    ],
+    "dificultad": "baja",
+    "tiempo_min": 15,
+    "calorias_aprox": 300,
+    "tags": [
+      "tradicional",
+      "mexicano"
+    ],
+    "proceso_corto": "Preparar y mezclar los ingredientes principales. Añadir ingredientes base y ajustar sal al gusto. Servir caliente o frío según corresponda.",
+    "proceso_detallado": [
+      "1. preparar patata, preparar chorizo.",
+      "2. Cocinar o mezclar los ingredientes segun el tipo de receta.",
+      "5. Ajustar sal y especias al gusto y servir."
+    ]
+  },
+  {
+    "receta_id": 149,
+    "nombre": "hot cakes con fruta",
+    "categoria": "desayuno",
+    "tipo": "completa",
+    "ingredientes_clave": [
+      {
+        "item": "harina",
+        "qty": 1,
+        "unit": "taza"
+      },
+      {
+        "item": "leche",
+        "qty": 0.75,
+        "unit": "taza"
+      },
+      {
+        "item": "huevo",
+        "qty": 1,
+        "unit": "ud"
+      },
+      {
+        "item": "fresa",
+        "qty": 4,
+        "unit": "ud"
+      }
+    ],
+    "ingredientes_base": [
+      "mantequilla",
+      "miel"
+    ],
+    "dificultad": "baja",
+    "tiempo_min": 15,
+    "calorias_aprox": 300,
+    "tags": [
+      "dulce",
+      "desayuno"
+    ],
+    "proceso_corto": "Batir o preparar el huevo según receta. Añadir ingredientes base y ajustar sal al gusto. Servir caliente o frío según corresponda.",
+    "proceso_detallado": [
+      "1. preparar harina, preparar leche, batir los huevos, preparar fresa.",
+      "2. Calentar una sarten con un poco de aceite o mantequilla.",
+      "3. Agregar los ingredientes preparados y luego incorporar el huevo.",
+      "4. Cocinar hasta que el huevo este en el punto deseado.",
+      "5. Ajustar sal y especias al gusto y servir."
+    ]
+  },
+  {
+    "receta_id": 150,
+    "nombre": "gazpacho rapido",
+    "categoria": "comida",
+    "tipo": "completa",
+    "ingredientes_clave": [
+      {
+        "item": "tomate",
+        "qty": 4,
+        "unit": "ud"
+      },
+      {
+        "item": "pepino",
+        "qty": 1,
+        "unit": "ud"
+      },
+      {
+        "item": "pimiento",
+        "qty": 1,
+        "unit": "ud"
+      }
+    ],
+    "ingredientes_base": [
+      "aceite de oliva",
+      "vinagre",
+      "ajo"
+    ],
+    "dificultad": "baja",
+    "tiempo_min": 15,
+    "calorias_aprox": 300,
+    "tags": [
+      "vegano",
+      "frio"
+    ],
+    "proceso_corto": "Preparar y mezclar los ingredientes principales. Añadir ingredientes base y ajustar sal al gusto. Servir caliente o frío según corresponda.",
+    "proceso_detallado": [
+      "1. picar el tomate en cubos, preparar pepino, preparar pimiento.",
+      "2. Cocinar o mezclar los ingredientes segun el tipo de receta.",
+      "5. Ajustar sal y especias al gusto y servir."
+    ]
+  },
+  {
+    "receta_id": 151,
+    "nombre": "guiso de res con papas",
+    "categoria": "comida",
+    "tipo": "completa",
+    "ingredientes_clave": [
+      {
+        "item": "carne de res",
+        "qty": 200,
+        "unit": "gr"
+      },
+      {
+        "item": "patata",
+        "qty": 2,
+        "unit": "ud"
+      },
+      {
+        "item": "zanahoria",
+        "qty": 1,
+        "unit": "ud"
+      }
+    ],
+    "ingredientes_base": [
+      "caldo de res",
+      "tomate"
+    ],
+    "dificultad": "alta",
+    "tiempo_min": 45,
+    "calorias_aprox": 300,
+    "tags": [
+      "guiso",
+      "caliente"
+    ],
+    "proceso_corto": "Preparar y mezclar los ingredientes principales. Añadir ingredientes base y ajustar sal al gusto. Servir caliente o frío según corresponda.",
+    "proceso_detallado": [
+      "1. preparar carne de res, preparar patata, preparar zanahoria.",
+      "2. Cocinar o mezclar los ingredientes segun el tipo de receta.",
+      "5. Ajustar sal y especias al gusto y servir."
+    ]
+  },
+  {
+    "receta_id": 152,
+    "nombre": "tacos de huevo con salsa",
+    "categoria": "comida",
+    "tipo": "completa",
+    "ingredientes_clave": [
+      {
+        "item": "tortilla",
+        "qty": 3,
+        "unit": "ud"
+      },
+      {
+        "item": "huevo",
+        "qty": 2,
+        "unit": "ud"
+      },
+      {
+        "item": "salsa",
+        "qty": 0.5,
+        "unit": "taza"
+      }
+    ],
+    "ingredientes_base": [
+      "aceite"
+    ],
+    "dificultad": "baja",
+    "tiempo_min": 15,
+    "calorias_aprox": 300,
+    "tags": [
+      "economico",
+      "rapido"
+    ],
+    "proceso_corto": "Batir o preparar el huevo según receta. Añadir ingredientes base y ajustar sal al gusto. Servir caliente o frío según corresponda.",
+    "proceso_detallado": [
+      "1. preparar tortilla, batir los huevos, preparar salsa.",
+      "2. Calentar una sarten con un poco de aceite o mantequilla.",
+      "3. Agregar los ingredientes preparados y luego incorporar el huevo.",
+      "4. Cocinar hasta que el huevo este en el punto deseado.",
+      "5. Ajustar sal y especias al gusto y servir."
+    ]
+  },
+  {
+    "receta_id": 153,
+    "nombre": "salpicon de res",
+    "categoria": "comida",
+    "tipo": "completa",
+    "ingredientes_clave": [
+      {
+        "item": "carne de res deshebrada",
+        "qty": 150,
+        "unit": "gr"
+      },
+      {
+        "item": "lechuga",
+        "qty": 1,
+        "unit": "taza"
+      },
+      {
+        "item": "tomate",
+        "qty": 1,
+        "unit": "ud"
+      }
+    ],
+    "ingredientes_base": [
+      "vinagre",
+      "aceite"
+    ],
+    "dificultad": "media",
+    "tiempo_min": 30,
+    "calorias_aprox": 300,
+    "tags": [
+      "frio",
+      "proteina"
+    ],
+    "proceso_corto": "Preparar y mezclar los ingredientes principales. Añadir ingredientes base y ajustar sal al gusto. Servir caliente o frío según corresponda.",
+    "proceso_detallado": [
+      "1. preparar carne de res deshebrada, preparar lechuga, picar el tomate en cubos.",
+      "2. Cocinar o mezclar los ingredientes segun el tipo de receta.",
+      "5. Ajustar sal y especias al gusto y servir."
+    ]
+  },
+  {
+    "receta_id": 154,
+    "nombre": "crema de calabacita",
+    "categoria": "comida",
+    "tipo": "completa",
+    "ingredientes_clave": [
+      {
+        "item": "calabacita",
+        "qty": 3,
+        "unit": "ud"
+      },
+      {
+        "item": "leche",
+        "qty": 1,
+        "unit": "taza"
+      },
+      {
+        "item": "queso crema",
+        "qty": 50,
+        "unit": "gr"
+      }
+    ],
+    "ingredientes_base": [
+      "mantequilla",
+      "sal"
+    ],
+    "dificultad": "baja",
+    "tiempo_min": 15,
+    "calorias_aprox": 300,
+    "tags": [
+      "sopa",
+      "cremoso"
+    ],
+    "proceso_corto": "Preparar y mezclar los ingredientes principales. Añadir ingredientes base y ajustar sal al gusto. Servir caliente o frío según corresponda.",
+    "proceso_detallado": [
+      "1. preparar calabacita, preparar leche, rallar o cortar el queso.",
+      "2. Cocinar o mezclar los ingredientes segun el tipo de receta.",
+      "5. Ajustar sal y especias al gusto y servir."
+    ]
+  },
+  {
+    "receta_id": 155,
+    "nombre": "arroz rojo",
+    "categoria": "guarnicion",
+    "tipo": "completa",
+    "ingredientes_clave": [
+      {
+        "item": "arroz",
+        "qty": 1,
+        "unit": "taza"
+      },
+      {
+        "item": "tomate",
+        "qty": 2,
+        "unit": "ud"
+      }
+    ],
+    "ingredientes_base": [
+      "ajo",
+      "cebolla",
+      "aceite"
+    ],
+    "dificultad": "media",
+    "tiempo_min": 30,
+    "calorias_aprox": 300,
+    "tags": [
+      "tradicional",
+      "guarnicion"
+    ],
+    "proceso_corto": "Cocinar el arroz hasta que esté suave. Añadir ingredientes base y ajustar sal al gusto. Servir caliente o frío según corresponda.",
+    "proceso_detallado": [
+      "1. preparar arroz, picar el tomate en cubos.",
+      "2. Cocinar el arroz segun instrucciones hasta que este listo.",
+      "3. Mezclar con los ingredientes preparados y saltear brevemente.",
+      "5. Ajustar sal y especias al gusto y servir."
+    ]
+  },
+  {
+    "receta_id": 156,
+    "nombre": "sandwich de atun",
+    "categoria": "comida",
+    "tipo": "completa",
+    "ingredientes_clave": [
+      {
+        "item": "pan",
+        "qty": 2,
+        "unit": "rebanada"
+      },
+      {
+        "item": "atun",
+        "qty": 1,
+        "unit": "lata"
+      },
+      {
+        "item": "lechuga",
+        "qty": 2,
+        "unit": "hojas"
+      }
+    ],
+    "ingredientes_base": [
+      "mayonesa",
+      "mostaza"
+    ],
+    "dificultad": "baja",
+    "tiempo_min": 15,
+    "calorias_aprox": 300,
+    "tags": [
+      "rapido",
+      "atun"
+    ],
+    "proceso_corto": "Preparar y mezclar los ingredientes principales. Añadir ingredientes base y ajustar sal al gusto. Servir caliente o frío según corresponda.",
+    "proceso_detallado": [
+      "1. preparar pan, preparar atun, preparar lechuga.",
+      "2. Cocinar o mezclar los ingredientes segun el tipo de receta.",
+      "5. Ajustar sal y especias al gusto y servir."
+    ]
+  },
+  {
+    "receta_id": 157,
+    "nombre": "ensalada griega",
+    "categoria": "comida",
+    "tipo": "completa",
+    "ingredientes_clave": [
+      {
+        "item": "tomate",
+        "qty": 2,
+        "unit": "ud"
+      },
+      {
+        "item": "pepino",
+        "qty": 1,
+        "unit": "ud"
+      },
+      {
+        "item": "queso fresco",
+        "qty": 100,
+        "unit": "gr"
+      },
+      {
+        "item": "aceitunas",
+        "qty": 5,
+        "unit": "ud"
+      }
+    ],
+    "ingredientes_base": [
+      "aceite de oliva",
+      "oregano"
+    ],
+    "dificultad": "baja",
+    "tiempo_min": 15,
+    "calorias_aprox": 300,
+    "tags": [
+      "mediterraneo",
+      "ensalada"
+    ],
+    "proceso_corto": "Preparar y mezclar los ingredientes principales. Añadir ingredientes base y ajustar sal al gusto. Servir caliente o frío según corresponda.",
+    "proceso_detallado": [
+      "1. picar el tomate en cubos, preparar pepino, rallar o cortar el queso, preparar aceitunas.",
+      "2. Cocinar o mezclar los ingredientes segun el tipo de receta.",
+      "5. Ajustar sal y especias al gusto y servir."
+    ]
+  },
+  {
+    "receta_id": 158,
+    "nombre": "huevos revueltos con chorizo",
+    "categoria": "desayuno",
+    "tipo": "completa",
+    "ingredientes_clave": [
+      {
+        "item": "huevo",
+        "qty": 2,
+        "unit": "ud"
+      },
+      {
+        "item": "chorizo",
+        "qty": 40,
+        "unit": "gr"
+      }
+    ],
+    "ingredientes_base": [
+      "sal"
+    ],
+    "dificultad": "baja",
+    "tiempo_min": 15,
+    "calorias_aprox": 300,
+    "tags": [
+      "mexicano",
+      "desayuno"
+    ],
+    "proceso_corto": "Batir o preparar el huevo según receta. Añadir ingredientes base y ajustar sal al gusto. Servir caliente o frío según corresponda.",
+    "proceso_detallado": [
+      "1. batir los huevos, preparar chorizo.",
+      "2. Calentar una sarten con un poco de aceite o mantequilla.",
+      "3. Agregar los ingredientes preparados y luego incorporar el huevo.",
+      "4. Cocinar hasta que el huevo este en el punto deseado.",
+      "5. Ajustar sal y especias al gusto y servir."
+    ]
+  },
+  {
+    "receta_id": 159,
+    "nombre": "lentejas con salchicha",
+    "categoria": "comida",
+    "tipo": "completa",
+    "ingredientes_clave": [
+      {
+        "item": "lentejas",
+        "qty": 1,
+        "unit": "taza"
+      },
+      {
+        "item": "salchicha",
+        "qty": 2,
+        "unit": "ud"
+      },
+      {
+        "item": "zanahoria",
+        "qty": 1,
+        "unit": "ud"
+      }
+    ],
+    "ingredientes_base": [
+      "cebolla",
+      "ajo"
+    ],
+    "dificultad": "media",
+    "tiempo_min": 30,
+    "calorias_aprox": 300,
+    "tags": [
+      "legumbre",
+      "caliente"
+    ],
+    "proceso_corto": "Preparar y mezclar los ingredientes principales. Añadir ingredientes base y ajustar sal al gusto. Servir caliente o frío según corresponda.",
+    "proceso_detallado": [
+      "1. preparar lentejas, preparar salchicha, preparar zanahoria.",
+      "2. Cocinar o mezclar los ingredientes segun el tipo de receta.",
+      "5. Ajustar sal y especias al gusto y servir."
+    ]
+  },
+  {
+    "receta_id": 160,
+    "nombre": "pescado al papillote",
+    "categoria": "comida",
+    "tipo": "completa",
+    "ingredientes_clave": [
+      {
+        "item": "pescado",
+        "qty": 1,
+        "unit": "filete"
+      },
+      {
+        "item": "zanahoria",
+        "qty": 1,
+        "unit": "ud"
+      },
+      {
+        "item": "calabacita",
+        "qty": 1,
+        "unit": "ud"
+      }
+    ],
+    "ingredientes_base": [
+      "mantequilla",
+      "limon"
+    ],
+    "dificultad": "media",
+    "tiempo_min": 30,
+    "calorias_aprox": 300,
+    "tags": [
+      "vapor",
+      "ligero"
+    ],
+    "proceso_corto": "Preparar y mezclar los ingredientes principales. Añadir ingredientes base y ajustar sal al gusto. Servir caliente o frío según corresponda.",
+    "proceso_detallado": [
+      "1. preparar pescado, preparar zanahoria, preparar calabacita.",
+      "2. Cocinar o mezclar los ingredientes segun el tipo de receta.",
+      "5. Ajustar sal y especias al gusto y servir."
+    ]
+  },
+  {
+    "receta_id": 161,
+    "nombre": "espinacas con garbanzos",
+    "categoria": "comida",
+    "tipo": "completa",
+    "ingredientes_clave": [
+      {
+        "item": "espinaca",
+        "qty": 2,
+        "unit": "tazas"
+      },
+      {
+        "item": "garbanzo",
+        "qty": 1,
+        "unit": "lata"
+      }
+    ],
+    "ingredientes_base": [
+      "comino",
+      "ajo",
+      "aceite"
+    ],
+    "dificultad": "baja",
+    "tiempo_min": 15,
+    "calorias_aprox": 300,
+    "tags": [
+      "vegano",
+      "espanol"
+    ],
+    "proceso_corto": "Preparar y mezclar los ingredientes principales. Añadir ingredientes base y ajustar sal al gusto. Servir caliente o frío según corresponda.",
+    "proceso_detallado": [
+      "1. preparar espinaca, preparar garbanzo.",
+      "2. Cocinar o mezclar los ingredientes segun el tipo de receta.",
+      "5. Ajustar sal y especias al gusto y servir."
+    ]
+  },
+  {
+    "receta_id": 162,
+    "nombre": "macarrones con queso",
+    "categoria": "comida",
+    "tipo": "completa",
+    "ingredientes_clave": [
+      {
+        "item": "pasta",
+        "qty": 100,
+        "unit": "gr"
+      },
+      {
+        "item": "queso cheddar",
+        "qty": 80,
+        "unit": "gr"
+      },
+      {
+        "item": "leche",
+        "qty": 100,
+        "unit": "ml"
+      }
+    ],
+    "ingredientes_base": [
+      "mantequilla",
+      "harina"
+    ],
+    "dificultad": "media",
+    "tiempo_min": 30,
+    "calorias_aprox": 300,
+    "tags": [
+      "confort",
+      "pasta"
+    ],
+    "proceso_corto": "Hervir la pasta hasta que esté al dente. Añadir ingredientes base y ajustar sal al gusto. Servir caliente o frío según corresponda.",
+    "proceso_detallado": [
+      "1. preparar pasta, rallar o cortar el queso, preparar leche.",
+      "2. Hervir agua con sal y cocinar la pasta hasta que este al dente.",
+      "3. Incorporar los ingredientes preparados y mezclar bien.",
+      "5. Ajustar sal y especias al gusto y servir."
+    ]
+  },
+  {
+    "receta_id": 163,
+    "nombre": "tostadas de jamon",
+    "categoria": "comida",
+    "tipo": "completa",
+    "ingredientes_clave": [
+      {
+        "item": "tostada",
+        "qty": 3,
+        "unit": "ud"
+      },
+      {
+        "item": "jamon",
+        "qty": 3,
+        "unit": "rebanada"
+      },
+      {
+        "item": "crema",
+        "qty": 2,
+        "unit": "cda"
+      },
+      {
+        "item": "lechuga",
+        "qty": 1,
+        "unit": "taza"
+      }
+    ],
+    "ingredientes_base": [
+      "frijoles"
+    ],
+    "dificultad": "baja",
+    "tiempo_min": 15,
+    "calorias_aprox": 300,
+    "tags": [
+      "frio",
+      "rapido"
+    ],
+    "proceso_corto": "Preparar y mezclar los ingredientes principales. Añadir ingredientes base y ajustar sal al gusto. Servir caliente o frío según corresponda.",
+    "proceso_detallado": [
+      "1. preparar tostada, cortar el jamon en tiras, preparar crema, preparar lechuga.",
+      "2. Cocinar o mezclar los ingredientes segun el tipo de receta.",
+      "5. Ajustar sal y especias al gusto y servir."
+    ]
+  },
+  {
+    "receta_id": 164,
+    "nombre": "pollo al ajillo",
+    "categoria": "comida",
+    "tipo": "completa",
+    "ingredientes_clave": [
+      {
+        "item": "pollo",
+        "qty": 200,
+        "unit": "gr"
+      },
+      {
+        "item": "ajo",
+        "qty": 3,
+        "unit": "dientes"
+      },
+      {
+        "item": "guajillo",
+        "qty": 1,
+        "unit": "ud"
+      }
+    ],
+    "ingredientes_base": [
+      "aceite",
+      "sal"
+    ],
+    "dificultad": "media",
+    "tiempo_min": 30,
+    "calorias_aprox": 300,
+    "tags": [
+      "sabroso",
+      "espanol"
+    ],
+    "proceso_corto": "Cocinar el pollo hasta que esté bien hecho. Añadir ingredientes base y ajustar sal al gusto. Servir caliente o frío según corresponda.",
+    "proceso_detallado": [
+      "1. cortar el pollo en trozos, preparar ajo, preparar guajillo.",
+      "2. Cocinar el pollo en sarten hasta que este dorado y bien hecho.",
+      "3. Agregar los demas ingredientes y cocinar unos minutos mas.",
+      "5. Ajustar sal y especias al gusto y servir."
+    ]
+  },
+  {
+    "receta_id": 165,
+    "nombre": "ensalada de pasta",
+    "categoria": "comida",
+    "tipo": "completa",
+    "ingredientes_clave": [
+      {
+        "item": "pasta fria",
+        "qty": 100,
+        "unit": "gr"
+      },
+      {
+        "item": "tomate",
+        "qty": 1,
+        "unit": "ud"
+      },
+      {
+        "item": "queso",
+        "qty": 50,
+        "unit": "gr"
+      },
+      {
+        "item": "jamon",
+        "qty": 2,
+        "unit": "rebanada"
+      }
+    ],
+    "ingredientes_base": [
+      "mayonesa",
+      "sal"
+    ],
+    "dificultad": "baja",
+    "tiempo_min": 15,
+    "calorias_aprox": 300,
+    "tags": [
+      "picnic",
+      "pasta"
+    ],
+    "proceso_corto": "Hervir la pasta hasta que esté al dente. Añadir ingredientes base y ajustar sal al gusto. Servir caliente o frío según corresponda.",
+    "proceso_detallado": [
+      "1. preparar pasta fria, picar el tomate en cubos, rallar o cortar el queso, cortar el jamon en tiras.",
+      "2. Hervir agua con sal y cocinar la pasta hasta que este al dente.",
+      "3. Incorporar los ingredientes preparados y mezclar bien.",
+      "5. Ajustar sal y especias al gusto y servir."
+    ]
+  },
+  {
+    "receta_id": 166,
+    "nombre": "pimientos rellenos de arroz",
+    "categoria": "comida",
+    "tipo": "completa",
+    "ingredientes_clave": [
+      {
+        "item": "pimiento",
+        "qty": 2,
+        "unit": "ud"
+      },
+      {
+        "item": "arroz cocido",
+        "qty": 1,
+        "unit": "taza"
+      },
+      {
+        "item": "queso",
+        "qty": 50,
+        "unit": "gr"
+      }
+    ],
+    "ingredientes_base": [
+      "tomate",
+      "cebolla"
+    ],
+    "dificultad": "media",
+    "tiempo_min": 30,
+    "calorias_aprox": 300,
+    "tags": [
+      "horno",
+      "completo"
+    ],
+    "proceso_corto": "Cocinar el arroz hasta que esté suave. Añadir ingredientes base y ajustar sal al gusto. Servir caliente o frío según corresponda.",
+    "proceso_detallado": [
+      "1. preparar pimiento, preparar arroz cocido, rallar o cortar el queso.",
+      "2. Cocinar el arroz segun instrucciones hasta que este listo.",
+      "3. Mezclar con los ingredientes preparados y saltear brevemente.",
+      "5. Ajustar sal y especias al gusto y servir."
+    ]
+  },
+  {
+    "receta_id": 167,
+    "nombre": "crema de brocoli",
+    "categoria": "comida",
+    "tipo": "completa",
+    "ingredientes_clave": [
+      {
+        "item": "brocoli",
+        "qty": 1,
+        "unit": "cabeza"
+      },
+      {
+        "item": "leche",
+        "qty": 1,
+        "unit": "taza"
+      },
+      {
+        "item": "patata",
+        "qty": 1,
+        "unit": "ud"
+      }
+    ],
+    "ingredientes_base": [
+      "mantequilla",
+      "sal"
+    ],
+    "dificultad": "baja",
+    "tiempo_min": 15,
+    "calorias_aprox": 300,
+    "tags": [
+      "sopa",
+      "cremoso"
+    ],
+    "proceso_corto": "Preparar y mezclar los ingredientes principales. Añadir ingredientes base y ajustar sal al gusto. Servir caliente o frío según corresponda.",
+    "proceso_detallado": [
+      "1. preparar brocoli, preparar leche, preparar patata.",
+      "2. Cocinar o mezclar los ingredientes segun el tipo de receta.",
+      "5. Ajustar sal y especias al gusto y servir."
+    ]
+  },
+  {
+    "receta_id": 168,
+    "nombre": "rollitos de pollo y espinaca",
+    "categoria": "comida",
+    "tipo": "completa",
+    "ingredientes_clave": [
+      {
+        "item": "pollo",
+        "qty": 1,
+        "unit": "filete"
+      },
+      {
+        "item": "espinaca",
+        "qty": 0.5,
+        "unit": "taza"
+      },
+      {
+        "item": "queso crema",
+        "qty": 30,
+        "unit": "gr"
+      }
+    ],
+    "ingredientes_base": [
+      "sal",
+      "pimienta"
+    ],
+    "dificultad": "alta",
+    "tiempo_min": 45,
+    "calorias_aprox": 300,
+    "tags": [
+      "proteina",
+      "keto"
+    ],
+    "proceso_corto": "Cocinar el pollo hasta que esté bien hecho. Añadir ingredientes base y ajustar sal al gusto. Servir caliente o frío según corresponda.",
+    "proceso_detallado": [
+      "1. cortar el pollo en trozos, preparar espinaca, rallar o cortar el queso.",
+      "2. Cocinar el pollo en sarten hasta que este dorado y bien hecho.",
+      "3. Agregar los demas ingredientes y cocinar unos minutos mas.",
+      "5. Ajustar sal y especias al gusto y servir."
+    ]
+  },
+  {
+    "receta_id": 169,
+    "nombre": "smoothie de platano y yogur",
+    "categoria": "desayuno",
+    "tipo": "completa",
+    "ingredientes_clave": [
+      {
+        "item": "platano",
+        "qty": 1,
+        "unit": "ud"
+      },
+      {
+        "item": "yogur",
+        "qty": 125,
+        "unit": "ml"
+      },
+      {
+        "item": "leche",
+        "qty": 100,
+        "unit": "ml"
+      }
+    ],
+    "ingredientes_base": [
+      "azucar"
+    ],
+    "dificultad": "baja",
+    "tiempo_min": 15,
+    "calorias_aprox": 300,
+    "tags": [
+      "fitness",
+      "desayuno"
+    ],
+    "proceso_corto": "Preparar y mezclar los ingredientes principales. Añadir ingredientes base y ajustar sal al gusto. Servir caliente o frío según corresponda.",
+    "proceso_detallado": [
+      "1. preparar platano, preparar yogur, preparar leche.",
+      "2. Cocinar o mezclar los ingredientes segun el tipo de receta.",
+      "5. Ajustar sal y especias al gusto y servir."
+    ]
+  },
+  {
+    "receta_id": 170,
+    "nombre": "huevos cocidos rellenos",
+    "categoria": "comida",
+    "tipo": "completa",
+    "ingredientes_clave": [
+      {
+        "item": "huevo duro",
+        "qty": 2,
+        "unit": "ud"
+      },
+      {
+        "item": "atun",
+        "qty": 1,
+        "unit": "lata"
+      },
+      {
+        "item": "mayonesa",
+        "qty": 1,
+        "unit": "cda"
+      }
+    ],
+    "ingredientes_base": [
+      "mostaza",
+      "sal"
+    ],
+    "dificultad": "baja",
+    "tiempo_min": 15,
+    "calorias_aprox": 300,
+    "tags": [
+      "frio",
+      "entrada"
+    ],
+    "proceso_corto": "Batir o preparar el huevo según receta. Añadir ingredientes base y ajustar sal al gusto. Servir caliente o frío según corresponda.",
+    "proceso_detallado": [
+      "1. batir los huevos, preparar atun, preparar mayonesa.",
+      "2. Calentar una sarten con un poco de aceite o mantequilla.",
+      "3. Agregar los ingredientes preparados y luego incorporar el huevo.",
+      "4. Cocinar hasta que el huevo este en el punto deseado.",
+      "5. Ajustar sal y especias al gusto y servir."
+    ]
+  },
+  {
+    "receta_id": 171,
+    "nombre": "pasta a la carbonara express",
+    "categoria": "comida",
+    "tipo": "completa",
+    "ingredientes_clave": [
+      {
+        "item": "pasta",
+        "qty": 100,
+        "unit": "gr"
+      },
+      {
+        "item": "huevo",
+        "qty": 1,
+        "unit": "ud"
+      },
+      {
+        "item": "queso",
+        "qty": 30,
+        "unit": "gr"
+      },
+      {
+        "item": "jamon",
+        "qty": 2,
+        "unit": "rebanada"
+      }
+    ],
+    "ingredientes_base": [
+      "pimienta",
+      "sal"
+    ],
+    "dificultad": "media",
+    "tiempo_min": 30,
+    "calorias_aprox": 300,
+    "tags": [
+      "pasta",
+      "clasico"
+    ],
+    "proceso_corto": "Batir o preparar el huevo según receta. Hervir la pasta hasta que esté al dente. Añadir ingredientes base y ajustar sal al gusto. Servir caliente o frío según corresponda.",
+    "proceso_detallado": [
+      "1. preparar pasta, batir los huevos, rallar o cortar el queso, cortar el jamon en tiras.",
+      "2. Calentar una sarten con un poco de aceite o mantequilla.",
+      "3. Agregar los ingredientes preparados y luego incorporar el huevo.",
+      "4. Cocinar hasta que el huevo este en el punto deseado.",
+      "5. Ajustar sal y especias al gusto y servir."
+    ]
+  },
+  {
+    "receta_id": 172,
+    "nombre": "arroz con champinones",
+    "categoria": "guarnicion",
+    "tipo": "completa",
+    "ingredientes_clave": [
+      {
+        "item": "arroz",
+        "qty": 1,
+        "unit": "taza"
+      },
+      {
+        "item": "champinones",
+        "qty": 100,
+        "unit": "gr"
+      }
+    ],
+    "ingredientes_base": [
+      "ajo",
+      "caldo de pollo"
+    ],
+    "dificultad": "baja",
+    "tiempo_min": 15,
+    "calorias_aprox": 300,
+    "tags": [
+      "veggie",
+      "guarnicion"
+    ],
+    "proceso_corto": "Cocinar el arroz hasta que esté suave. Añadir ingredientes base y ajustar sal al gusto. Servir caliente o frío según corresponda.",
+    "proceso_detallado": [
+      "1. preparar arroz, preparar champinones.",
+      "2. Cocinar el arroz segun instrucciones hasta que este listo.",
+      "3. Mezclar con los ingredientes preparados y saltear brevemente.",
+      "5. Ajustar sal y especias al gusto y servir."
+    ]
+  },
+  {
+    "receta_id": 173,
+    "nombre": "salpicon de pollo",
+    "categoria": "comida",
+    "tipo": "completa",
+    "ingredientes_clave": [
+      {
+        "item": "pollo deshebrado",
+        "qty": 150,
+        "unit": "gr"
+      },
+      {
+        "item": "lechuga",
+        "qty": 1,
+        "unit": "taza"
+      },
+      {
+        "item": "tomate",
+        "qty": 1,
+        "unit": "ud"
+      },
+      {
+        "item": "cebolla",
+        "qty": 0.25,
+        "unit": "ud"
+      }
+    ],
+    "ingredientes_base": [
+      "vinagre",
+      "limon"
+    ],
+    "dificultad": "baja",
+    "tiempo_min": 15,
+    "calorias_aprox": 300,
+    "tags": [
+      "ensalada",
+      "ligero"
+    ],
+    "proceso_corto": "Cocinar el pollo hasta que esté bien hecho. Añadir ingredientes base y ajustar sal al gusto. Servir caliente o frío según corresponda.",
+    "proceso_detallado": [
+      "1. cortar el pollo en trozos, preparar lechuga, picar el tomate en cubos, picar la cebolla finamente.",
+      "2. Cocinar el pollo en sarten hasta que este dorado y bien hecho.",
+      "3. Agregar los demas ingredientes y cocinar unos minutos mas.",
+      "5. Ajustar sal y especias al gusto y servir."
+    ]
+  },
+  {
+    "receta_id": 174,
+    "nombre": "papas gajo con especias",
+    "categoria": "guarnicion",
+    "tipo": "minimal",
+    "ingredientes_clave": [
+      {
+        "item": "patata",
+        "qty": 2,
+        "unit": "ud"
+      }
+    ],
+    "ingredientes_base": [
+      "aceite",
+      "paprika",
+      "sal"
+    ],
+    "dificultad": "baja",
+    "tiempo_min": 15,
+    "calorias_aprox": 300,
+    "tags": [
+      "guarnicion",
+      "frito"
+    ],
+    "proceso_corto": "Preparar patata de forma sencilla. Cocinar hasta que esté en el punto deseado y servir.",
+    "proceso_detallado": [
+      "1. preparar patata.",
+      "2. Cocinar o mezclar los ingredientes segun el tipo de receta.",
+      "5. Ajustar sal y especias al gusto y servir."
+    ]
+  },
+  {
+    "receta_id": 175,
+    "nombre": "fajitas de pollo",
+    "categoria": "comida",
+    "tipo": "completa",
+    "ingredientes_clave": [
+      {
+        "item": "pollo",
+        "qty": 200,
+        "unit": "gr"
+      },
+      {
+        "item": "pimiento",
+        "qty": 1,
+        "unit": "ud"
+      },
+      {
+        "item": "cebolla",
+        "qty": 0.5,
+        "unit": "ud"
+      }
+    ],
+    "ingredientes_base": [
+      "aceite",
+      "sal"
+    ],
+    "dificultad": "media",
+    "tiempo_min": 30,
+    "calorias_aprox": 300,
+    "tags": [
+      "mexicano",
+      "proteina"
+    ],
+    "proceso_corto": "Cocinar el pollo hasta que esté bien hecho. Añadir ingredientes base y ajustar sal al gusto. Servir caliente o frío según corresponda.",
+    "proceso_detallado": [
+      "1. cortar el pollo en trozos, preparar pimiento, picar la cebolla finamente.",
+      "2. Cocinar el pollo en sarten hasta que este dorado y bien hecho.",
+      "3. Agregar los demas ingredientes y cocinar unos minutos mas.",
+      "5. Ajustar sal y especias al gusto y servir."
+    ]
+  },
+  {
+    "receta_id": 176,
+    "nombre": "ensalada de manzana dulce",
+    "categoria": "postre",
+    "tipo": "completa",
+    "ingredientes_clave": [
+      {
+        "item": "manzana",
+        "qty": 2,
+        "unit": "ud"
+      },
+      {
+        "item": "crema",
+        "qty": 100,
+        "unit": "ml"
+      },
+      {
+        "item": "nuez",
+        "qty": 30,
+        "unit": "gr"
+      }
+    ],
+    "ingredientes_base": [
+      "azucar"
+    ],
+    "dificultad": "baja",
+    "tiempo_min": 15,
+    "calorias_aprox": 300,
+    "tags": [
+      "dulce",
+      "navideno"
+    ],
+    "proceso_corto": "Preparar y mezclar los ingredientes principales. Añadir ingredientes base y ajustar sal al gusto. Servir caliente o frío según corresponda.",
+    "proceso_detallado": [
+      "1. preparar manzana, preparar crema, preparar nuez.",
+      "2. Cocinar o mezclar los ingredientes segun el tipo de receta.",
+      "5. Ajustar sal y especias al gusto y servir."
+    ]
+  },
+  {
+    "receta_id": 177,
+    "nombre": "tortas de papa con queso",
+    "categoria": "comida",
+    "tipo": "completa",
+    "ingredientes_clave": [
+      {
+        "item": "patata",
+        "qty": 2,
+        "unit": "ud"
+      },
+      {
+        "item": "queso",
+        "qty": 50,
+        "unit": "gr"
+      },
+      {
+        "item": "huevo",
+        "qty": 1,
+        "unit": "ud"
+      }
+    ],
+    "ingredientes_base": [
+      "aceite",
+      "pan molido"
+    ],
+    "dificultad": "media",
+    "tiempo_min": 30,
+    "calorias_aprox": 300,
+    "tags": [
+      "vegetariano",
+      "tradicional"
+    ],
+    "proceso_corto": "Batir o preparar el huevo según receta. Añadir ingredientes base y ajustar sal al gusto. Servir caliente o frío según corresponda.",
+    "proceso_detallado": [
+      "1. preparar patata, rallar o cortar el queso, batir los huevos.",
+      "2. Calentar una sarten con un poco de aceite o mantequilla.",
+      "3. Agregar los ingredientes preparados y luego incorporar el huevo.",
+      "4. Cocinar hasta que el huevo este en el punto deseado.",
+      "5. Ajustar sal y especias al gusto y servir."
+    ]
+  },
+  {
+    "receta_id": 178,
+    "nombre": "caldo de pollo",
+    "categoria": "comida",
+    "tipo": "completa",
+    "ingredientes_clave": [
+      {
+        "item": "pollo",
+        "qty": 1,
+        "unit": "pieza"
+      },
+      {
+        "item": "zanahoria",
+        "qty": 1,
+        "unit": "ud"
+      },
+      {
+        "item": "patata",
+        "qty": 1,
+        "unit": "ud"
+      },
+      {
+        "item": "apio",
+        "qty": 1,
+        "unit": "tallo"
+      }
+    ],
+    "ingredientes_base": [
+      "sal",
+      "ajo"
+    ],
+    "dificultad": "media",
+    "tiempo_min": 30,
+    "calorias_aprox": 300,
+    "tags": [
+      "sopa",
+      "confort"
+    ],
+    "proceso_corto": "Cocinar el pollo hasta que esté bien hecho. Añadir ingredientes base y ajustar sal al gusto. Servir caliente o frío según corresponda.",
+    "proceso_detallado": [
+      "1. cortar el pollo en trozos, preparar zanahoria, preparar patata, preparar apio.",
+      "2. Cocinar el pollo en sarten hasta que este dorado y bien hecho.",
+      "3. Agregar los demas ingredientes y cocinar unos minutos mas.",
+      "5. Ajustar sal y especias al gusto y servir."
+    ]
+  },
+  {
+    "receta_id": 179,
+    "nombre": "quesadillas de flor de calabaza",
+    "categoria": "comida",
+    "tipo": "completa",
+    "ingredientes_clave": [
+      {
+        "item": "tortilla",
+        "qty": 2,
+        "unit": "ud"
+      },
+      {
+        "item": "queso",
+        "qty": 50,
+        "unit": "gr"
+      },
+      {
+        "item": "flor de calabaza",
+        "qty": 100,
+        "unit": "gr"
+      }
+    ],
+    "ingredientes_base": [
+      "epazote"
+    ],
+    "dificultad": "baja",
+    "tiempo_min": 15,
+    "calorias_aprox": 300,
+    "tags": [
+      "mexicano",
+      "veggie"
+    ],
+    "proceso_corto": "Preparar y mezclar los ingredientes principales. Añadir ingredientes base y ajustar sal al gusto. Servir caliente o frío según corresponda.",
+    "proceso_detallado": [
+      "1. preparar tortilla, rallar o cortar el queso, preparar flor de calabaza.",
+      "2. Cocinar o mezclar los ingredientes segun el tipo de receta.",
+      "5. Ajustar sal y especias al gusto y servir."
+    ]
+  },
+  {
+    "receta_id": 180,
+    "nombre": "sandwich de pollo frio",
+    "categoria": "comida",
+    "tipo": "completa",
+    "ingredientes_clave": [
+      {
+        "item": "pan",
+        "qty": 2,
+        "unit": "rebanada"
+      },
+      {
+        "item": "pollo",
+        "qty": 80,
+        "unit": "gr"
+      },
+      {
+        "item": "mayonesa",
+        "qty": 1,
+        "unit": "cda"
+      },
+      {
+        "item": "apio",
+        "qty": 0.5,
+        "unit": "tallo"
+      }
+    ],
+    "ingredientes_base": [
+      "pimienta"
+    ],
+    "dificultad": "baja",
+    "tiempo_min": 15,
+    "calorias_aprox": 300,
+    "tags": [
+      "lunch",
+      "atun"
+    ],
+    "proceso_corto": "Cocinar el pollo hasta que esté bien hecho. Añadir ingredientes base y ajustar sal al gusto. Servir caliente o frío según corresponda.",
+    "proceso_detallado": [
+      "1. preparar pan, cortar el pollo en trozos, preparar mayonesa, preparar apio.",
+      "2. Cocinar el pollo en sarten hasta que este dorado y bien hecho.",
+      "3. Agregar los demas ingredientes y cocinar unos minutos mas.",
+      "5. Ajustar sal y especias al gusto y servir."
+    ]
+  },
+  {
+    "receta_id": 181,
+    "nombre": "ensalada de garbanzos y atun",
+    "categoria": "comida",
+    "tipo": "completa",
+    "ingredientes_clave": [
+      {
+        "item": "garbanzo",
+        "qty": 1,
+        "unit": "lata"
+      },
+      {
+        "item": "atun",
+        "qty": 1,
+        "unit": "lata"
+      },
+      {
+        "item": "tomate",
+        "qty": 1,
+        "unit": "ud"
+      }
+    ],
+    "ingredientes_base": [
+      "limon",
+      "aceite de oliva"
+    ],
+    "dificultad": "baja",
+    "tiempo_min": 15,
+    "calorias_aprox": 300,
+    "tags": [
+      "saludable",
+      "rapido"
+    ],
+    "proceso_corto": "Preparar y mezclar los ingredientes principales. Añadir ingredientes base y ajustar sal al gusto. Servir caliente o frío según corresponda.",
+    "proceso_detallado": [
+      "1. preparar garbanzo, preparar atun, picar el tomate en cubos.",
+      "2. Cocinar o mezclar los ingredientes segun el tipo de receta.",
+      "5. Ajustar sal y especias al gusto y servir."
+    ]
+  },
+  {
+    "receta_id": 182,
+    "nombre": "pasta con tomate y albahaca",
+    "categoria": "comida",
+    "tipo": "completa",
+    "ingredientes_clave": [
+      {
+        "item": "pasta",
+        "qty": 100,
+        "unit": "gr"
+      },
+      {
+        "item": "tomate fresco",
+        "qty": 2,
+        "unit": "ud"
+      },
+      {
+        "item": "albahaca",
+        "qty": 4,
+        "unit": "hojas"
+      }
+    ],
+    "ingredientes_base": [
+      "ajo",
+      "aceite de oliva"
+    ],
+    "dificultad": "baja",
+    "tiempo_min": 15,
+    "calorias_aprox": 300,
+    "tags": [
+      "italiano",
+      "pasta"
+    ],
+    "proceso_corto": "Hervir la pasta hasta que esté al dente. Añadir ingredientes base y ajustar sal al gusto. Servir caliente o frío según corresponda.",
+    "proceso_detallado": [
+      "1. preparar pasta, picar el tomate en cubos, preparar albahaca.",
+      "2. Hervir agua con sal y cocinar la pasta hasta que este al dente.",
+      "3. Incorporar los ingredientes preparados y mezclar bien.",
+      "5. Ajustar sal y especias al gusto y servir."
+    ]
+  },
+  {
+    "receta_id": 183,
+    "nombre": "huevos con ejotes",
+    "categoria": "desayuno",
+    "tipo": "completa",
+    "ingredientes_clave": [
+      {
+        "item": "huevo",
+        "qty": 2,
+        "unit": "ud"
+      },
+      {
+        "item": "ejotes",
+        "qty": 1,
+        "unit": "taza"
+      }
+    ],
+    "ingredientes_base": [
+      "sal",
+      "cebolla"
+    ],
+    "dificultad": "baja",
+    "tiempo_min": 15,
+    "calorias_aprox": 300,
+    "tags": [
+      "ligero",
+      "desayuno"
+    ],
+    "proceso_corto": "Batir o preparar el huevo según receta. Añadir ingredientes base y ajustar sal al gusto. Servir caliente o frío según corresponda.",
+    "proceso_detallado": [
+      "1. batir los huevos, preparar ejotes.",
+      "2. Calentar una sarten con un poco de aceite o mantequilla.",
+      "3. Agregar los ingredientes preparados y luego incorporar el huevo.",
+      "4. Cocinar hasta que el huevo este en el punto deseado.",
+      "5. Ajustar sal y especias al gusto y servir."
+    ]
+  },
+  {
+    "receta_id": 184,
+    "nombre": "canelones de jamon y queso",
+    "categoria": "comida",
+    "tipo": "completa",
+    "ingredientes_clave": [
+      {
+        "item": "pasta lasana",
+        "qty": 3,
+        "unit": "placas"
+      },
+      {
+        "item": "jamon",
+        "qty": 3,
+        "unit": "rebanada"
+      },
+      {
+        "item": "queso",
+        "qty": 60,
+        "unit": "gr"
+      },
+      {
+        "item": "crema",
+        "qty": 50,
+        "unit": "ml"
+      }
+    ],
+    "ingredientes_base": [
+      "pimienta"
+    ],
+    "dificultad": "alta",
+    "tiempo_min": 45,
+    "calorias_aprox": 300,
+    "tags": [
+      "horno",
+      "completo"
+    ],
+    "proceso_corto": "Hervir la pasta hasta que esté al dente. Añadir ingredientes base y ajustar sal al gusto. Servir caliente o frío según corresponda.",
+    "proceso_detallado": [
+      "1. preparar pasta lasana, cortar el jamon en tiras, rallar o cortar el queso, preparar crema.",
+      "2. Hervir agua con sal y cocinar la pasta hasta que este al dente.",
+      "3. Incorporar los ingredientes preparados y mezclar bien.",
+      "5. Ajustar sal y especias al gusto y servir."
+    ]
+  },
+  {
+    "receta_id": 185,
+    "nombre": "sopa de cebolla",
+    "categoria": "comida",
+    "tipo": "completa",
+    "ingredientes_clave": [
+      {
+        "item": "cebolla",
+        "qty": 2,
+        "unit": "ud"
+      },
+      {
+        "item": "pan",
+        "qty": 1,
+        "unit": "rebanada"
+      },
+      {
+        "item": "queso",
+        "qty": 30,
+        "unit": "gr"
+      }
+    ],
+    "ingredientes_base": [
+      "mantequilla",
+      "caldo"
+    ],
+    "dificultad": "media",
+    "tiempo_min": 30,
+    "calorias_aprox": 300,
+    "tags": [
+      "francesa",
+      "sopa"
+    ],
+    "proceso_corto": "Preparar y mezclar los ingredientes principales. Añadir ingredientes base y ajustar sal al gusto. Servir caliente o frío según corresponda.",
+    "proceso_detallado": [
+      "1. picar la cebolla finamente, preparar pan, rallar o cortar el queso.",
+      "2. Cocinar o mezclar los ingredientes segun el tipo de receta.",
+      "5. Ajustar sal y especias al gusto y servir."
+    ]
+  },
+  {
+    "receta_id": 186,
+    "nombre": "papas chorreadas",
+    "categoria": "guarnicion",
+    "tipo": "completa",
+    "ingredientes_clave": [
+      {
+        "item": "patata",
+        "qty": 2,
+        "unit": "ud"
+      },
+      {
+        "item": "queso",
+        "qty": 50,
+        "unit": "gr"
+      },
+      {
+        "item": "crema",
+        "qty": 50,
+        "unit": "ml"
+      },
+      {
+        "item": "tomate",
+        "qty": 1,
+        "unit": "ud"
+      }
+    ],
+    "ingredientes_base": [
+      "cebolla"
+    ],
+    "dificultad": "media",
+    "tiempo_min": 30,
+    "calorias_aprox": 300,
+    "tags": [
+      "latino",
+      "guarnicion"
+    ],
+    "proceso_corto": "Preparar y mezclar los ingredientes principales. Añadir ingredientes base y ajustar sal al gusto. Servir caliente o frío según corresponda.",
+    "proceso_detallado": [
+      "1. preparar patata, rallar o cortar el queso, preparar crema, picar el tomate en cubos.",
+      "2. Cocinar o mezclar los ingredientes segun el tipo de receta.",
+      "5. Ajustar sal y especias al gusto y servir."
+    ]
+  },
+  {
+    "receta_id": 187,
+    "nombre": "fruta con queso cottage",
+    "categoria": "snack",
+    "tipo": "completa",
+    "ingredientes_clave": [
+      {
+        "item": "queso cottage",
+        "qty": 100,
+        "unit": "gr"
+      },
+      {
+        "item": "manzana",
+        "qty": 0.5,
+        "unit": "ud"
+      },
+      {
+        "item": "fresa",
+        "qty": 4,
+        "unit": "ud"
+      }
+    ],
+    "ingredientes_base": [
+      "miel"
+    ],
+    "dificultad": "baja",
+    "tiempo_min": 15,
+    "calorias_aprox": 300,
+    "tags": [
+      "fit",
+      "snack"
+    ],
+    "proceso_corto": "Preparar y mezclar los ingredientes principales. Añadir ingredientes base y ajustar sal al gusto. Servir caliente o frío según corresponda.",
+    "proceso_detallado": [
+      "1. rallar o cortar el queso, preparar manzana, preparar fresa.",
+      "2. Cocinar o mezclar los ingredientes segun el tipo de receta.",
+      "5. Ajustar sal y especias al gusto y servir."
+    ]
+  },
+  {
+    "receta_id": 188,
+    "nombre": "milanesa de res",
+    "categoria": "comida",
+    "tipo": "completa",
+    "ingredientes_clave": [
+      {
+        "item": "carne de res",
+        "qty": 1,
+        "unit": "filete"
+      },
+      {
+        "item": "huevo",
+        "qty": 1,
+        "unit": "ud"
+      },
+      {
+        "item": "pan molido",
+        "qty": 100,
+        "unit": "gr"
+      }
+    ],
+    "ingredientes_base": [
+      "aceite",
+      "sal"
+    ],
+    "dificultad": "media",
+    "tiempo_min": 30,
+    "calorias_aprox": 300,
+    "tags": [
+      "frito",
+      "proteina"
+    ],
+    "proceso_corto": "Batir o preparar el huevo según receta. Añadir ingredientes base y ajustar sal al gusto. Servir caliente o frío según corresponda.",
+    "proceso_detallado": [
+      "1. preparar carne de res, batir los huevos, preparar pan molido.",
+      "2. Calentar una sarten con un poco de aceite o mantequilla.",
+      "3. Agregar los ingredientes preparados y luego incorporar el huevo.",
+      "4. Cocinar hasta que el huevo este en el punto deseado.",
+      "5. Ajustar sal y especias al gusto y servir."
+    ]
+  },
+  {
+    "receta_id": 189,
+    "nombre": "burritos de huevo con salchicha",
+    "categoria": "desayuno",
+    "tipo": "completa",
+    "ingredientes_clave": [
+      {
+        "item": "tortilla harina",
+        "qty": 2,
+        "unit": "ud"
+      },
+      {
+        "item": "huevo",
+        "qty": 2,
+        "unit": "ud"
+      },
+      {
+        "item": "salchicha",
+        "qty": 2,
+        "unit": "ud"
+      }
+    ],
+    "ingredientes_base": [
+      "queso"
+    ],
+    "dificultad": "baja",
+    "tiempo_min": 15,
+    "calorias_aprox": 300,
+    "tags": [
+      "rapido",
+      "desayuno"
+    ],
+    "proceso_corto": "Batir o preparar el huevo según receta. Añadir ingredientes base y ajustar sal al gusto. Servir caliente o frío según corresponda.",
+    "proceso_detallado": [
+      "1. preparar tortilla harina, batir los huevos, preparar salchicha.",
+      "2. Calentar una sarten con un poco de aceite o mantequilla.",
+      "3. Agregar los ingredientes preparados y luego incorporar el huevo.",
+      "4. Cocinar hasta que el huevo este en el punto deseado.",
+      "5. Ajustar sal y especias al gusto y servir."
+    ]
+  },
+  {
+    "receta_id": 190,
+    "nombre": "crema de champinones",
+    "categoria": "comida",
+    "tipo": "completa",
+    "ingredientes_clave": [
+      {
+        "item": "champinones",
+        "qty": 150,
+        "unit": "gr"
+      },
+      {
+        "item": "leche",
+        "qty": 1,
+        "unit": "taza"
+      },
+      {
+        "item": "crema",
+        "qty": 50,
+        "unit": "ml"
+      }
+    ],
+    "ingredientes_base": [
+      "mantequilla",
+      "ajo"
+    ],
+    "dificultad": "baja",
+    "tiempo_min": 15,
+    "calorias_aprox": 300,
+    "tags": [
+      "sopa",
+      "otono"
+    ],
+    "proceso_corto": "Preparar y mezclar los ingredientes principales. Añadir ingredientes base y ajustar sal al gusto. Servir caliente o frío según corresponda.",
+    "proceso_detallado": [
+      "1. preparar champinones, preparar leche, preparar crema.",
+      "2. Cocinar o mezclar los ingredientes segun el tipo de receta.",
+      "5. Ajustar sal y especias al gusto y servir."
+    ]
+  },
+  {
+    "receta_id": 191,
+    "nombre": "tostadas de atun",
+    "categoria": "comida",
+    "tipo": "completa",
+    "ingredientes_clave": [
+      {
+        "item": "tostada",
+        "qty": 3,
+        "unit": "ud"
+      },
+      {
+        "item": "atun",
+        "qty": 1,
+        "unit": "lata"
+      },
+      {
+        "item": "aguacate",
+        "qty": 0.5,
+        "unit": "ud"
+      },
+      {
+        "item": "tomate",
+        "qty": 1,
+        "unit": "ud"
+      }
+    ],
+    "ingredientes_base": [
+      "limon"
+    ],
+    "dificultad": "baja",
+    "tiempo_min": 15,
+    "calorias_aprox": 300,
+    "tags": [
+      "fresco",
+      "rapido"
+    ],
+    "proceso_corto": "Preparar y mezclar los ingredientes principales. Añadir ingredientes base y ajustar sal al gusto. Servir caliente o frío según corresponda.",
+    "proceso_detallado": [
+      "1. preparar tostada, preparar atun, preparar aguacate, picar el tomate en cubos.",
+      "2. Cocinar o mezclar los ingredientes segun el tipo de receta.",
+      "5. Ajustar sal y especias al gusto y servir."
+    ]
+  },
+  {
+    "receta_id": 192,
+    "nombre": "tortilla de queso y chiles",
+    "categoria": "comida",
+    "tipo": "completa",
+    "ingredientes_clave": [
+      {
+        "item": "huevo",
+        "qty": 2,
+        "unit": "ud"
+      },
+      {
+        "item": "queso",
+        "qty": 40,
+        "unit": "gr"
+      },
+      {
+        "item": "chile verde",
+        "qty": 1,
+        "unit": "ud"
+      }
+    ],
+    "ingredientes_base": [
+      "aceite",
+      "sal"
+    ],
+    "dificultad": "baja",
+    "tiempo_min": 15,
+    "calorias_aprox": 300,
+    "tags": [
+      "picante",
+      "cena"
+    ],
+    "proceso_corto": "Batir o preparar el huevo según receta. Añadir ingredientes base y ajustar sal al gusto. Servir caliente o frío según corresponda.",
+    "proceso_detallado": [
+      "1. batir los huevos, rallar o cortar el queso, preparar chile verde.",
+      "2. Calentar una sarten con un poco de aceite o mantequilla.",
+      "3. Agregar los ingredientes preparados y luego incorporar el huevo.",
+      "4. Cocinar hasta que el huevo este en el punto deseado.",
+      "5. Ajustar sal y especias al gusto y servir."
+    ]
+  },
+  {
+    "receta_id": 193,
+    "nombre": "pollo crema chipotle",
+    "categoria": "comida",
+    "tipo": "completa",
+    "ingredientes_clave": [
+      {
+        "item": "pollo",
+        "qty": 200,
+        "unit": "gr"
+      },
+      {
+        "item": "crema",
+        "qty": 0.5,
+        "unit": "taza"
+      },
+      {
+        "item": "chile chipotle",
+        "qty": 1,
+        "unit": "ud"
+      }
+    ],
+    "ingredientes_base": [
+      "ajo",
+      "cebolla"
+    ],
+    "dificultad": "media",
+    "tiempo_min": 30,
+    "calorias_aprox": 300,
+    "tags": [
+      "mexicano",
+      "cremoso"
+    ],
+    "proceso_corto": "Cocinar el pollo hasta que esté bien hecho. Añadir ingredientes base y ajustar sal al gusto. Servir caliente o frío según corresponda.",
+    "proceso_detallado": [
+      "1. cortar el pollo en trozos, preparar crema, preparar chile chipotle.",
+      "2. Cocinar el pollo en sarten hasta que este dorado y bien hecho.",
+      "3. Agregar los demas ingredientes y cocinar unos minutos mas.",
+      "5. Ajustar sal y especias al gusto y servir."
+    ]
+  },
+  {
+    "receta_id": 194,
+    "nombre": "sandwich dulce",
+    "categoria": "postre",
+    "tipo": "completa",
+    "ingredientes_clave": [
+      {
+        "item": "pan",
+        "qty": 2,
+        "unit": "rebanada"
+      },
+      {
+        "item": "mermelada",
+        "qty": 2,
+        "unit": "cda"
+      },
+      {
+        "item": "mantequilla",
+        "qty": 1,
+        "unit": "cda"
+      }
+    ],
+    "ingredientes_base": [],
+    "dificultad": "baja",
+    "tiempo_min": 15,
+    "calorias_aprox": 300,
+    "tags": [
+      "merienda",
+      "dulce"
+    ],
+    "proceso_corto": "Preparar y mezclar los ingredientes principales. Añadir ingredientes base y ajustar sal al gusto. Servir caliente o frío según corresponda.",
+    "proceso_detallado": [
+      "1. preparar pan, preparar mermelada, preparar mantequilla.",
+      "2. Cocinar o mezclar los ingredientes segun el tipo de receta.",
+      "5. Ajustar sal y especias al gusto y servir."
+    ]
+  },
+  {
+    "receta_id": 195,
+    "nombre": "zanahorias glaseadas",
+    "categoria": "guarnicion",
+    "tipo": "minimal",
+    "ingredientes_clave": [
+      {
+        "item": "zanahoria",
+        "qty": 3,
+        "unit": "ud"
+      }
+    ],
+    "ingredientes_base": [
+      "mantequilla",
+      "azucar"
+    ],
+    "dificultad": "baja",
+    "tiempo_min": 15,
+    "calorias_aprox": 300,
+    "tags": [
+      "guarnicion",
+      "vegetariano"
+    ],
+    "proceso_corto": "Preparar zanahoria de forma sencilla. Cocinar hasta que esté en el punto deseado y servir.",
+    "proceso_detallado": [
+      "1. preparar zanahoria.",
+      "2. Cocinar o mezclar los ingredientes segun el tipo de receta.",
+      "5. Ajustar sal y especias al gusto y servir."
+    ]
+  },
+  {
+    "receta_id": 196,
+    "nombre": "arroz queso horno",
+    "categoria": "guarnicion",
+    "tipo": "completa",
+    "ingredientes_clave": [
+      {
+        "item": "arroz cocido",
+        "qty": 1,
+        "unit": "taza"
+      },
+      {
+        "item": "queso",
+        "qty": 80,
+        "unit": "gr"
+      },
+      {
+        "item": "crema",
+        "qty": 50,
+        "unit": "ml"
+      }
+    ],
+    "ingredientes_base": [
+      "mantequilla"
+    ],
+    "dificultad": "media",
+    "tiempo_min": 30,
+    "calorias_aprox": 300,
+    "tags": [
+      "horno",
+      "guarnicion"
+    ],
+    "proceso_corto": "Cocinar el arroz hasta que esté suave. Añadir ingredientes base y ajustar sal al gusto. Servir caliente o frío según corresponda.",
+    "proceso_detallado": [
+      "1. preparar arroz cocido, rallar o cortar el queso, preparar crema.",
+      "2. Cocinar el arroz segun instrucciones hasta que este listo.",
+      "3. Mezclar con los ingredientes preparados y saltear brevemente.",
+      "5. Ajustar sal y especias al gusto y servir."
+    ]
+  },
+  {
+    "receta_id": 197,
+    "nombre": "ensalada espinaca manzana",
+    "categoria": "comida",
+    "tipo": "completa",
+    "ingredientes_clave": [
+      {
+        "item": "espinaca",
+        "qty": 1.5,
+        "unit": "tazas"
+      },
+      {
+        "item": "manzana",
+        "qty": 1,
+        "unit": "ud"
+      },
+      {
+        "item": "queso",
+        "qty": 30,
+        "unit": "gr"
+      }
+    ],
+    "ingredientes_base": [
+      "vinagreta"
+    ],
+    "dificultad": "baja",
+    "tiempo_min": 15,
+    "calorias_aprox": 300,
+    "tags": [
+      "fresco",
+      "ligero"
+    ],
+    "proceso_corto": "Preparar y mezclar los ingredientes principales. Añadir ingredientes base y ajustar sal al gusto. Servir caliente o frío según corresponda.",
+    "proceso_detallado": [
+      "1. preparar espinaca, preparar manzana, rallar o cortar el queso.",
+      "2. Cocinar o mezclar los ingredientes segun el tipo de receta.",
+      "5. Ajustar sal y especias al gusto y servir."
+    ]
+  },
+  {
+    "receta_id": 198,
+    "nombre": "salchichas enchipotladas",
+    "categoria": "comida",
+    "tipo": "completa",
+    "ingredientes_clave": [
+      {
+        "item": "salchicha",
+        "qty": 4,
+        "unit": "ud"
+      },
+      {
+        "item": "crema",
+        "qty": 100,
+        "unit": "ml"
+      },
+      {
+        "item": "chipotle",
+        "qty": 1,
+        "unit": "ud"
+      }
+    ],
+    "ingredientes_base": [
+      "cebolla"
+    ],
+    "dificultad": "baja",
+    "tiempo_min": 15,
+    "calorias_aprox": 300,
+    "tags": [
+      "rapido",
+      "mexicano"
+    ],
+    "proceso_corto": "Preparar y mezclar los ingredientes principales. Añadir ingredientes base y ajustar sal al gusto. Servir caliente o frío según corresponda.",
+    "proceso_detallado": [
+      "1. preparar salchicha, preparar crema, preparar chipotle.",
+      "2. Cocinar o mezclar los ingredientes segun el tipo de receta.",
+      "5. Ajustar sal y especias al gusto y servir."
+    ]
+  },
+  {
+    "receta_id": 199,
+    "nombre": "omelette jamon tomate",
+    "categoria": "desayuno",
+    "tipo": "completa",
+    "ingredientes_clave": [
+      {
+        "item": "huevo",
+        "qty": 2,
+        "unit": "ud"
+      },
+      {
+        "item": "jamon",
+        "qty": 2,
+        "unit": "rebanada"
+      },
+      {
+        "item": "tomate",
+        "qty": 0.5,
+        "unit": "ud"
+      }
+    ],
+    "ingredientes_base": [
+      "aceite"
+    ],
+    "dificultad": "baja",
+    "tiempo_min": 15,
+    "calorias_aprox": 300,
+    "tags": [
+      "desayuno",
+      "rapido"
+    ],
+    "proceso_corto": "Batir o preparar el huevo según receta. Añadir ingredientes base y ajustar sal al gusto. Servir caliente o frío según corresponda.",
+    "proceso_detallado": [
+      "1. batir los huevos, cortar el jamon en tiras, picar el tomate en cubos.",
+      "2. Calentar una sarten con un poco de aceite o mantequilla.",
+      "3. Agregar los ingredientes preparados y luego incorporar el huevo.",
+      "4. Cocinar hasta que el huevo este en el punto deseado.",
+      "5. Ajustar sal y especias al gusto y servir."
+    ]
+  },
+  {
+    "receta_id": 200,
+    "nombre": "flan leche express",
+    "categoria": "postre",
+    "tipo": "completa",
+    "ingredientes_clave": [
+      {
+        "item": "leche",
+        "qty": 250,
+        "unit": "ml"
+      },
+      {
+        "item": "huevo",
+        "qty": 2,
+        "unit": "ud"
+      },
+      {
+        "item": "azucar",
+        "qty": 100,
+        "unit": "gr"
+      }
+    ],
+    "ingredientes_base": [
+      "vainilla"
+    ],
+    "dificultad": "media",
+    "tiempo_min": 30,
+    "calorias_aprox": 300,
+    "tags": [
+      "postre",
+      "dulce"
+    ],
+    "proceso_corto": "Batir o preparar el huevo según receta. Añadir ingredientes base y ajustar sal al gusto. Servir caliente o frío según corresponda.",
+    "proceso_detallado": [
+      "1. preparar leche, batir los huevos, preparar azucar.",
+      "2. Calentar una sarten con un poco de aceite o mantequilla.",
+      "3. Agregar los ingredientes preparados y luego incorporar el huevo.",
+      "4. Cocinar hasta que el huevo este en el punto deseado.",
+      "5. Ajustar sal y especias al gusto y servir."
+    ]
+  },
+  {
+    "receta_id": 201,
+    "nombre": "arroz frito limpia-nevera",
+    "categoria": "comida",
+    "tipo": "completa",
+    "ingredientes_clave": [
+      {
+        "item": "arroz sobras",
+        "qty": 1,
+        "unit": "taza"
+      },
+      {
+        "item": "verduras congeladas",
+        "qty": 0.5,
+        "unit": "taza"
+      },
+      {
+        "item": "salsa soya",
+        "qty": 1,
+        "unit": "cda"
+      }
+    ],
+    "ingredientes_base": [
+      "aceite",
+      "jengibre",
+      "huevo"
+    ],
+    "dificultad": "baja",
+    "tiempo_min": 15,
+    "calorias_aprox": 300,
+    "tags": [
+      "sobras",
+      "ahorro"
+    ],
+    "proceso_corto": "Cocinar el arroz hasta que esté suave. Añadir ingredientes base y ajustar sal al gusto. Servir caliente o frío según corresponda.",
+    "proceso_detallado": [
+      "1. preparar arroz sobras, preparar verduras congeladas, preparar salsa soya.",
+      "2. Cocinar el arroz segun instrucciones hasta que este listo.",
+      "3. Mezclar con los ingredientes preparados y saltear brevemente.",
+      "5. Ajustar sal y especias al gusto y servir."
+    ]
+  },
+  {
+    "receta_id": 202,
+    "nombre": "dip queso crema y chile",
+    "categoria": "snack",
+    "tipo": "completa",
+    "ingredientes_clave": [
+      {
+        "item": "queso crema",
+        "qty": 190,
+        "unit": "gr"
+      },
+      {
+        "item": "chiles vinagre",
+        "qty": 2,
+        "unit": "ud"
+      },
+      {
+        "item": "cebolla",
+        "qty": 0.25,
+        "unit": "ud"
+      }
+    ],
+    "ingredientes_base": [
+      "galletas saladas",
+      "leche"
+    ],
+    "dificultad": "baja",
+    "tiempo_min": 15,
+    "calorias_aprox": 300,
+    "tags": [
+      "fiesta",
+      "snack"
+    ],
+    "proceso_corto": "Preparar y mezclar los ingredientes principales. Añadir ingredientes base y ajustar sal al gusto. Servir caliente o frío según corresponda.",
+    "proceso_detallado": [
+      "1. rallar o cortar el queso, preparar chiles vinagre, picar la cebolla finamente.",
+      "2. Cocinar o mezclar los ingredientes segun el tipo de receta.",
+      "5. Ajustar sal y especias al gusto y servir."
+    ]
+  },
+  {
+    "receta_id": 203,
+    "nombre": "pollo bbq rapido",
+    "categoria": "comida",
+    "tipo": "completa",
+    "ingredientes_clave": [
+      {
+        "item": "pollo",
+        "qty": 200,
+        "unit": "gr"
+      },
+      {
+        "item": "salsa bbq",
+        "qty": 3,
+        "unit": "cda"
+      },
+      {
+        "item": "refresco cola",
+        "qty": 100,
+        "unit": "ml"
+      }
+    ],
+    "ingredientes_base": [
+      "sal",
+      "pimienta"
+    ],
+    "dificultad": "baja",
+    "tiempo_min": 15,
+    "calorias_aprox": 300,
+    "tags": [
+      "puerta",
+      "norteamericano"
+    ],
+    "proceso_corto": "Cocinar el pollo hasta que esté bien hecho. Añadir ingredientes base y ajustar sal al gusto. Servir caliente o frío según corresponda.",
+    "proceso_detallado": [
+      "1. cortar el pollo en trozos, preparar salsa bbq, preparar refresco cola.",
+      "2. Cocinar el pollo en sarten hasta que este dorado y bien hecho.",
+      "3. Agregar los demas ingredientes y cocinar unos minutos mas.",
+      "5. Ajustar sal y especias al gusto y servir."
+    ]
+  },
+  {
+    "receta_id": 204,
+    "nombre": "ensalada pasta pepinillos",
+    "categoria": "comida",
+    "tipo": "completa",
+    "ingredientes_clave": [
+      {
+        "item": "pasta fria",
+        "qty": 100,
+        "unit": "gr"
+      },
+      {
+        "item": "pepinillos",
+        "qty": 3,
+        "unit": "ud"
+      },
+      {
+        "item": "mayonesa",
+        "qty": 2,
+        "unit": "cda"
+      }
+    ],
+    "ingredientes_base": [
+      "mostaza",
+      "sal"
+    ],
+    "dificultad": "baja",
+    "tiempo_min": 15,
+    "calorias_aprox": 300,
+    "tags": [
+      "sobras",
+      "frio"
+    ],
+    "proceso_corto": "Hervir la pasta hasta que esté al dente. Añadir ingredientes base y ajustar sal al gusto. Servir caliente o frío según corresponda.",
+    "proceso_detallado": [
+      "1. preparar pasta fria, preparar pepinillos, preparar mayonesa.",
+      "2. Hervir agua con sal y cocinar la pasta hasta que este al dente.",
+      "3. Incorporar los ingredientes preparados y mezclar bien.",
+      "5. Ajustar sal y especias al gusto y servir."
+    ]
+  },
+  {
+    "receta_id": 205,
+    "nombre": "pescado alcaparras",
+    "categoria": "comida",
+    "tipo": "completa",
+    "ingredientes_clave": [
+      {
+        "item": "pescado",
+        "qty": 1,
+        "unit": "filete"
+      },
+      {
+        "item": "alcaparras",
+        "qty": 1,
+        "unit": "cda"
+      },
+      {
+        "item": "limon",
+        "qty": 1,
+        "unit": "ud"
+      }
+    ],
+    "ingredientes_base": [
+      "mantequilla",
+      "ajo"
+    ],
+    "dificultad": "media",
+    "tiempo_min": 30,
+    "calorias_aprox": 300,
+    "tags": [
+      "puerta",
+      "gourmet"
+    ],
+    "proceso_corto": "Preparar y mezclar los ingredientes principales. Añadir ingredientes base y ajustar sal al gusto. Servir caliente o frío según corresponda.",
+    "proceso_detallado": [
+      "1. preparar pescado, preparar alcaparras, preparar limon.",
+      "2. Cocinar o mezclar los ingredientes segun el tipo de receta.",
+      "5. Ajustar sal y especias al gusto y servir."
+    ]
+  },
+  {
+    "receta_id": 206,
+    "nombre": "smoothie fruta olvidada",
+    "categoria": "comida",
+    "tipo": "completa",
+    "ingredientes_clave": [
+      {
+        "item": "platano maduro",
+        "qty": 1,
+        "unit": "ud"
+      },
+      {
+        "item": "frutos rojos congelados",
+        "qty": 0.5,
+        "unit": "taza"
+      },
+      {
+        "item": "jugo naranja",
+        "qty": 1,
+        "unit": "taza"
+      }
+    ],
+    "ingredientes_base": [
+      "hielo",
+      "miel"
+    ],
+    "dificultad": "baja",
+    "tiempo_min": 15,
+    "calorias_aprox": 300,
+    "tags": [
+      "congelador",
+      "fit"
+    ],
+    "proceso_corto": "Preparar y mezclar los ingredientes principales. Añadir ingredientes base y ajustar sal al gusto. Servir caliente o frío según corresponda.",
+    "proceso_detallado": [
+      "1. preparar platano maduro, preparar frutos rojos congelados, preparar jugo naranja.",
+      "2. Cocinar o mezclar los ingredientes segun el tipo de receta.",
+      "5. Ajustar sal y especias al gusto y servir."
+    ]
+  },
+  {
+    "receta_id": 207,
+    "nombre": "omelette queso azul",
+    "categoria": "comida",
+    "tipo": "completa",
+    "ingredientes_clave": [
+      {
+        "item": "huevo",
+        "qty": 2,
+        "unit": "ud"
+      },
+      {
+        "item": "queso azul",
+        "qty": 20,
+        "unit": "gr"
+      },
+      {
+        "item": "espinaca",
+        "qty": 0.5,
+        "unit": "taza"
+      }
+    ],
+    "ingredientes_base": [
+      "mantequilla",
+      "nuez"
+    ],
+    "dificultad": "media",
+    "tiempo_min": 30,
+    "calorias_aprox": 300,
+    "tags": [
+      "sabroso",
+      "keto"
+    ],
+    "proceso_corto": "Batir o preparar el huevo según receta. Añadir ingredientes base y ajustar sal al gusto. Servir caliente o frío según corresponda.",
+    "proceso_detallado": [
+      "1. batir los huevos, rallar o cortar el queso, preparar espinaca.",
+      "2. Calentar una sarten con un poco de aceite o mantequilla.",
+      "3. Agregar los ingredientes preparados y luego incorporar el huevo.",
+      "4. Cocinar hasta que el huevo este en el punto deseado.",
+      "5. Ajustar sal y especias al gusto y servir."
+    ]
+  },
+  {
+    "receta_id": 208,
+    "nombre": "cebollas encurtidas express",
+    "categoria": "comida",
+    "tipo": "completa",
+    "ingredientes_clave": [
+      {
+        "item": "cebolla morada",
+        "qty": 1,
+        "unit": "ud"
+      },
+      {
+        "item": "vinagre chiles",
+        "qty": 3,
+        "unit": "cda"
+      },
+      {
+        "item": "limon",
+        "qty": 1,
+        "unit": "ud"
+      }
+    ],
+    "ingredientes_base": [
+      "sal",
+      "oregano"
+    ],
+    "dificultad": "baja",
+    "tiempo_min": 15,
+    "calorias_aprox": 300,
+    "tags": [
+      "ahorro",
+      "condimento"
+    ],
+    "proceso_corto": "Preparar y mezclar los ingredientes principales. Añadir ingredientes base y ajustar sal al gusto. Servir caliente o frío según corresponda.",
+    "proceso_detallado": [
+      "1. picar la cebolla finamente, preparar vinagre chiles, preparar limon.",
+      "2. Cocinar o mezclar los ingredientes segun el tipo de receta.",
+      "5. Ajustar sal y especias al gusto y servir."
+    ]
+  },
+  {
+    "receta_id": 209,
+    "nombre": "nuggets salsa agridulce",
+    "categoria": "comida",
+    "tipo": "completa",
+    "ingredientes_clave": [
+      {
+        "item": "nuggets",
+        "qty": 6,
+        "unit": "ud"
+      },
+      {
+        "item": "mermelada",
+        "qty": 2,
+        "unit": "cda"
+      },
+      {
+        "item": "mostaza",
+        "qty": 1,
+        "unit": "cda"
+      }
+    ],
+    "ingredientes_base": [
+      "vinagre"
+    ],
+    "dificultad": "baja",
+    "tiempo_min": 15,
+    "calorias_aprox": 300,
+    "tags": [
+      "congelador",
+      "rapido"
+    ],
+    "proceso_corto": "Preparar y mezclar los ingredientes principales. Añadir ingredientes base y ajustar sal al gusto. Servir caliente o frío según corresponda.",
+    "proceso_detallado": [
+      "1. preparar nuggets, preparar mermelada, preparar mostaza.",
+      "2. Cocinar o mezclar los ingredientes segun el tipo de receta.",
+      "5. Ajustar sal y especias al gusto y servir."
+    ]
+  },
+  {
+    "receta_id": 210,
+    "nombre": "pesto hierbas marchitas",
+    "categoria": "comida",
+    "tipo": "completa",
+    "ingredientes_clave": [
+      {
+        "item": "cilantro",
+        "qty": 1,
+        "unit": "manojo"
+      },
+      {
+        "item": "aceite oliva",
+        "qty": 50,
+        "unit": "ml"
+      },
+      {
+        "item": "queso seco",
+        "qty": 20,
+        "unit": "gr"
+      }
+    ],
+    "ingredientes_base": [
+      "ajo",
+      "sal"
+    ],
+    "dificultad": "baja",
+    "tiempo_min": 15,
+    "calorias_aprox": 300,
+    "tags": [
+      "residuo-cero",
+      "salsa"
+    ],
+    "proceso_corto": "Preparar y mezclar los ingredientes principales. Añadir ingredientes base y ajustar sal al gusto. Servir caliente o frío según corresponda.",
+    "proceso_detallado": [
+      "1. preparar cilantro, preparar aceite oliva, rallar o cortar el queso.",
+      "2. Cocinar o mezclar los ingredientes segun el tipo de receta.",
+      "5. Ajustar sal y especias al gusto y servir."
+    ]
+  },
+  {
+    "receta_id": 211,
+    "nombre": "papas aderezo ranch",
+    "categoria": "snack",
+    "tipo": "completa",
+    "ingredientes_clave": [
+      {
+        "item": "patata",
+        "qty": 2,
+        "unit": "ud"
+      },
+      {
+        "item": "aderezo ranch",
+        "qty": 2,
+        "unit": "cda"
+      },
+      {
+        "item": "tocino",
+        "qty": 20,
+        "unit": "gr"
+      }
+    ],
+    "ingredientes_base": [
+      "queso",
+      "sal"
+    ],
+    "dificultad": "baja",
+    "tiempo_min": 15,
+    "calorias_aprox": 300,
+    "tags": [
+      "snack",
+      "calorico"
+    ],
+    "proceso_corto": "Preparar y mezclar los ingredientes principales. Añadir ingredientes base y ajustar sal al gusto. Servir caliente o frío según corresponda.",
+    "proceso_detallado": [
+      "1. preparar patata, preparar aderezo ranch, preparar tocino.",
+      "2. Cocinar o mezclar los ingredientes segun el tipo de receta.",
+      "5. Ajustar sal y especias al gusto y servir."
+    ]
+  },
+  {
+    "receta_id": 212,
+    "nombre": "sandwich meatloaf",
+    "categoria": "comida",
+    "tipo": "completa",
+    "ingredientes_clave": [
+      {
+        "item": "carne cocinada",
+        "qty": 100,
+        "unit": "gr"
+      },
+      {
+        "item": "pan caja",
+        "qty": 2,
+        "unit": "rebanada"
+      },
+      {
+        "item": "ketchup",
+        "qty": 1,
+        "unit": "cda"
+      }
+    ],
+    "ingredientes_base": [
+      "mantequilla"
+    ],
+    "dificultad": "baja",
+    "tiempo_min": 15,
+    "calorias_aprox": 300,
+    "tags": [
+      "sobras",
+      "lunch"
+    ],
+    "proceso_corto": "Preparar y mezclar los ingredientes principales. Añadir ingredientes base y ajustar sal al gusto. Servir caliente o frío según corresponda.",
+    "proceso_detallado": [
+      "1. preparar carne cocinada, preparar pan caja, preparar ketchup.",
+      "2. Cocinar o mezclar los ingredientes segun el tipo de receta.",
+      "5. Ajustar sal y especias al gusto y servir."
+    ]
+  },
+  {
+    "receta_id": 213,
+    "nombre": "pizza pan de caja",
+    "categoria": "comida",
+    "tipo": "completa",
+    "ingredientes_clave": [
+      {
+        "item": "pan caja",
+        "qty": 2,
+        "unit": "rebanada"
+      },
+      {
+        "item": "salsa tomate",
+        "qty": 2,
+        "unit": "cda"
+      },
+      {
+        "item": "queso rallado",
+        "qty": 50,
+        "unit": "gr"
+      }
+    ],
+    "ingredientes_base": [
+      "oregano",
+      "aceitunas"
+    ],
+    "dificultad": "baja",
+    "tiempo_min": 15,
+    "calorias_aprox": 300,
+    "tags": [
+      "ninos",
+      "rapido"
+    ],
+    "proceso_corto": "Preparar y mezclar los ingredientes principales. Añadir ingredientes base y ajustar sal al gusto. Servir caliente o frío según corresponda.",
+    "proceso_detallado": [
+      "1. preparar pan caja, picar el tomate en cubos, rallar o cortar el queso.",
+      "2. Cocinar o mezclar los ingredientes segun el tipo de receta.",
+      "5. Ajustar sal y especias al gusto y servir."
+    ]
+  },
+  {
+    "receta_id": 214,
+    "nombre": "crema verduras varias",
+    "categoria": "comida",
+    "tipo": "completa",
+    "ingredientes_clave": [
+      {
+        "item": "pimiento",
+        "qty": 0.5,
+        "unit": "ud"
+      },
+      {
+        "item": "calabaza",
+        "qty": 0.5,
+        "unit": "ud"
+      },
+      {
+        "item": "leche",
+        "qty": 1,
+        "unit": "taza"
+      }
+    ],
+    "ingredientes_base": [
+      "mantequilla",
+      "caldo"
+    ],
+    "dificultad": "baja",
+    "tiempo_min": 15,
+    "calorias_aprox": 300,
+    "tags": [
+      "vegetal",
+      "sopa"
+    ],
+    "proceso_corto": "Preparar y mezclar los ingredientes principales. Añadir ingredientes base y ajustar sal al gusto. Servir caliente o frío según corresponda.",
+    "proceso_detallado": [
+      "1. preparar pimiento, preparar calabaza, preparar leche.",
+      "2. Cocinar o mezclar los ingredientes segun el tipo de receta.",
+      "5. Ajustar sal y especias al gusto y servir."
+    ]
+  },
+  {
+    "receta_id": 215,
+    "nombre": "tacos recalentado",
+    "categoria": "comida",
+    "tipo": "completa",
+    "ingredientes_clave": [
+      {
+        "item": "carne sobras",
+        "qty": 100,
+        "unit": "gr"
+      },
+      {
+        "item": "tortilla",
+        "qty": 3,
+        "unit": "ud"
+      },
+      {
+        "item": "salsa frasco",
+        "qty": 2,
+        "unit": "cda"
+      }
+    ],
+    "ingredientes_base": [
+      "aceite"
+    ],
+    "dificultad": "baja",
+    "tiempo_min": 15,
+    "calorias_aprox": 300,
+    "tags": [
+      "sobras",
+      "mexicano"
+    ],
+    "proceso_corto": "Preparar y mezclar los ingredientes principales. Añadir ingredientes base y ajustar sal al gusto. Servir caliente o frío según corresponda.",
+    "proceso_detallado": [
+      "1. preparar carne sobras, preparar tortilla, preparar salsa frasco.",
+      "2. Cocinar o mezclar los ingredientes segun el tipo de receta.",
+      "5. Ajustar sal y especias al gusto y servir."
+    ]
+  },
+  {
+    "receta_id": 216,
+    "nombre": "aguacate atun",
+    "categoria": "comida",
+    "tipo": "completa",
+    "ingredientes_clave": [
+      {
+        "item": "aguacate",
+        "qty": 1,
+        "unit": "ud"
+      },
+      {
+        "item": "atun lata",
+        "qty": 1,
+        "unit": "lata"
+      },
+      {
+        "item": "elote congelado",
+        "qty": 0.25,
+        "unit": "taza"
+      }
+    ],
+    "ingredientes_base": [
+      "mayonesa",
+      "limon"
+    ],
+    "dificultad": "baja",
+    "tiempo_min": 15,
+    "calorias_aprox": 300,
+    "tags": [
+      "frio",
+      "saludable"
+    ],
+    "proceso_corto": "Preparar y mezclar los ingredientes principales. Añadir ingredientes base y ajustar sal al gusto. Servir caliente o frío según corresponda.",
+    "proceso_detallado": [
+      "1. preparar aguacate, preparar atun lata, preparar elote congelado.",
+      "2. Cocinar o mezclar los ingredientes segun el tipo de receta.",
+      "5. Ajustar sal y especias al gusto y servir."
+    ]
+  },
+  {
+    "receta_id": 217,
+    "nombre": "pasta vino blanco",
+    "categoria": "comida",
+    "tipo": "completa",
+    "ingredientes_clave": [
+      {
+        "item": "pasta",
+        "qty": 100,
+        "unit": "gr"
+      },
+      {
+        "item": "vino blanco",
+        "qty": 50,
+        "unit": "ml"
+      },
+      {
+        "item": "ajo",
+        "qty": 2,
+        "unit": "dientes"
+      }
+    ],
+    "ingredientes_base": [
+      "aceite oliva",
+      "parmesano"
+    ],
+    "dificultad": "media",
+    "tiempo_min": 30,
+    "calorias_aprox": 300,
+    "tags": [
+      "puerta",
+      "italiano"
+    ],
+    "proceso_corto": "Hervir la pasta hasta que esté al dente. Añadir ingredientes base y ajustar sal al gusto. Servir caliente o frío según corresponda.",
+    "proceso_detallado": [
+      "1. preparar pasta, preparar vino blanco, preparar ajo.",
+      "2. Hervir agua con sal y cocinar la pasta hasta que este al dente.",
+      "3. Incorporar los ingredientes preparados y mezclar bien.",
+      "5. Ajustar sal y especias al gusto y servir."
+    ]
+  },
+  {
+    "receta_id": 218,
+    "nombre": "huevo cocido simple",
+    "categoria": "comida",
+    "tipo": "minimal",
+    "ingredientes_clave": [
+      {
+        "item": "huevo",
+        "qty": 1,
+        "unit": "ud"
+      }
+    ],
+    "ingredientes_base": [],
+    "dificultad": "baja",
+    "tiempo_min": 15,
+    "calorias_aprox": 300,
+    "tags": [
+      "basico",
+      "proteina",
+      "simple"
+    ],
+    "proceso_corto": "Preparar huevo de forma sencilla. Cocinar hasta que esté en el punto deseado y servir.",
+    "proceso_detallado": [
+      "1. batir los huevos.",
+      "2. Calentar una sarten con un poco de aceite o mantequilla.",
+      "3. Agregar los ingredientes preparados y luego incorporar el huevo.",
+      "4. Cocinar hasta que el huevo este en el punto deseado.",
+      "5. Ajustar sal y especias al gusto y servir."
+    ]
+  },
+  {
+    "receta_id": 219,
+    "nombre": "huevos revueltos basicos",
+    "categoria": "desayuno",
+    "tipo": "minimal",
+    "ingredientes_clave": [
+      {
+        "item": "huevo",
+        "qty": 2,
+        "unit": "ud"
+      }
+    ],
+    "ingredientes_base": [],
+    "dificultad": "baja",
+    "tiempo_min": 15,
+    "calorias_aprox": 300,
+    "tags": [
+      "basico",
+      "desayuno",
+      "simple"
+    ],
+    "proceso_corto": "Preparar huevo de forma sencilla. Cocinar hasta que esté en el punto deseado y servir.",
+    "proceso_detallado": [
+      "1. batir los huevos.",
+      "2. Calentar una sarten con un poco de aceite o mantequilla.",
+      "3. Agregar los ingredientes preparados y luego incorporar el huevo.",
+      "4. Cocinar hasta que el huevo este en el punto deseado.",
+      "5. Ajustar sal y especias al gusto y servir."
+    ]
+  },
+  {
+    "receta_id": 220,
+    "nombre": "huevo frito",
+    "categoria": "comida",
+    "tipo": "minimal",
+    "ingredientes_clave": [
+      {
+        "item": "huevo",
+        "qty": 1,
+        "unit": "ud"
+      }
+    ],
+    "ingredientes_base": [
+      "aceite"
+    ],
+    "dificultad": "baja",
+    "tiempo_min": 15,
+    "calorias_aprox": 300,
+    "tags": [
+      "basico",
+      "rapido"
+    ],
+    "proceso_corto": "Preparar huevo de forma sencilla. Cocinar hasta que esté en el punto deseado y servir.",
+    "proceso_detallado": [
+      "1. batir los huevos.",
+      "2. Calentar una sarten con un poco de aceite o mantequilla.",
+      "3. Agregar los ingredientes preparados y luego incorporar el huevo.",
+      "4. Cocinar hasta que el huevo este en el punto deseado.",
+      "5. Ajustar sal y especias al gusto y servir."
+    ]
+  },
+  {
+    "receta_id": 221,
+    "nombre": "patata cocida",
+    "categoria": "comida",
+    "tipo": "minimal",
+    "ingredientes_clave": [
+      {
+        "item": "patata",
+        "qty": 1,
+        "unit": "ud"
+      }
+    ],
+    "ingredientes_base": [],
+    "dificultad": "baja",
+    "tiempo_min": 15,
+    "calorias_aprox": 300,
+    "tags": [
+      "basico",
+      "vegetariano",
+      "simple"
+    ],
+    "proceso_corto": "Preparar patata de forma sencilla. Cocinar hasta que esté en el punto deseado y servir.",
+    "proceso_detallado": [
+      "1. preparar patata.",
+      "2. Cocinar o mezclar los ingredientes segun el tipo de receta.",
+      "5. Ajustar sal y especias al gusto y servir."
+    ]
+  },
+  {
+    "receta_id": 222,
+    "nombre": "patata al horno simple",
+    "categoria": "comida",
+    "tipo": "minimal",
+    "ingredientes_clave": [
+      {
+        "item": "patata",
+        "qty": 1,
+        "unit": "ud"
+      }
+    ],
+    "ingredientes_base": [],
+    "dificultad": "baja",
+    "tiempo_min": 15,
+    "calorias_aprox": 300,
+    "tags": [
+      "basico",
+      "horno"
+    ],
+    "proceso_corto": "Preparar patata de forma sencilla. Cocinar hasta que esté en el punto deseado y servir.",
+    "proceso_detallado": [
+      "1. preparar patata.",
+      "2. Cocinar o mezclar los ingredientes segun el tipo de receta.",
+      "5. Ajustar sal y especias al gusto y servir."
+    ]
+  },
+  {
+    "receta_id": 223,
+    "nombre": "arroz blanco solo",
+    "categoria": "guarnicion",
+    "tipo": "minimal",
+    "ingredientes_clave": [
+      {
+        "item": "arroz",
+        "qty": 1,
+        "unit": "taza"
+      }
+    ],
+    "ingredientes_base": [
+      "agua"
+    ],
+    "dificultad": "baja",
+    "tiempo_min": 15,
+    "calorias_aprox": 300,
+    "tags": [
+      "basico",
+      "guarnicion"
+    ],
+    "proceso_corto": "Preparar arroz de forma sencilla. Cocinar hasta que esté en el punto deseado y servir.",
+    "proceso_detallado": [
+      "1. preparar arroz.",
+      "2. Cocinar el arroz segun instrucciones hasta que este listo.",
+      "3. Mezclar con los ingredientes preparados y saltear brevemente.",
+      "5. Ajustar sal y especias al gusto y servir."
+    ]
+  },
+  {
+    "receta_id": 224,
+    "nombre": "pasta cocida simple",
+    "categoria": "comida",
+    "tipo": "minimal",
+    "ingredientes_clave": [
+      {
+        "item": "pasta",
+        "qty": 100,
+        "unit": "gr"
+      }
+    ],
+    "ingredientes_base": [
+      "agua"
+    ],
+    "dificultad": "baja",
+    "tiempo_min": 15,
+    "calorias_aprox": 300,
+    "tags": [
+      "basico",
+      "simple"
+    ],
+    "proceso_corto": "Preparar pasta de forma sencilla. Cocinar hasta que esté en el punto deseado y servir.",
+    "proceso_detallado": [
+      "1. preparar pasta.",
+      "2. Hervir agua con sal y cocinar la pasta hasta que este al dente.",
+      "3. Incorporar los ingredientes preparados y mezclar bien.",
+      "5. Ajustar sal y especias al gusto y servir."
+    ]
+  },
+  {
+    "receta_id": 225,
+    "nombre": "pechuga a la plancha simple",
+    "categoria": "comida",
+    "tipo": "minimal",
+    "ingredientes_clave": [
+      {
+        "item": "pollo",
+        "qty": 1,
+        "unit": "filete"
+      }
+    ],
+    "ingredientes_base": [],
+    "dificultad": "baja",
+    "tiempo_min": 15,
+    "calorias_aprox": 300,
+    "tags": [
+      "basico",
+      "proteina"
+    ],
+    "proceso_corto": "Preparar pollo de forma sencilla. Cocinar hasta que esté en el punto deseado y servir.",
+    "proceso_detallado": [
+      "1. cortar el pollo en trozos.",
+      "2. Cocinar el pollo en sarten hasta que este dorado y bien hecho.",
+      "3. Agregar los demas ingredientes y cocinar unos minutos mas.",
+      "5. Ajustar sal y especias al gusto y servir."
+    ]
+  },
+  {
+    "receta_id": 226,
+    "nombre": "carne a la plancha simple",
+    "categoria": "comida",
+    "tipo": "minimal",
+    "ingredientes_clave": [
+      {
+        "item": "carne de res",
+        "qty": 1,
+        "unit": "filete"
+      }
+    ],
+    "ingredientes_base": [],
+    "dificultad": "baja",
+    "tiempo_min": 15,
+    "calorias_aprox": 300,
+    "tags": [
+      "basico",
+      "proteina"
+    ],
+    "proceso_corto": "Preparar carne de res de forma sencilla. Cocinar hasta que esté en el punto deseado y servir.",
+    "proceso_detallado": [
+      "1. preparar carne de res.",
+      "2. Cocinar o mezclar los ingredientes segun el tipo de receta.",
+      "5. Ajustar sal y especias al gusto y servir."
+    ]
+  },
+  {
+    "receta_id": 227,
+    "nombre": "pescado a la plancha simple",
+    "categoria": "comida",
+    "tipo": "minimal",
+    "ingredientes_clave": [
+      {
+        "item": "pescado",
+        "qty": 1,
+        "unit": "filete"
+      }
+    ],
+    "ingredientes_base": [],
+    "dificultad": "baja",
+    "tiempo_min": 15,
+    "calorias_aprox": 300,
+    "tags": [
+      "basico",
+      "ligero"
+    ],
+    "proceso_corto": "Preparar pescado de forma sencilla. Cocinar hasta que esté en el punto deseado y servir.",
+    "proceso_detallado": [
+      "1. preparar pescado.",
+      "2. Cocinar o mezclar los ingredientes segun el tipo de receta.",
+      "5. Ajustar sal y especias al gusto y servir."
+    ]
+  },
+  {
+    "receta_id": 228,
+    "nombre": "zanahoria cocida",
+    "categoria": "comida",
+    "tipo": "minimal",
+    "ingredientes_clave": [
+      {
+        "item": "zanahoria",
+        "qty": 1,
+        "unit": "ud"
+      }
+    ],
+    "ingredientes_base": [],
+    "dificultad": "baja",
+    "tiempo_min": 15,
+    "calorias_aprox": 300,
+    "tags": [
+      "basico",
+      "vegetal"
+    ],
+    "proceso_corto": "Preparar zanahoria de forma sencilla. Cocinar hasta que esté en el punto deseado y servir.",
+    "proceso_detallado": [
+      "1. preparar zanahoria.",
+      "2. Cocinar o mezclar los ingredientes segun el tipo de receta.",
+      "5. Ajustar sal y especias al gusto y servir."
+    ]
+  },
+  {
+    "receta_id": 229,
+    "nombre": "brocoli al vapor simple",
+    "categoria": "comida",
+    "tipo": "minimal",
+    "ingredientes_clave": [
+      {
+        "item": "brocoli",
+        "qty": 1,
+        "unit": "cabeza"
+      }
+    ],
+    "ingredientes_base": [],
+    "dificultad": "baja",
+    "tiempo_min": 15,
+    "calorias_aprox": 300,
+    "tags": [
+      "basico",
+      "vegetal"
+    ],
+    "proceso_corto": "Preparar brocoli de forma sencilla. Cocinar hasta que esté en el punto deseado y servir.",
+    "proceso_detallado": [
+      "1. preparar brocoli.",
+      "2. Cocinar o mezclar los ingredientes segun el tipo de receta.",
+      "5. Ajustar sal y especias al gusto y servir."
+    ]
+  },
+  {
+    "receta_id": 230,
+    "nombre": "calabacita cocida",
+    "categoria": "comida",
+    "tipo": "minimal",
+    "ingredientes_clave": [
+      {
+        "item": "calabacita",
+        "qty": 1,
+        "unit": "ud"
+      }
+    ],
+    "ingredientes_base": [],
+    "dificultad": "baja",
+    "tiempo_min": 15,
+    "calorias_aprox": 300,
+    "tags": [
+      "basico",
+      "vegetariano"
+    ],
+    "proceso_corto": "Preparar calabacita de forma sencilla. Cocinar hasta que esté en el punto deseado y servir.",
+    "proceso_detallado": [
+      "1. preparar calabacita.",
+      "2. Cocinar o mezclar los ingredientes segun el tipo de receta.",
+      "5. Ajustar sal y especias al gusto y servir."
+    ]
+  },
+  {
+    "receta_id": 231,
+    "nombre": "lentejas cocidas",
+    "categoria": "comida",
+    "tipo": "minimal",
+    "ingredientes_clave": [
+      {
+        "item": "lentejas",
+        "qty": 1,
+        "unit": "taza"
+      }
+    ],
+    "ingredientes_base": [
+      "agua"
+    ],
+    "dificultad": "baja",
+    "tiempo_min": 15,
+    "calorias_aprox": 300,
+    "tags": [
+      "basico",
+      "legumbre"
+    ],
+    "proceso_corto": "Preparar lentejas de forma sencilla. Cocinar hasta que esté en el punto deseado y servir.",
+    "proceso_detallado": [
+      "1. preparar lentejas.",
+      "2. Cocinar o mezclar los ingredientes segun el tipo de receta.",
+      "5. Ajustar sal y especias al gusto y servir."
+    ]
+  },
+  {
+    "receta_id": 232,
+    "nombre": "garbanzos cocidos",
+    "categoria": "comida",
+    "tipo": "minimal",
+    "ingredientes_clave": [
+      {
+        "item": "garbanzo",
+        "qty": 1,
+        "unit": "taza"
+      }
+    ],
+    "ingredientes_base": [
+      "agua"
+    ],
+    "dificultad": "baja",
+    "tiempo_min": 15,
+    "calorias_aprox": 300,
+    "tags": [
+      "basico",
+      "legumbre"
+    ],
+    "proceso_corto": "Preparar garbanzo de forma sencilla. Cocinar hasta que esté en el punto deseado y servir.",
+    "proceso_detallado": [
+      "1. preparar garbanzo.",
+      "2. Cocinar o mezclar los ingredientes segun el tipo de receta.",
+      "5. Ajustar sal y especias al gusto y servir."
+    ]
+  },
+  {
+    "receta_id": 233,
+    "nombre": "platano en rodajas",
+    "categoria": "comida",
+    "tipo": "minimal",
+    "ingredientes_clave": [
+      {
+        "item": "platano",
+        "qty": 1,
+        "unit": "ud"
+      }
+    ],
+    "ingredientes_base": [],
+    "dificultad": "baja",
+    "tiempo_min": 15,
+    "calorias_aprox": 300,
+    "tags": [
+      "basico",
+      "fruta",
+      "sin coccion"
+    ],
+    "proceso_corto": "Preparar platano de forma sencilla. Cocinar hasta que esté en el punto deseado y servir.",
+    "proceso_detallado": [
+      "1. preparar platano.",
+      "2. Cocinar o mezclar los ingredientes segun el tipo de receta.",
+      "5. Ajustar sal y especias al gusto y servir."
+    ]
+  },
+  {
+    "receta_id": 234,
+    "nombre": "manzana en rebanadas",
+    "categoria": "comida",
+    "tipo": "minimal",
+    "ingredientes_clave": [
+      {
+        "item": "manzana",
+        "qty": 1,
+        "unit": "ud"
+      }
+    ],
+    "ingredientes_base": [],
+    "dificultad": "baja",
+    "tiempo_min": 15,
+    "calorias_aprox": 300,
+    "tags": [
+      "basico",
+      "fruta",
+      "sin coccion"
+    ],
+    "proceso_corto": "Preparar manzana de forma sencilla. Cocinar hasta que esté en el punto deseado y servir.",
+    "proceso_detallado": [
+      "1. preparar manzana.",
+      "2. Cocinar o mezclar los ingredientes segun el tipo de receta.",
+      "5. Ajustar sal y especias al gusto y servir."
+    ]
+  },
+  {
+    "receta_id": 235,
+    "nombre": "queso en cubos",
+    "categoria": "snack",
+    "tipo": "minimal",
+    "ingredientes_clave": [
+      {
+        "item": "queso",
+        "qty": 100,
+        "unit": "gr"
+      }
+    ],
+    "ingredientes_base": [],
+    "dificultad": "baja",
+    "tiempo_min": 15,
+    "calorias_aprox": 300,
+    "tags": [
+      "basico",
+      "snack"
+    ],
+    "proceso_corto": "Preparar queso de forma sencilla. Cocinar hasta que esté en el punto deseado y servir.",
+    "proceso_detallado": [
+      "1. rallar o cortar el queso.",
+      "2. Cocinar o mezclar los ingredientes segun el tipo de receta.",
+      "5. Ajustar sal y especias al gusto y servir."
+    ]
+  }
+]

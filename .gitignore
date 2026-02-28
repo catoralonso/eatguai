@@ -1,5 +1,7 @@
-# Datos y persistencia
-data/
+# Datos auto-generados (no subir)
+data/ratings.csv
+data/session_state.json
+data/app.log
 
 # Python
 __pycache__/
