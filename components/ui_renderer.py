@@ -192,8 +192,9 @@ class UIRenderer:
             return ""
         
         cards = []
-        for ing in sorted(ingredients, key=lambda x: x.confidence, reverse=True):
-            emoji = cls._get_ingredient_emoji(ing.name)
+        for i, ing in enumerate(sorted(ingredients, key=lambda x: x.confidence, reverse=True)):
+            emoji, cat_color = cls.get_ingredient_visual(ing.name)
+            delay = f"animation-delay:{i*0.1}s;" if i < 6 else ""
             
             cards.append(f"""
             <div class="glass-panel" style="
@@ -204,14 +205,12 @@ class UIRenderer:
             ">
                 <div style="
                     position: absolute;
-                    top: 0;
-                    left: 0;
-                    right: 0;
-                    height: 3px;
+                    top: 0; left: 0; right: 0; height: 3px;
                     background: {ing.color};
-                    opacity: 0.6;
+                    opacity: 0.8;
+                    box-shadow: 0 0 8px {ing.color};
                 "></div>
-                <div style="font-size: 2em; margin-bottom: 8px; filter: drop-shadow(0 0 8px {ing.color});">
+                <div style="font-size: 2.2em; margin-bottom: 8px; filter: drop-shadow(0 0 6px {ing.color}); animation:float 3s ease-in-out infinite;">
                     {emoji}
                 </div>
                 <div style="font-family: var(--font-body); font-size: 0.9em; color: var(--text-primary); margin-bottom: 4px;">
@@ -239,63 +238,163 @@ class UIRenderer:
         """
     
     @classmethod
-    def _get_ingredient_emoji(cls, name: str) -> str:
-        """Mapeo de ingredientes a emojis."""
-        mapping = {
-            "huevo": "🥚", "huevos": "🥚",
-            "leche": "🥛", "queso": "🧀", "yogur": "🥛",
-            "pollo": "🍗", "carne": "🥩", "pescado": "🐟", "atún": "🐟",
-            "tomate": "🍅", "lechuga": "🥬", "cebolla": "🧅", "ajo": "🧄",
-            "papa": "🥔", "patata": "🥔", "zanahoria": "🥕",
-            "arroz": "🍚", "pasta": "🍝", "pan": "🍞",
-            "manzana": "🍎", "plátano": "🍌", "naranja": "🍊",
-            "aceite": "🫒", "mantequilla": "🧈",
-            "sal": "🧂", "azúcar": "🍬",
+    def get_ingredient_visual(cls, name: str) -> tuple:
+        """Retorna (emoji, color_de_categoría)"""
+        categories = {
+            "proteina": {
+                "items": ["huevo", "huevos", "pollo", "carne", "pescado", "atún", "jamón", "tocino"],
+                "emoji": "🥩",
+                "color": "#f87171"
+            },
+            "lacteo": {
+                "items": ["leche", "queso", "yogur", "mantequilla", "crema", "nata"],
+                "emoji": "🥛",
+                "color": "#60a5fa"
+            },
+            "vegetal": {
+                "items": ["tomate", "lechuga", "cebolla", "ajo", "papa", "patata", "zanahoria", "pimiento"],
+                "emoji": "🥬",
+                "color": "#34d399"
+            },
+            "fruta": {
+                "items": ["manzana", "plátano", "naranja", "limón", "fresa", "uva"],
+                "emoji": "🍎",
+                "color": "#fbbf24"
+            },
+            "grano": {
+                "items": ["arroz", "pasta", "pan", "harina", "avena"],
+                "emoji": "🌾",
+                "color": "#d4d4d8"
+            },
+            "condimento": {
+                "items": ["sal", "pimienta", "aceite", "vinagre", "salsa"],
+                "emoji": "🧂",
+                "color": "#a78bfa"
+            }
         }
-        return mapping.get(name.lower(), "🥘")
+        
+        name_lower = name.lower()
+        for cat, data in categories.items():
+            if any(item in name_lower for item in data["items"]):
+                return data["emoji"], data["color"]
+        
+        return "🥘", "#94a3b8"
     
     @classmethod
-    def render_empty_state(cls, message: str = "Los resultados aparecerán aquí") -> str:
-        """Estado vacío elegante."""
+    def render_empty_state(cls, message: str = "Los resultados aparecerán aquí", 
+                           tipo: str = "default") -> str:
+        """Empty state con icono temático y animación."""
+        
+        icons = {
+            "default": "🧊",
+            "no_results": "🔍❄️",
+            "error": "⚠️🧊",
+            "success": "✨🍽️"
+        }
+        icon = icons.get(tipo, "🧊")
+        
+        subtipos = {
+            "default": "Sube una foto de tu nevera para comenzar",
+            "no_results": "Prueba con otros ingredientes o filtros diferentes",
+            "error": "Verifica la conexión e intenta de nuevo",
+            "success": "¡Listo para cocinar!"
+        }
+        sub = subtipos.get(tipo, "")
+        
         return f"""
         <div style="
-            text-align: center;
-            padding: 60px 20px;
-            color: var(--text-muted);
-            font-family: var(--font-body);
-            border: 2px dashed var(--border-subtle);
-            border-radius: 16px;
-            margin: 20px 0;
+            text-align:center; padding:60px 20px; color:var(--text-muted);
+            font-family:var(--font-body); border:2px dashed var(--border-subtle);
+            border-radius:16px; margin:20px 0; position:relative; overflow:hidden;
         ">
-            <div style="font-size: 3em; margin-bottom: 16px; opacity: 0.5;">🧊</div>
-            <p style="font-size: 1.1em; margin: 0;">{message}</p>
+            <div style="
+                font-size:3.5em; margin-bottom:20px; opacity:0.6;
+                animation:float 6s ease-in-out infinite;
+                filter:drop-shadow(0 0 20px rgba(125,211,252,0.2));
+            ">
+                {icon}
+            </div>
+            <p style="font-size:1.1em; margin:0 0 8px 0; color:var(--text-secondary);">
+                {message}
+            </p>
+            <p style="font-size:0.85em; margin:0; opacity:0.6;">{sub}</p>
         </div>
+        
+        <style>
+            @keyframes float {{
+                0%, 100% {{ transform:translateY(0px); }}
+                50% {{ transform:translateY(-10px); }}
+            }}
+        </style>
         """
     
     @classmethod
     def render_scanning(cls) -> str:
-        """Efecto de escaneo."""
+        """Efecto de escaneo moderno con puntos de carga."""
         return """
         <div style="
-            position: relative;
-            height: 200px;
-            background: var(--bg-secondary);
-            border-radius: 16px;
-            overflow: hidden;
-            display: flex;
-            align-items: center;
-            justify-content: center;
+            position:relative; height:220px; background:var(--bg-secondary);
+            border-radius:16px; overflow:hidden; display:flex; 
+            flex-direction:column; align-items:center; justify-content:center;
+            gap:20px;
         ">
             <div class="scanning-overlay"></div>
-            <div style="text-align: center; z-index: 1;">
-                <div style="font-size: 2em; margin-bottom: 12px;">🔍</div>
-                <div class="text-label">Analizando nevera...</div>
-                <div style="margin-top: 8px; font-family: var(--font-data); color: var(--ice-blue);">
-                    Procesando imagen con Gemini AI
+            
+            <div style="display:flex; gap:6px;">
+                <div style="
+                    width:10px; height:10px; background:var(--ice-blue);
+                    border-radius:50%; animation:dotPulse 1.4s infinite ease-in-out both;
+                "></div>
+                <div style="
+                    width:10px; height:10px; background:var(--ice-blue);
+                    border-radius:50%; animation:dotPulse 1.4s infinite ease-in-out both 0.2s;
+                "></div>
+                <div style="
+                    width:10px; height:10px; background:var(--ice-blue);
+                    border-radius:50%; animation:dotPulse 1.4s infinite ease-in-out both 0.4s;
+                "></div>
+            </div>
+            
+            <div style="text-align:center; z-index:1;">
+                <div class="text-label" style="margin-bottom:6px;">Analizando nevera</div>
+                <div style="font-family:var(--font-data); font-size:0.8em; color:var(--text-muted);">
+                    Detectando ingredientes...
                 </div>
             </div>
         </div>
+        
+        <style>
+            @keyframes dotPulse {
+                0%, 80%, 100% { transform:scale(0.6); opacity:0.4; }
+                40% { transform:scale(1); opacity:1; box-shadow:0 0 10px var(--ice-blue); }
+            }
+        </style>
         """
+    @classmethod
+    def render_match_ring(cls, match: float, color: str, label: str) -> str:
+        """Anillo circular de progreso con porcentaje."""
+        circumference = 2 * 3.14159 * 16
+        offset = circumference * (1 - match / 100)
+
+        html = (
+            f'<div style="position:relative; width:46px; height:46px; flex-shrink:0;">'
+            f'<svg width="46" height="46" style="transform:rotate(-90deg);">'
+            f'<circle cx="23" cy="23" r="16" fill="none" stroke="rgba(255,255,255,0.08)" stroke-width="3"/>'
+            f'<circle cx="23" cy="23" r="16" fill="none" stroke="{color}" stroke-width="3"'
+            f' stroke-dasharray="{circumference}" stroke-dashoffset="{offset}"'
+            f' stroke-linecap="round"'
+            f' style="transition:stroke-dashoffset 1s ease-out; filter:drop-shadow(0 0 3px {color});"/>'
+            f'</svg>'
+            f'<div style="position:absolute; inset:0; display:flex; flex-direction:column; align-items:center; justify-content:center;">'
+            f'<div style="font-family:var(--font-data); font-size:0.6em; font-weight:700; color:{color};">{match:.0f}%</div>'
+            f'</div>'
+            f'<div style="position:absolute; bottom:-14px; left:50%; transform:translateX(-50%); font-size:0.55em; color:{color}; white-space:nowrap; opacity:0.9;">'
+            f'{label}'
+            f'</div>'
+            f'</div>'
+        )
+        return html        
+
     @classmethod
     def render_recipe_card(cls, rec: Any, modo: str = "survival") -> str:
         """Tarjeta completa de receta. Acepta objeto Recommendation."""
@@ -414,17 +513,7 @@ class UIRenderer:
                     </div>
                 </div>
                 <div style="display:flex; align-items:center; gap:16px;">
-                    <div style="text-align:right;">
-                        <div style="font-family:{TYPO.DATA}; font-size:0.75em;
-                                    color:{match_color}; margin-bottom:4px;">
-                            {match_label}
-                        </div>
-                        <div style="width:100px; background:{COLORS.BG_TERTIARY};
-                                    border-radius:99px; height:5px; overflow:hidden;">
-                            <div style="background:{match_color}; width:{match:.0f}%;
-                                        height:100%; border-radius:99px;"></div>
-                        </div>
-                    </div>
+                {cls.render_match_ring(match, match_color, match_label)}
                     <span id="arrow_{recipe_id}" style="color:{COLORS.TEXT_MUTED};
                           font-size:0.8em;">▼</span>
                 </div>
