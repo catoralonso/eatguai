@@ -56,8 +56,8 @@ def analizar_nevera(imagen, n_recetas, confianza, filtro_tiempo, filtro_faltan, 
 
     if imagen is None:
         yield (
-            renderer.render_empty_state("Sube una foto de tu nevera"),
-            renderer.render_empty_state(),
+            renderer.render_empty_state("Sube una foto de tu nevera", "default"),
+            renderer.render_empty_state("Los resultados aparecerán aquí", "default"),
             {},
             gr.update(choices=[]),
             gr.update(visible=False),
@@ -67,7 +67,7 @@ def analizar_nevera(imagen, n_recetas, confianza, filtro_tiempo, filtro_faltan, 
     # Efecto de escaneo mientras procesa
     yield (
         renderer.render_scanning(),
-        "<p style='color:var(--ice-blue); text-align:center; padding:20px;'>Procesando imagen...</p>",
+        renderer.render_empty_state("Procesando imagen...", "default"),
         {},
         gr.update(choices=[]),
         gr.update(visible=False),
@@ -90,8 +90,8 @@ def analizar_nevera(imagen, n_recetas, confianza, filtro_tiempo, filtro_faltan, 
 
         if not ingredientes:
             yield (
-                "",
-                renderer.render_empty_state("No se detectaron ingredientes. Prueba con mejor iluminación."),
+                renderer.render_empty_state("No se detectaron ingredientes", "error"),
+                renderer.render_empty_state("Prueba con mejor iluminación", "no_results"),
                 {},
                 gr.update(choices=[]),
                 gr.update(visible=False),
@@ -122,7 +122,7 @@ def analizar_nevera(imagen, n_recetas, confianza, filtro_tiempo, filtro_faltan, 
         if not resultados:
             yield (
                 ing_html,
-                renderer.render_empty_state("No hay recetas con esos ingredientes y filtros."),
+                renderer.render_empty_state("No hay recetas con esos filtros", "no_results"),
                 {},
                 gr.update(choices=[]),
                 gr.update(visible=False),
@@ -151,19 +151,17 @@ def analizar_nevera(imagen, n_recetas, confianza, filtro_tiempo, filtro_faltan, 
         )
 
     except VisionError as e:
-        logger.error(f"Error de visión: {e}")
         yield (
-            "",
-            f"<p style='color:var(--error); padding:20px;'>❌ Error analizando imagen: {e}</p>",
+            renderer.render_empty_state(f"Error de visión: {e}", "error"),
+            renderer.render_empty_state("Inténtalo de nuevo", "error"),
             {},
             gr.update(choices=[]),
             gr.update(visible=False),
         )
     except Exception as e:
-        logger.error(f"Error inesperado: {e}")
         yield (
-            "",
-            f"<p style='color:var(--error); padding:20px;'>❌ Error inesperado: {e}</p>",
+            renderer.render_empty_state("Error inesperado", "error"),
+            renderer.render_empty_state(str(e), "error"),
             {},
             gr.update(choices=[]),
             gr.update(visible=False),
@@ -551,6 +549,17 @@ button.secondary:hover {{
     margin: 0 !important;
     padding: 0 !important;
 }}
+
+/* Animaciones para empty states y elementos */
+@keyframes float {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+}
+
+@keyframes dotPulse {
+    0%, 80%, 100% { transform: scale(0.6); opacity: 0.4; }
+    40% { transform: scale(1); opacity: 1; box-shadow: 0 0 10px var(--ice-blue); }
+}
 """
 
 # =============================================================================
