@@ -204,8 +204,8 @@ def guardar_rating(receta_sel, gusto, relevancia, estado):
         session_id=store.session.session_id,
     )
     store.add_rating(rating)
-    return f"<span style='color:var(--success);'>✅ Guardado: {receta_sel}</span>"
-
+    return gr.update(
+    value=f"<span style='color:var(--success);'>✅ Guardado: {receta_sel}</span>", visible=True)
 
 def mostrar_analytics():
     """Renderiza dashboard de sesión."""
@@ -259,9 +259,14 @@ CSS_CUSTOM = f"""
 /* CONTENEDOR PRINCIPAL */
 /* ─────────────────────────────────────────────────────────────────────────── */
 
-.gradio-container {{
-    background: {COLORS.BG_PRIMARY} !important;
-    font-family: 'DM Sans', sans-serif !important;
+.gradio-container-6-8-0 {{
+    border: 1px solid rgba(125, 211, 252, 0.2) !important;
+    border-radius: 20px !important;
+    box-shadow: 
+        0 0 40px rgba(125, 211, 252, 0.1),
+        0 0 80px rgba(125, 211, 252, 0.05),
+        inset 0 0 40px rgba(125, 211, 252, 0.02) !important;
+    overflow: hidden !important;
 }}
 
 /* ─────────────────────────────────────────────────────────────────────────── */
@@ -540,7 +545,7 @@ button.secondary:hover {{
     border-color: rgba(125, 211, 252, 0.5) !important;
 }}
 
-/* Quitar espacios de HTML injectado */
+/* HTML inyectado - transparente */
 .gradio-html {{
     background: transparent !important;
     border: none !important;
@@ -549,16 +554,7 @@ button.secondary:hover {{
     margin: 0 !important;
 }}
 
-/* Separador invisible (usa esto en lugar de gr.HTML con height) */
-.spacer {{
-    height: 8px !important;
-    background: transparent !important;
-    border: none !important;
-    margin: 0 !important;
-    padding: 0 !important;
-}}
-
-/* Animaciones para empty states y elementos */
+/* Animaciones */
 @keyframes float {{
     0%, 100% {{ transform: translateY(0px); }}
     50% {{ transform: translateY(-10px); }}
@@ -568,7 +564,7 @@ button.secondary:hover {{
     40% {{ transform: scale(1); opacity: 1; box-shadow: 0 0 10px var(--ice-blue); }}
 }}
 
-/* Label universal - cubre TODOS los componentes */
+/* Labels universales */
 [data-testid="block-info"] {{
     color: {COLORS.ICE_BLUE} !important;
     font-family: 'Space Grotesk', sans-serif !important;
@@ -581,39 +577,33 @@ button.secondary:hover {{
     margin-bottom: 8px !important;
 }}
 
-/* Quitar fondo gris del form contenedor */
+/* Form contenedor - transparente */
 .form.svelte-d5xbca {{
     background: transparent !important;
     border: none !important;
     box-shadow: none !important;
 }}
 
-/* Quitar border-style solid que Gradio inyecta inline */
+/* Todos los bloques con brillo */
 .block.svelte-1plpy97 {{
     border-style: none !important;
     background: {COLORS.BG_SECONDARY} !important;
     border: 1px solid rgba(125, 211, 252, 0.25) !important;
     border-radius: 16px !important;
+    padding: 16px !important;
     box-shadow: 
         0 0 18px rgba(125, 211, 252, 0.15),
         0 0 40px rgba(125, 211, 252, 0.06),
         inset 0 0 20px rgba(125, 211, 252, 0.03) !important;
 }}
 
-/* Radio horizontal */
-.gradio-radio .wrap.svelte-e4x47i {{
+/* Fieldset (radio) - mismo estilo + flex para centrar */
+fieldset.block.svelte-1plpy97,
+fieldset[style*="border-style: solid"] {{
+    border-style: none !important;
     display: flex !important;
-    flex-direction: row !important;
-    gap: 8px !important;
-}}
-
-/* Dropdown más pequeño */
-.svelte-1xfsv4t.container {{
-    min-height: unset !important;
-}}
-.wrap.svelte-1xfsv4t {{
-    min-height: unset !important;
-    padding: 4px 8px !important;
+    flex-direction: column !important;
+    justify-content: center !important;
 }}
 
 /* Radio en fila horizontal */
@@ -622,35 +612,55 @@ button.secondary:hover {{
     flex-direction: row !important;
     flex-wrap: nowrap !important;
     gap: 8px !important;
-    padding: 4px !important;
+    padding: 8px 4px !important;
+    align-items: center !important;
 }}
 
-/* Radio labels centrados con padding */
+/* Radio labels */
+input[type="radio"].svelte-19qdtil {{
+    display: none !important;
+}}
+
 label.svelte-19qdtil {{
     display: flex !important;
     align-items: center !important;
-    padding: 6px 8px !important;
+    justify-content: center !important;
+    padding: 8px 12px !important;
     border-radius: 8px !important;
     background: rgba(255,255,255,0.03) !important;
     border: 1px solid rgba(125,211,252,0.15) !important;
     cursor: pointer !important;
     flex: 1 !important;
-    justify-content: center !important;
     min-width: 0 !important;
     font-size: 0.85em !important;
+    text-align: center !important;
 }}
 
 label.svelte-19qdtil.selected {{
     background: rgba(125,211,252,0.12) !important;
     border-color: rgba(125,211,252,0.4) !important;
+    color: {COLORS.ICE_BLUE} !important;
 }}
 
-/* Padding interno del bloque para alinear con los demás */
-.block.svelte-1plpy97.padded {{
-    padding: 16px !important;
+label.svelte-19qdtil span.svelte-19qdtil {{
+    margin: 0 !important;
+    padding: 0 !important;
+    line-height: 1 !important;
+    display: block !important;
+    text-align: center !important;
+    width: 100% !important;
 }}
 
-/* Ocultar completamente grupos invisibles */
+/* Dropdown compacto */
+.svelte-1xfsv4t.container {{
+    min-height: unset !important;
+}}
+.wrap.svelte-1xfsv4t {{
+    min-height: unset !important;
+    padding: 4px 8px !important;
+}}
+
+/* Grupos invisibles ocultos */
 .gradio-group[style*="display: none"],
 .gradio-group.hidden {{
     display: none !important;
@@ -659,6 +669,62 @@ label.svelte-19qdtil.selected {{
     padding: 0 !important;
     overflow: hidden !important;
 }}
+
+/* Botón guardar - amarillo */
+button.secondary.svelte-xzq5jh {{
+    background: linear-gradient(135deg, {COLORS.WARNING}, #f59e0b) !important;
+    color: {COLORS.BG_PRIMARY} !important;
+    border: none !important;
+    border-radius: 12px !important;
+    font-family: 'Space Grotesk', sans-serif !important;
+    font-weight: 600 !important;
+    text-transform: uppercase !important;
+    letter-spacing: 1px !important;
+    box-shadow: 0 4px 20px rgba(251, 191, 36, 0.3) !important;
+}}
+
+button.secondary.svelte-xzq5jh:hover {{
+    transform: translateY(-2px) !important;
+    box-shadow: 0 8px 30px rgba(251, 191, 36, 0.4) !important;
+    filter: brightness(1.1) !important;
+}}
+
+/* Dropdown mismo estilo que radio */
+.wrap-inner.svelte-1xfsv4t {{
+    background: rgba(255,255,255,0.03) !important;
+    border: 1px solid rgba(125,211,252,0.15) !important;
+    border-radius: 8px !important;
+    padding: 6px 8px !important;
+    transition: all 0.2s ease !important;
+}}
+
+.wrap-inner.svelte-1xfsv4t:hover {{
+    background: rgba(125,211,252,0.08) !important;
+    border-color: rgba(125,211,252,0.3) !important;
+}}
+
+/* Texto del dropdown */
+.wrap-inner.svelte-1xfsv4t input {{
+    background: transparent !important;
+    border: none !important;
+    color: {COLORS.TEXT_PRIMARY} !important;
+    font-family: 'DM Sans', sans-serif !important;
+}}
+
+/* Flecha del dropdown */
+.dropdown-arrow {{
+    fill: {COLORS.ICE_BLUE} !important;
+    opacity: 0.6 !important;
+}}
+
+/* Quitar fondo gris del wrap externo del dropdown */
+.wrap.svelte-1xfsv4t {{
+    background: transparent !important;
+    border: none !important;
+    padding: 0 !important;
+    min-height: unset !important;
+}}
+
 """
 
 # =============================================================================
@@ -700,13 +766,12 @@ with gr.Blocks(title="🧊 Fridge Survival Guide Pro 🧊", theme=gr.themes.Base
                     filtro_tiempo = gr.Dropdown(choices=OPCIONES_TIEMPO, value="Todos", label="⏱ Tiempo máx.")
                     filtro_faltan = gr.Dropdown(choices=OPCIONES_FALTAN, value="Todos", label="❌ Máx. faltantes")
 
-                    with gr.Group(visible=False) as val_group:
-                        gr.HTML("<div style='height:16px;'></div>")
+                    with gr.Column(visible=False) as val_group:
                         receta_dd   = gr.Dropdown(choices=[], label="⭐ Valorar receta")
                         gusto_radio = gr.Radio(["👍 Me gusta", "👎 No me gusta"], label="¿Te gustó?")
                         rel_radio   = gr.Radio(["Usa lo que tengo", "Me faltan cosas"], label="¿Es relevante?")
                         guardar_btn = gr.Button("Guardar valoración", variant="secondary")
-                        msg_val     = gr.HTML()
+                    msg_val = gr.HTML(value="", visible=False)
 
                 # COLUMNA 3 — Resultados
                 with gr.Column(scale=2, min_width=400):
