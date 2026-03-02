@@ -380,36 +380,44 @@ fieldset[style*="border-style: solid"] {{
     padding: 6px !important;
     border: 1px solid rgba(125, 211, 252, 0.15) !important;
     margin-bottom: 20px !important;
+}}
+
+.tab-nav {{
+    border-bottom: none !important;
     display: flex !important;
     gap: 4px !important;
 }}
 
 /* Botón individual de tab */
 .tab-nav button {{
-    font-family: 'Space Grotesk', sans-serif !important;
-    font-size: 0.75em !important;
-    font-weight: 500 !important;
+    font-family: 'DM Sans', sans-serif !important;
+    font-size: 0.88em !important;
+    font-weight: 400 !important;
     text-transform: uppercase !important;
     letter-spacing: 2px !important;
-    color: rgba(125, 211, 252, 0.6) !important;
+    color: #7dd3fc !important;
+    opacity: 0.85 !important;
     border-radius: 12px !important;
     padding: 12px 24px !important;
     border: none !important;
     background: transparent !important;
     transition: all 0.3s ease !important;
-    cursor: pointer !important;
 }}
 
 .tab-nav button:hover {{
-    color: rgba(125, 211, 252, 0.85) !important;
-    background: rgba(125, 211, 252, 0.05) !important;
+    opacity: 1 !important;
+    color: rgba(125, 211, 252, 0.08) !important;
+    text-shadow: 0 0 10px rgba(125, 211, 252, 0.5) !important;
 }}
 
 .tab-nav button.selected {{
+    opacity: 1 !important;
     color: #7dd3fc !important;
-    background: rgba(125, 211, 252, 0.12) !important;
-    box-shadow: 0 0 20px rgba(125, 211, 252, 0.15) !important;
-    font-weight: 600 !important;
+    background: rgba(125, 211, 252, 0.15) !important;
+    box-shadow: 
+        0 0 20px rgba(125, 211, 252, 0.2),
+        inset 0 0 10px rgba(125, 211, 252, 0.05) !important;
+    font-weight: 400 !important;
 }}
 
 /* Quitar línea inferior de tabs */
@@ -786,7 +794,7 @@ with gr.Blocks(title="🧊 Fridge Survival Guide Pro 🧊", theme=gr.themes.Base
 
     gr.HTML(f"""
     <div style="text-align:center; padding:12px 20px; color:var(--text-muted);
-                font-size:0.75em; border-top:1px solid var(--border-subtle); margin-top:20px;">
+                font-size:0.95em; border-top:1px solid var(--border-subtle); margin-top:20px;">
         🧊 Fridge Survival Guide Pro · Sesión: {store.session.session_id}
     </div>
     """)
