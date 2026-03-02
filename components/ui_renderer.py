@@ -188,97 +188,9 @@ class UIRenderer:
     @classmethod
     def render_ingredients_grid(cls, ingredients: List[Any]) -> str:
         """Grid visual de ingredientes detectados."""
-        if not ingredients:
-            return ""
-        
-        cards = []
         for i, ing in enumerate(sorted(ingredients, key=lambda x: x.confidence, reverse=True)):
-            emoji, cat_color = cls.get_ingredient_visual(ing.name)
-            delay = f"animation-delay:{i*0.1}s;" if i < 6 else ""
-            
-            cards.append(f"""
-            <div class="glass-panel" style="
-                padding: 16px;
-                text-align: center;
-                position: relative;
-                --confidence-color: {ing.color};
-            ">
-                <div style="
-                    position: absolute;
-                    top: 0; left: 0; right: 0; height: 3px;
-                    background: {ing.color};
-                    opacity: 0.8;
-                    box-shadow: 0 0 8px {ing.color};
-                "></div>
-                <div style="font-size: 2.2em; margin-bottom: 8px; filter: drop-shadow(0 0 6px {ing.color}); animation:float 3s ease-in-out infinite;">
-                    {emoji}
-                </div>
-                <div style="font-family: var(--font-body); font-size: 0.9em; color: var(--text-primary); margin-bottom: 4px;">
-                    {ing.name.title()}
-                </div>
-                <div style="font-family: var(--font-data); font-size: 0.75em; color: var(--text-secondary);">
-                    {ing.emoji} {ing.confidence:.0%}
-                </div>
-            </div>
-            """)
-        
-        return f"""
-        <div style="margin: 24px 0;">
-            <div class="text-label" style="margin-bottom: 12px;">
-                Ingredientes Detectados ({len(ingredients)})
-            </div>
-            <div style="
-                display: grid;
-                grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
-                gap: 12px;
-            " class="fade-in">
-                {''.join(cards)}
-            </div>
-        </div>
-        """
-    
-    @classmethod
-    def get_ingredient_visual(cls, name: str) -> tuple:
-        """Retorna (emoji, color_de_categoría)"""
-        categories = {
-            "proteina": {
-                "items": ["huevo", "huevos", "pollo", "carne", "pescado", "atún", "jamón", "tocino"],
-                "emoji": "🥩",
-                "color": "#f87171"
-            },
-            "lacteo": {
-                "items": ["leche", "queso", "yogur", "mantequilla", "crema", "nata"],
-                "emoji": "🥛",
-                "color": "#60a5fa"
-            },
-            "vegetal": {
-                "items": ["tomate", "lechuga", "cebolla", "ajo", "papa", "patata", "zanahoria", "pimiento"],
-                "emoji": "🥬",
-                "color": "#34d399"
-            },
-            "fruta": {
-                "items": ["manzana", "plátano", "naranja", "limón", "fresa", "uva"],
-                "emoji": "🍎",
-                "color": "#fbbf24"
-            },
-            "grano": {
-                "items": ["arroz", "pasta", "pan", "harina", "avena"],
-                "emoji": "🌾",
-                "color": "#d4d4d8"
-            },
-            "condimento": {
-                "items": ["sal", "pimienta", "aceite", "vinagre", "salsa"],
-                "emoji": "🧂",
-                "color": "#a78bfa"
-            }
-        }
-        
-        name_lower = name.lower()
-        for cat, data in categories.items():
-            if any(item in name_lower for item in data["items"]):
-                return data["emoji"], data["color"]
-        
-        return "🥘", "#94a3b8"
+            emoji = ing.emoji
+            cat_color = "#4a6fa5" 
     
     @classmethod
     def render_empty_state(cls, message: str = "Los resultados aparecerán aquí", 
