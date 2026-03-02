@@ -21,50 +21,38 @@ logger = logging.getLogger(__name__)
 vertexai.init(project=CONFIG.VERTEX_PROJECT_ID, location=CONFIG.VERTEX_LOCATION)
 _model = GenerativeModel(CONFIG.GEMINI_MODEL)
 
-# ============================================================================
-# INGREDIENTES A DESCARTAR (del vision.py original)
-# ============================================================================
-
-DISCARD = {
-    "ensalada de frutas", "ensalada de pasta", "mermelada de frutas",
-    "aderezo para ensalada", "fiambre", "verduras de hoja", "hierbas",
-    "aceite de cocina", "botella", "verdura", "comida",
-    "bebida embotellada", "agua",
-}
-
 PROMPT = """
-Mira esta imagen de una nevera y lista TODOS los ingredientes y productos visibles.
-Devuelve ÚNICAMENTE un array JSON, sin ningún otro texto. Formato:
+Eres un asistente especializado en identificar ingredientes de cocina en imágenes de neveras.
+
+Analiza la imagen y devuelve ÚNICAMENTE un array JSON válido, sin texto adicional, sin markdown, sin bloques de código.
+
+Formato exacto:
 [
-    {"name": "nombre del ingrediente", "confidence": 0.95},
-    ...
+    {"name": "zanahoria", "confidence": 0.95, "emoji": "🥕"},
+    {"name": "leche entera", "confidence": 0.90, "emoji": "🥛"}
 ]
-Reglas:
-- Usa nombres simples en ESPAÑOL (ej: "zanahoria" no "zanahoria fresca orgánica")
-- Incluye todo lo visible: frutas, verduras, bebidas, condimentos, lácteos, sobras
-- Confidence: 0.9 si se ve claramente, 0.7 si se ve parcialmente, 0.5 si hay incertidumbre
-- NO incluyas nombres de marcas, pon el ingrediente real (ej: "zumo de naranja" no "Tropicana")
+
+REGLAS para "name":
+- En ESPAÑOL, concreto y cocinero (lo que pondría un chef en una receta)
+- Puedes poner nombres como "pechuga de pollo", "queso manchego", "zumo de naranja"
+- No pongas nombres generales como "comida", "verdura", "botella", "producto", "cosa marrón"
+- No pongas nombres de marca → pon el ingrediente real ("ketchup", no "Heinz")
+- Si solo ves el envase pero no puedes identificar el contenido → omítelo
+- Si ves un plato preparado o tupperware con contenido no identificable → omítelo
+- Si ves un ingrediente procesado reconocible → ponlo ("jamón cocido", "mermelada de fresa")
+
+REGLAS para "confidence":
+- 0.9 → visible con claridad
+- 0.7 → parcialmente visible u ocluido
+- 0.5 → intuyes que está pero no lo ves bien
+- Si la confianza sería menor de 0.5 → omite el ingrediente directamente
+
+REGLAS para "emoji":
+- El emoji que mejor represente VISUALMENTE ese ingrediente específico
+- Un emoji por ingrediente, el más preciso posible
+- Por ejemplo: "salmón" → 🐟, "huevo" → 🥚, "mantequilla" → 🧈, "ajo" → 🧄
+- Evitar usar 🥘 ni 🍽️ como respuesta genérica solo usalo en casos extremos que no sepas qué representa el ingrediente.
 """
-
-# ============================================================================
-# CATEGORÍAS
-# ============================================================================
-
-_CATEGORIES = {
-    "lacteo":      ["leche", "queso", "yogur", "mantequilla", "crema", "nata"],
-    "proteina":    ["pollo", "carne", "pescado", "atun", "huevo", "jamon", "tocino", "salmon"],
-    "vegetal":     ["tomate", "lechuga", "cebolla", "ajo", "patata", "zanahoria", "pimiento", "espinaca"],
-    "fruta":       ["manzana", "platano", "naranja", "limon", "fresa", "uva", "melocoton"],
-    "grano":       ["arroz", "pasta", "pan", "harina", "avena", "legumbre", "lenteja", "garbanzo"],
-    "condimento":  ["sal", "pimienta", "aceite", "vinagre", "salsa", "mostaza"],
-}
-
-def _infer_category(name: str) -> str:
-    name_lower = name.lower()
-    for cat, items in _CATEGORIES.items():
-        if any(item in name_lower for item in items):
-            return cat
-    return "otro"
 
 # ============================================================================
 # NORMALIZACIÓN (del vision.py original)
@@ -139,7 +127,7 @@ def clean_ingredients(
                 name=name,
                 confidence=conf,
                 raw_detection=str(item),
-                category=_infer_category(name),
+                emoji=item.get("emoji", "🥘"),
             ))
             logger.debug(f"  ✓ {name} ({conf:.0%}) [{_infer_category(name)}]")
 
