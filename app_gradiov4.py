@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Fridge Survival Guide - Pro Edition
+EatguAI
 Entry point unificado para Vertex AI Workbench.
 """
 
@@ -30,7 +30,7 @@ from components.ui_renderer import UIRenderer
 from components.analytics import SimpleStore
 
 # ── Inicializar componentes globales ─────────────────────────────────────────
-logger.info("🧊 Iniciando Fridge Survival Guide Pro...")
+logger.info("🧊 Iniciando EatguAI...")
 
 store      = SimpleStore()
 renderer   = UIRenderer()
@@ -62,6 +62,7 @@ def analizar_nevera(imagen, n_recetas, confianza, filtro_tiempo, filtro_faltan, 
             gr.update(choices=[]),
             gr.update(visible=False),
             gr.update(value="", visible=False),
+            gr.update(interactive=True),
         )
         return
 
@@ -73,6 +74,7 @@ def analizar_nevera(imagen, n_recetas, confianza, filtro_tiempo, filtro_faltan, 
         gr.update(choices=[]),
         gr.update(visible=False),
         gr.update(value="", visible=False),
+        gr.update(interactive=True),
     )
 
     try:
@@ -98,6 +100,7 @@ def analizar_nevera(imagen, n_recetas, confianza, filtro_tiempo, filtro_faltan, 
                 gr.update(choices=[]),
                 gr.update(visible=False),
                 gr.update(value="", visible=False),
+                gr.update(interactive=True),
             )
             return
 
@@ -129,6 +132,8 @@ def analizar_nevera(imagen, n_recetas, confianza, filtro_tiempo, filtro_faltan, 
                 {},
                 gr.update(choices=[]),
                 gr.update(visible=False),
+                gr.update(value="", visible=False),
+                gr.update(interactive=True),
             )
             return
 
@@ -151,6 +156,8 @@ def analizar_nevera(imagen, n_recetas, confianza, filtro_tiempo, filtro_faltan, 
             estado,
             gr.update(choices=nombres_recetas, value=None),
             gr.update(visible=True),
+            gr.update(value="", visible=False),
+            gr.update(interactive=True),
         )
 
     except VisionError as e:
@@ -160,6 +167,8 @@ def analizar_nevera(imagen, n_recetas, confianza, filtro_tiempo, filtro_faltan, 
             {},
             gr.update(choices=[]),
             gr.update(visible=False),
+            gr.update(value="", visible=False),
+            gr.update(interactive=True),
         )
     except Exception as e:
         yield (
@@ -168,6 +177,8 @@ def analizar_nevera(imagen, n_recetas, confianza, filtro_tiempo, filtro_faltan, 
             {},
             gr.update(choices=[]),
             gr.update(visible=False),
+            gr.update(value="", visible=False),
+            gr.update(interactive=True),
         )
 
 
@@ -194,7 +205,13 @@ def recomendar_manual(ingredientes_str, n_recetas, filtro_tiempo, filtro_faltan,
 def guardar_rating(receta_sel, gusto, relevancia, estado):
     """Guarda valoración en CSV."""
     if not receta_sel or not gusto or not relevancia:
-        return "<span style='color:var(--warning);'>⚠️ Completa todos los campos.</span>"
+        return (
+            gr.update(value="<span style='color:var(--warning);'>⚠️ Completa todos los campos.</span>", visible=True),
+            gr.update(),
+            gr.update(),
+            gr.update(),
+            gr.update(),
+        )
 
     info   = estado.get(receta_sel, {})
     rating = Rating(
@@ -207,8 +224,13 @@ def guardar_rating(receta_sel, gusto, relevancia, estado):
         session_id=store.session.session_id,
     )
     store.add_rating(rating)
-    return gr.update(
-    value=f"<span style='color:var(--success);'>✅ Guardado: {receta_sel}</span>", visible=False)
+    return (
+        gr.update(value=f"<span style='color:var(--success);'>✅ Guardado: {receta_sel}</span>", visible=True),
+        gr.update(value=None),           # resetea dropdown
+        gr.update(value=None),           # resetea gusto
+        gr.update(value=None),           # resetea relevancia
+        gr.update(interactive=False),    # deshabilita botón para no repetir
+    )
 
 def mostrar_analytics():
     """Renderiza dashboard de sesión."""
@@ -367,62 +389,6 @@ fieldset[style*="border-style: solid"] {{
     display: flex !important;
     flex-direction: column !important;
     justify-content: center !important;
-}}
-
-/* ═══════════════════════════════════════════════════════════════════════════ */
-/* TABS                                                                        */
-/* ═══════════════════════════════════════════════════════════════════════════ */
-
-/* Contenedor principal de tabs */
-.tabs {{
-    background: rgba(255,255,255,0.03) !important;
-    border-radius: 16px !important;
-    padding: 6px !important;
-    border: 1px solid rgba(125, 211, 252, 0.15) !important;
-    margin-bottom: 20px !important;
-}}
-
-.tab-nav {{
-    border-bottom: none !important;
-    display: flex !important;
-    gap: 4px !important;
-}}
-
-/* Botón individual de tab */
-.tab-nav button {{
-    font-family: 'DM Sans', sans-serif !important;
-    font-size: 0.88em !important;
-    font-weight: 400 !important;
-    text-transform: uppercase !important;
-    letter-spacing: 2px !important;
-    color: #7dd3fc !important;
-    opacity: 0.85 !important;
-    border-radius: 12px !important;
-    padding: 12px 24px !important;
-    border: none !important;
-    background: transparent !important;
-    transition: all 0.3s ease !important;
-}}
-
-.tab-nav button:hover {{
-    opacity: 1 !important;
-    color: rgba(125, 211, 252, 0.08) !important;
-    text-shadow: 0 0 10px rgba(125, 211, 252, 0.5) !important;
-}}
-
-.tab-nav button.selected {{
-    opacity: 1 !important;
-    color: #7dd3fc !important;
-    background: rgba(125, 211, 252, 0.15) !important;
-    box-shadow: 
-        0 0 20px rgba(125, 211, 252, 0.2),
-        inset 0 0 10px rgba(125, 211, 252, 0.05) !important;
-    font-weight: 400 !important;
-}}
-
-/* Quitar línea inferior de tabs */
-.tab-nav {{
-    border-bottom: none !important;
 }}
 
 /* ═══════════════════════════════════════════════════════════════════════════ */
@@ -688,13 +654,90 @@ button.secondary.svelte-xzq5jh:hover {{
     40% {{ transform: scale(1); opacity: 1; box-shadow: 0 0 10px var(--ice-blue); }}
 }}
 
+/* ═══════════════════════════════════════════════════════════════════════════ */
+/* TABS — estandarizar colores y eliminar barra blanca                         */
+/* ═══════════════════════════════════════════════════════════════════════════ */
+
+/* Contenedor de tabs — fondo oscuro, sin borde blanco inferior */
+.tab-wrapper.svelte-11gaq1,
+div.tab-wrapper {{
+    background: {COLORS.BG_PRIMARY} !important;
+    border-bottom: 1px solid rgba(125, 211, 252, 0.15) !important;
+    padding: 0 8px !important;
+}}
+
+/* Contenedor interno */
+.tab-container.svelte-11gaq1 {{
+    background: transparent !important;
+    border: none !important;
+    gap: 4px !important;
+}}
+
+/* Todos los botones de tab — estado inactivo */
+.tab-wrapper button.svelte-11gaq1,
+div[role="tablist"] button {{
+    background: transparent !important;
+    color: rgba(125, 211, 252, 0.45) !important;
+    border: none !important;
+    border-bottom: 2px solid transparent !important;
+    border-radius: 8px 8px 0 0 !important;
+    padding: 10px 20px !important;
+    font-family: 'Space Grotesk', sans-serif !important;
+    font-size: 0.9em !important;
+    font-weight: 500 !important;
+    letter-spacing: 0.5px !important;
+    text-transform: uppercase !important;
+    transition: all 0.2s ease !important;
+    cursor: pointer !important;
+}}
+
+/* Hover sobre tab inactivo */
+.tab-wrapper button.svelte-11gaq1:hover,
+div[role="tablist"] button:hover {{
+    color: rgba(125, 211, 252, 0.8) !important;
+    background: rgba(125, 211, 252, 0.05) !important;
+    border-bottom: 2px solid rgba(125, 211, 252, 0.3) !important;
+}}
+
+/* Tab activo — igual que "Analizar Foto" */
+.tab-wrapper button.svelte-11gaq1.selected,
+div[role="tablist"] button[aria-selected="true"] {{
+    background: rgba(125, 211, 252, 0.1) !important;
+    color: {COLORS.ICE_BLUE} !important;
+    border-bottom: 2px solid {COLORS.ICE_BLUE} !important;
+    font-weight: 600 !important;
+    box-shadow: 0 2px 12px rgba(125, 211, 252, 0.15) !important;
+}}
+
+/* Eliminar la barra/línea blanca debajo del tab-nav */
+.tabs.svelte-11gaq1 > div:first-child,
+.tabitem.svelte-11gaq1 {{
+    border-top: none !important;
+    box-shadow: none !important;
+}}
+
+/* Fondo del panel de contenido de cada tab */
+.tabitem.svelte-11gaq1,
+div.tabitem {{
+    background: {COLORS.BG_PRIMARY} !important;
+    border: none !important;
+    padding-top: 16px !important;
+}}
+
 """
 
 # =============================================================================
 # INTERFAZ GRADIO
 # =============================================================================
 
-with gr.Blocks(title="🧊 Fridge Survival Guide Pro 🧊", theme=gr.themes.Base(), css=CSS_CUSTOM) as demo:
+import base64
+with open("logo.png", "rb") as f:
+    LOGO_B64 = base64.b64encode(f.read()).decode()
+
+import components.ui_renderer as _ui_mod
+_ui_mod.LOGO_B64 = LOGO_B64
+
+with gr.Blocks(title="🧊 EatguAI 🧊", theme=gr.themes.Base(), css=CSS_CUSTOM) as demo:
 
     header      = gr.HTML(renderer.render_header("survival"))
     estado_vals = gr.State({})
@@ -745,12 +788,12 @@ with gr.Blocks(title="🧊 Fridge Survival Guide Pro 🧊", theme=gr.themes.Base
             analizar_btn.click(
                 fn=analizar_nevera,
                 inputs=[imagen_input, n_slider, conf_radio, filtro_tiempo, filtro_faltan, modo_radio],
-                outputs=[out_ing, out_rec, estado_vals, receta_dd, val_group, msg_val],
+                outputs=[out_ing, out_rec, estado_vals, receta_dd, val_group, msg_val, guardar_btn],
             )
             guardar_btn.click(
                 fn=guardar_rating,
                 inputs=[receta_dd, gusto_radio, rel_radio, estado_vals],
-                outputs=msg_val,
+                outputs=[msg_val, receta_dd, gusto_radio, rel_radio, guardar_btn],
             )
             modo_radio.change(
                 fn=lambda m: renderer.render_header(m),
@@ -793,9 +836,19 @@ with gr.Blocks(title="🧊 Fridge Survival Guide Pro 🧊", theme=gr.themes.Base
             export_btn.click(fn=lambda: store.export_message(), outputs=export_txt)
 
     gr.HTML(f"""
-    <div style="text-align:center; padding:12px 20px; color:var(--text-muted);
-                font-size:0.95em; border-top:1px solid var(--border-subtle); margin-top:20px;">
-        🧊 Fridge Survival Guide Pro · Sesión: {store.session.session_id}
+    <div style="text-align:center; padding:16px 20px 12px; 
+                border-top:1px solid var(--border-subtle); margin-top:20px;">
+        <div style="font-family:var(--font-body); font-size:0.8em; 
+                    color:var(--text-muted); margin-bottom:4px; letter-spacing:1px;">
+            Creado por
+        </div>
+        <div style="font-family:var(--font-accent); font-size:0.95em; 
+                    color:var(--ice-blue); margin-bottom:8px; letter-spacing:0.5px;">
+            Alonso Arredondo · Begoña Chamorro · Carolina Gamboa · Cesar Morales · Julián Álvarez
+        </div>
+        <div style="font-family:var(--font-data); font-size:1em; color:var(--text-muted);">
+            🧊 EatguAI 🧊 · Sesión: {store.session.session_id}
+        </div>
     </div>
     """)
 
@@ -806,4 +859,5 @@ if __name__ == "__main__":
         server_port=7860,
         share=True,
         show_error=True,
+        allowed_paths=["."],
     )
