@@ -4896,9 +4896,8 @@
     ],
     "proceso_corto": "Preparar huevo de forma sencilla. Cocinar hasta que esté en el punto deseado y servir.",
     "proceso_detallado": [
-      "1. batir los huevos.",
-      "2. Calentar una sarten con un poco de aceite o mantequilla.",
-      "3. Agregar los ingredientes preparados y luego incorporar el huevo.",
+      "1. Calentar una sarten con un poco de aceite o mantequilla.",
+      "3. Romper y agregar los huevos a la sarten",
       "4. Cocinar hasta que el huevo este en el punto deseado.",
       "5. Ajustar sal y especias al gusto y servir."
     ]
