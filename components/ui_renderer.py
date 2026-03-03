@@ -5,6 +5,7 @@ Renderizado de UI con diseño 'Nevera de Noche'.
 from typing import List, Dict, Any, Optional
 from config import COLORS, TYPO, CONFIG
 
+LOGO_B64 = "" 
 
 class UIRenderer:
     """Renderiza componentes HTML profesionales."""
@@ -147,7 +148,7 @@ class UIRenderer:
         }}
         </style>
         """
-    
+        
     @classmethod
     def render_header(cls, modo: str = "survival") -> str:
         config = CONFIG.get_mode(modo)
@@ -155,9 +156,15 @@ class UIRenderer:
     
         return f"""
         <div style="text-align:center; padding:32px 20px 24px;">
+            <img src="data:image/png;base64,{LOGO_B64}" style="
+                height:100px;
+                object-fit:contain;
+                filter:drop-shadow(0 0 20px rgba(120,200,255,0.6));
+                margin-bottom:12px;
+            " alt="EatguAI"/>
             <h1 style="
                 font-family:'Syne',sans-serif;
-                font-size:2.8em;
+                font-size:4em;
                 font-weight:800;
                 margin:0;
                 letter-spacing:3px;
@@ -166,12 +173,12 @@ class UIRenderer:
                     0 0 20px rgba(120,200,255,0.6),
                     0 0 40px rgba(100,180,255,0.3);
             ">
-                {config["icon"]} FRIDGE SURVIVAL GUIDE {config["icon"]}
+                EatguAI
             </h1>
             <p style="
                 color:{color};
                 margin:10px 0 0;
-                font-size:0.88em;
+                font-size:1.1em;
                 letter-spacing:2px;
                 font-family:'DM Sans',sans-serif;
                 text-transform:uppercase;
@@ -184,7 +191,8 @@ class UIRenderer:
                 background:linear-gradient(90deg, transparent, {color}80, transparent);
             "></div>
         </div>
-        """  
+        """
+        
     @classmethod
     def render_ingredients_grid(cls, ingredients: List[Any]) -> str:
         """Grid visual de ingredientes detectados."""
@@ -266,7 +274,7 @@ class UIRenderer:
             <p style="font-size:1.1em; margin:0 0 8px 0; color:{COLORS.ICE_BLUE};">
                 {message}
             </p>
-            <p style="font-size:0.85em; margin:0; opacity:0.6;">{sub}</p>
+            <p style="font-size:0.85em; margin:0; color:{COLORS.ICE_BLUE}; opacity:0.6;">{sub}</p>
         </div>
         
         <style>
