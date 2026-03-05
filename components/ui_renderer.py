@@ -153,14 +153,130 @@ class UIRenderer:
     def render_header(cls, modo: str = "survival") -> str:
         config = CONFIG.get_mode(modo)
         color  = config["color"]
-    
+
+        # ── Dynamic theme: chef → purple, survival → ice-blue ──────────────
+        if modo == "chef":
+            r, g, b = 167, 139, 250          # #a78bfa
+            logo_glow = "rgba(167,139,250,0.55)"
+            title_glow = "rgba(167,139,250,0.6), 0 0 40px rgba(167,139,250,0.3)"
+        else:
+            r, g, b = 125, 211, 252          # #7dd3fc
+            logo_glow = "rgba(120,200,255,0.5)"
+            title_glow = "rgba(120,200,255,0.6), 0 0 40px rgba(100,180,255,0.3)"
+
+        theme_css = f"""
+        <style id="dynamic-theme">
+        /* ── Accent override ({modo}) ── */
+        * {{
+            --ice-blue: {color} !important;
+            --border-glow: rgba({r},{g},{b},0.25) !important;
+        }}
+
+        /* Main container border + glow */
+        .gradio-container-6-8-0 {{
+            border-color: rgba({r},{g},{b},0.2) !important;
+            box-shadow:
+                0 0 40px rgba({r},{g},{b},0.12),
+                0 0 80px rgba({r},{g},{b},0.06),
+                inset 0 0 40px rgba({r},{g},{b},0.03) !important;
+        }}
+
+        /* Blocks glow */
+        .block, .block.svelte-1plpy97 {{
+            box-shadow:
+                0 0 18px rgba({r},{g},{b},0.18),
+                0 0 40px rgba({r},{g},{b},0.07),
+                inset 0 0 20px rgba({r},{g},{b},0.04) !important;
+        }}
+        .block:hover {{
+            border-color: rgba({r},{g},{b},0.45) !important;
+            box-shadow:
+                0 0 28px rgba({r},{g},{b},0.28),
+                0 0 60px rgba({r},{g},{b},0.12),
+                inset 0 0 20px rgba({r},{g},{b},0.06) !important;
+        }}
+
+        /* Labels */
+        [data-testid="block-info"], label .label-text, label span,
+        .form .label span, .gradio-dropdown label, .gradio-slider label,
+        .gradio-radio label, .gradio-image label, .wrap .label span,
+        .text-label {{
+            color: {color} !important;
+        }}
+
+        /* Radio selected */
+        label.svelte-19qdtil.selected {{
+            background: rgba({r},{g},{b},0.12) !important;
+            border-color: rgba({r},{g},{b},0.4) !important;
+            color: {color} !important;
+        }}
+
+        /* Slider */
+        input[type="range"] {{ accent-color: {color} !important; }}
+
+        /* Dropdown border + hover */
+        .wrap-inner.svelte-1xfsv4t {{
+            border-color: rgba({r},{g},{b},0.15) !important;
+        }}
+        .wrap-inner.svelte-1xfsv4t:hover {{
+            background: rgba({r},{g},{b},0.08) !important;
+            border-color: rgba({r},{g},{b},0.3) !important;
+        }}
+        .dropdown-arrow {{ fill: {color} !important; }}
+
+        /* Text inputs */
+        textarea, input[type="text"], input[type="number"] {{
+            border-color: rgba({r},{g},{b},0.2) !important;
+        }}
+        textarea:focus, input:focus {{
+            border-color: {color} !important;
+            box-shadow: 0 0 0 3px rgba({r},{g},{b},0.1) !important;
+        }}
+
+        /* Primary button */
+        button.lg.primary, button.svelte-xzq5jh.primary {{
+            box-shadow: 0 4px 20px rgba({r},{g},{b},0.3) !important;
+        }}
+        button.lg.primary:hover, button.svelte-xzq5jh.primary:hover {{
+            box-shadow: 0 8px 30px rgba({r},{g},{b},0.45) !important;
+        }}
+
+        /* Tabs active */
+        .tab-wrapper button.svelte-11gaq1.selected,
+        div[role="tablist"] button[aria-selected="true"] {{
+            background: rgba({r},{g},{b},0.1) !important;
+            color: {color} !important;
+            border-bottom: 2px solid {color} !important;
+            box-shadow: 0 2px 12px rgba({r},{g},{b},0.2) !important;
+        }}
+        .tab-wrapper button.svelte-11gaq1:hover,
+        div[role="tablist"] button:hover {{
+            color: rgba({r},{g},{b},0.85) !important;
+            border-bottom: 2px solid rgba({r},{g},{b},0.3) !important;
+        }}
+
+        /* Icon buttons */
+        .icon.svelte-exvkcd {{ color: {color} !important; }}
+        .icon-button.svelte-3jwzs9 {{ color: {color} !important; }}
+        label.svelte-19djge9 {{ color: {color} !important; }}
+
+        /* Ambient background pulse */
+        .fridge-container::before {{
+            background:
+                radial-gradient(ellipse at 20% 20%, rgba({r},{g},{b},0.08) 0%, transparent 50%),
+                radial-gradient(ellipse at 80% 80%, rgba({r},{g},{b},0.05) 0%, transparent 50%);
+        }}
+        </style>
+        """
+
         return f"""
+        {theme_css}
         <div style="text-align:center; padding:4px 25px 4px; display:flex; align-items:center; justify-content:flex-start; gap:14px; padding: 24px">
             <img src="data:image/png;base64,{LOGO_B64}" style="
                 height:125px;
                 width:auto;
                 object-fit:contain;
-                filter:drop-shadow(0 0 12px rgba(120,200,255,0.5));
+                filter:drop-shadow(0 0 12px {logo_glow});
                 flex-shrink:0;
             " alt="EatguAI"/>
             <div style="text-align:left;">
@@ -171,9 +287,7 @@ class UIRenderer:
                     margin:0;
                     letter-spacing:2px;
                     color:#e8f4f8;
-                    text-shadow:
-                        0 0 20px rgba(120,200,255,0.6),
-                        0 0 40px rgba(100,180,255,0.3);
+                    text-shadow: 0 0 20px {title_glow};
                     line-height:1;
                 ">
                     EatguAI
@@ -181,18 +295,21 @@ class UIRenderer:
                 <p style="
                     color:{color};
                     margin:10px 0 0;
-                    font-size:3.0 em;
-                    letter-spacing:2px;
-                    font-family:'DM Sans',sans-serif;
+                    font-size:1.1em;
+                    letter-spacing:3px;
+                    font-family:'Space Grotesk',sans-serif;
                     text-transform:uppercase;
-                    opacity:0.85;
+                    font-weight:700;
+                    text-shadow: 0 0 14px rgba({r},{g},{b},0.7), 0 0 28px rgba({r},{g},{b},0.4);
+                    opacity:1;
                 ">
-                    {config["description"]}
+                    {config['icon']}  {config["description"]}
                 </p>
             </div>
         </div>
         <div style="width:60%; height:1px; margin:0 auto 8px;
-            background:linear-gradient(90deg, transparent, {color}80, transparent);
+            background:linear-gradient(90deg, transparent, {color}90, transparent);
+            box-shadow: 0 0 8px rgba({r},{g},{b},0.5);
         "></div>
         """
         
