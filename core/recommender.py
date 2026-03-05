@@ -276,14 +276,18 @@ class RecipeRecommender:
             match_pct = n_found / total if total > 0 else 0
 
             # Modo survival: máximo 2 faltantes
-            if modo == "survival" and len(missing) > CONFIG.get_mode("survival")["max_missing"]:
+            if modo == "survival" and len(missing) > CONFIG.get_mode(modo)["max_missing"]:
                 continue
 
-            score_total = n_found * 1000 + match_pct * 100 + float(similarities[idx])
+            n_base_found = sum(1 for b in recipe.ingredientes_base if _normalize(b) in available_set)
+            score_total = (n_found * 1000) + (n_base_found * 50) + (match_pct * 100) + float(similarities[idx])
 
             # Bonus por calidad: recetas con proceso real se muestran primero
             if recipe.proceso_real:
                 score_total += 50
+            # Bonus/penalización por dificultad según modo
+            dificultad_bonus = CONFIG.get_mode(modo).get("dificultad_bonus", {})
+            score_total += dificultad_bonus.get(recipe.dificultad or "media", 0)
 
             results.append(Recommendation(
                 receta=recipe,
