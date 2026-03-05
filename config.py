@@ -1,5 +1,5 @@
 """
-Configuración centralizada de Fridge Survival Guide.
+Configuración centralizada de eatguai.
 Colores, umbrales y comportamiento.
 """
 from dataclasses import dataclass, field
@@ -109,6 +109,7 @@ class AppConfig:
             "color": "#7dd3fc",       # ICE_BLUE
             "accent": "#14b8a6",      # TEAL_AURORA
             "max_missing": 2,
+            "dificultad_bonus": {"baja": 20, "media": 0, "alta": -30},
             "show_techniques": False,
             "show_pairings": False,
             "show_plating": False,
@@ -120,6 +121,7 @@ class AppConfig:
             "color": "#a78bfa",       # PURPLE_NEBULA
             "accent": "#c4b5fd",      # Purple más claro para hover
             "max_missing": 5,
+            "dificultad_bonus": {"baja": 0, "media": 20, "alta": 40},
             "show_techniques": True,
             "show_pairings": True,
             "show_plating": True,
