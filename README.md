@@ -1,51 +1,95 @@
-# 🧊 EatguAI 🧊
+# 🧊 EatguAI — AI Fridge Assistant
 
-AI-powered fridge assistant that detects ingredients from a photo using Gemini Vision and recommends recipes using TF-IDF cosine similarity — built on Google Cloud Vertex AI.
+> Snap a photo of your fridge. Get ranked recipes in seconds.
 
-## How it works
+EatguAI combines **computer vision** and a **NLP-based recommendation engine** to detect ingredients from a fridge photo and suggest the best matching recipes — deployed as a production web app on Google Cloud Run.
 
-1. Upload a photo of your fridge
-2. Gemini Vision detects all visible ingredients
-3. The recommendation engine matches them against a database of 130+ recipes
-4. Get ranked recipes with step-by-step instructions
+---
+
+## What makes it interesting
+
+**The problem:** Traditional recipe apps require you to type ingredients manually. That's friction nobody wants.
+
+**The solution:** Upload one photo → Gemini Vision identifies every ingredient → a TF-IDF recommender ranks 300 recipes by match score → you get step-by-step instructions in under 5 seconds.
+
+**Key architectural decision:** Instead of training a custom YOLO model (explored and discarded due to dataset constraints and overfitting), we pivoted to zero-shot inference via Gemini 2.0 Flash. This eliminated the need for a labeled dataset, removed GPU dependency, and made the system generalizable to any real-world fridge photo.
+
+---
+
+## System Architecture
+
+```
+Photo → [Gemini 2.0 Flash / Vertex AI] → ingredient list
+                                              ↓
+                               [TF-IDF + Cosine Similarity]
+                                              ↓
+                               ranked recipes with match score
+                                              ↓
+                                    [Gradio UI / Cloud Run]
+```
+
+---
 
 ## Tech Stack
 
-- **Vision:** Google Gemini 2.0 Flash via Vertex AI
-- **Recommendation:** TF-IDF + Cosine Similarity + Fuzzy Matching (scikit-learn)
-- **Validation:** Pydantic v2
-- **Interface:** Gradio
-- **Cloud:** Google Cloud Vertex AI Workbench
+| Layer | Technology |
+|-------|-----------|
+| Vision | Gemini 2.0 Flash via Vertex AI (zero-shot) |
+| Recommendation | TF-IDF vectorization + Cosine Similarity (scikit-learn) |
+| Scoring | Weighted ingredient matching + difficulty bonus per mode |
+| Validation | Pydantic v2 |
+| Interface | Gradio |
+| Deployment | Docker → Google Artifact Registry → Cloud Run |
 
-## Setup for Virtual Machine en Vertex AI
-```bash
-# 1. Clone the repo
-git clone https://github.com/catoralonso/eatguai.git
-cd eatguai
-pip install -r requirements.txt
+---
 
-# 2. Google Cloud authentication
-gcloud auth login
-gcloud auth application-default login
+## Two Operating Modes
 
-# 3. Enable Vertex AI API
-gcloud services enable aiplatform.googleapis.com
+| Mode | Philosophy | Max missing ingredients |
+|------|-----------|------------------------|
+| 🧊 **Survival** | Cook strictly with what you have | 2 |
+| 👨‍🍳 **Chef Pro** | Full gastronomic experience — techniques, pairings, plating | 5 |
 
-# 4. Set project
-export GOOGLE_CLOUD_PROJECT=$(gcloud config get-value project)
+Each mode has independent scoring weights, a distinct UI theme, and different recipe fields exposed.
 
-# 5. Launch
-python app_gradiov4.py
+---
+
+## Dataset
+
+300 Spanish recipes with structured fields: key ingredients (with quantities), base ingredients, step-by-step instructions, difficulty, cook time, calories, tags — plus Chef Pro fields (techniques, wine pairings, plating notes).
+
+---
+
+## Project Structure
+
+```
+eatguai/
+├── app_gradiov4.py       → Entry point
+├── config.py             → Centralized config (modes, colors, paths, Cloud vars)
+├── models.py             → Pydantic v2 data models
+│
+├── core/
+│   ├── vision.py         → Gemini Vision detection + ingredient normalization
+│   └── recommender.py    → TF-IDF engine with weighted scoring
+│
+├── components/
+│   ├── ui_renderer.py    → Dynamic HTML/CSS theming per mode
+│   ├── detector.py       → Detection wrapper with error handling
+│   └── analytics.py      → Session analytics dashboard
+│
+└── data/                 → Local only (not in repo)
+    └── recetas_backend_proceso_ultra.json
 ```
 
-> **Note:** On a new Qwiklabs lab the API takes 2-3 minutes to activate after step 3.
-> The app will enable it automatically on startup, but wait a few minutes before uploading a photo.
+---
 
-## Setup for docker in CloudRun
+## Deployment
+
+The app runs on **Google Cloud Run** (serverless, auto-scaling). Deploy pipeline:
+
 ```bash
-# 1. Clone the Repo
-git clone https://github.com/catoralonso/eatguai.git
-cd eatguai
+# 1. Clone
+git clone https://github.com/catoralonso/eatguai.git && cd eatguai
 
 # 2. Create Dockerfile
 cat > Dockerfile << 'EOF'
@@ -62,86 +106,49 @@ CMD ["python", "app_gradiov4.py"]
 EOF
 
 # 3. Set variables
-AR_REPO='eatguai'
-SERVICE_NAME='eatguai'
-GOOGLE_CLOUD_PROJECT=$(gcloud config get-value project)
-GOOGLE_CLOUD_REGION='us-central1'
+export AR_REPO='eatguai'
+export SERVICE_NAME='eatguai'
+export GOOGLE_CLOUD_PROJECT=$(gcloud config get-value project)
+export GOOGLE_CLOUD_REGION='us-central1'
 
-# 4. Create repository in artifact registry
+# 4. Create Artifact Registry repo
 gcloud artifacts repositories create "$AR_REPO" \
-  --location="$GOOGLE_CLOUD_REGION" \
-  --repository-format=Docker
+  --location="$GOOGLE_CLOUD_REGION" --repository-format=Docker
 
-# 5. API activation
+# 5. Enable APIs
 gcloud services enable aiplatform.googleapis.com run.googleapis.com
 
-# 6. Build and upload image
-gcloud builds submit --tag "$GOOGLE_CLOUD_REGION-docker.pkg.dev/$GOOGLE_CLOUD_PROJECT/$AR_REPO/$SERVICE_NAME"
+# 6. Build and push
+gcloud builds submit \
+  --tag "$GOOGLE_CLOUD_REGION-docker.pkg.dev/$GOOGLE_CLOUD_PROJECT/$AR_REPO/$SERVICE_NAME"
 
-# 7. Launch CloudRun
+# 7. Deploy
 gcloud run deploy "$SERVICE_NAME" \
   --image "$GOOGLE_CLOUD_REGION-docker.pkg.dev/$GOOGLE_CLOUD_PROJECT/$AR_REPO/$SERVICE_NAME" \
-  --platform managed \
-  --region "$GOOGLE_CLOUD_REGION" \
-  --allow-unauthenticated \
-  --memory 2Gi \
+  --platform managed --region "$GOOGLE_CLOUD_REGION" \
+  --allow-unauthenticated --memory 2Gi \
   --set-env-vars "GOOGLE_CLOUD_PROJECT=$GOOGLE_CLOUD_PROJECT"
 ```
 
-## Project Structure
-```
-eatguai/
-├── app_gradiov4.py          → Application entry point 
-├── config.py                → Centralized configuration (colors, routes, modes)
-├── models.py                → Pydantic data validation models
-├── requirements.txt
-│
-├── core/
-│   ├── vision.py            → Gemini Vision ingredient detection module
-│   └── recommender.py       → TF-IDF recommendation engine
-│
-├── components/
-│   ├── ui_renderer.py       → HTML/CSS rendered (night fridge theme)
-│   ├── detector.py          → Detection wrapper with error handling
-│   └── analytics.py         → User analytics dashboard
-│
-├── releases/                → Previous app versions log
-│   ├── app_gradiov2.py
-│   └── app_gradiov3.py
-│
-└── data/                    → Local only (not included in the repository)
-    └── recetas_backend_proceso_ultra.json
+---
+
+## Local Setup (Vertex AI Workbench)
+
+```bash
+git clone https://github.com/catoralonso/eatguai.git && cd eatguai
+pip install -r requirements.txt
+gcloud auth application-default login
+gcloud services enable aiplatform.googleapis.com
+export GOOGLE_CLOUD_PROJECT=$(gcloud config get-value project)
+python app_gradiov4.py
 ```
 
-## Modes
+---
 
-| Mode | Description | Max missing ingredients |
-|------|-------------|------------------------|
-| 🧊 Survival | Cook with what you have right now | 2 |
-| 👨‍🍳 Chef Pro | Full gastronomic experience with techniques and pairings | 5 |
+## Version History
 
-## Version Log
-
-### v4 — Pro Edition *(current)*
-- Modular architecture: `core/` + `components/` separation
-- Smart recommender: fuzzy matching + ingredient substitutions
-- Pydantic v2 validation across all data layers
-- Two modes: Survival and Chef Pro with dynamic UI
-- Session analytics dashboard
-- Centralized config with environment variable support
-- Professional error handling with logging
-
-### v3
-- Improved interface, design and user experience
-- Dark theme "Nevera de Noche"
-- Expandable recipe cards with match progress bar
-- User ratings saved to CSV
-
-### v2
-- Basic interface
-- Ingredient detection from photo
-- Recipe recommendations
-
-## Dataset
-
-200+ Spanish recipes stored in `recetas_backend_proceso_ultra.json` with the following fields per recipe: key ingredients with quantities, step-by-step instructions, difficulty, time, calories, tags, and Chef Pro fields (techniques, pairing, plating notes).
+| Version | Highlights |
+|---------|-----------|
+| **v4** *(current)* | Modular architecture, dual modes, Pydantic v2, Cloud Run deployment, session analytics |
+| v3 | Dark "Nevera de Noche" theme, recipe cards with match progress bar, user ratings |
+| v2 | First working integration: vision + recommendations |
