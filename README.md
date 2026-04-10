@@ -4,13 +4,12 @@
 
 EatguAI combines **computer vision** and a **NLP-based recommendation engine** to detect ingredients from a fridge photo and suggest the best matching recipes — deployed as a production web app on Google Cloud Run.
 
-🔗 **[Live Demo](https://eatguai-naqwfs473q-uc.a.run.app/)**
-
 ![Python](https://img.shields.io/badge/Python-3.12-blue?logo=python&logoColor=white)
 ![Gemini](https://img.shields.io/badge/Gemini_2.5_Flash-Vertex_AI-4285F4?logo=google&logoColor=white)
 ![Cloud Run](https://img.shields.io/badge/Cloud_Run-Deployed-34A853?logo=googlecloud&logoColor=white)
 ![Terraform](https://img.shields.io/badge/Infra-Terraform-7B42BC?logo=terraform&logoColor=white)
 
+🔗 **[Live Demo](https://eatguai-naqwfs473q-uc.a.run.app/)**
 ---
 
 ## What makes it interesting
